@@ -1,0 +1,182 @@
+[
+    {
+        "file": "ReferralWelcomeCard.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "SupportBannerToast.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "CheckoutPromoBanner.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The 'promoCode' is directly extracted from 'window.location.search' and then unsafely rendered into the DOM via 'dangerouslySetInnerHTML' without sanitization, allowing for potential script injection."
+        }
+    },
+    {
+        "file": "DocsSnippetPreviewFrame.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based Cross-Site Scripting (XSS)",
+            "reasoning": "Unsanitized user input from `window.location.search` is directly embedded into the `srcDoc` of an `iframe` with `allow-scripts` and `allow-same-origin` sandbox attributes, allowing arbitrary script execution within the iframe."
+        }
+    },
+    {
+        "file": "EmbeddedChatNotice.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly assigns `event.data.body` from `window.postMessage` to `noticeRef.current.innerHTML` without sanitization, which can lead to DOM-based XSS if the `corpchat.com` origin sends malicious HTML content."
+        }
+    },
+    {
+        "file": "ReferralAttributionNote.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The 'campaign' parameter, extracted directly from 'document.referrer' without sanitization, is inserted into the DOM using 'insertAdjacentHTML', allowing for arbitrary HTML/script injection."
+        }
+    },
+    {
+        "file": "SavedFilterChip.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The 'savedLabel' retrieved from localStorage is directly interpolated into an HTML string ('chipHtml') which is then rendered using 'dangerouslySetInnerHTML', allowing for potential DOM-based XSS if an attacker can manipulate the localStorage item."
+        }
+    },
+    {
+        "file": "ProductSearchHeader.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "DocsPreviewFrame.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "ProfileBioPreview.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "ReferralWelcomeCard.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "SupportBannerToast.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "CheckoutPromoBanner.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The component safely renders the promo code using JSX, which automatically escapes user-controlled input from URL parameters, preventing DOM-based XSS, and does not use client-side storage for sensitive data."
+        }
+    },
+    {
+        "file": "DocsSnippetPreviewFrame.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The user-controlled 'snippet' parameter from the URL is properly HTML-escaped using 'escapeHtml' before being embedded into the 'srcDoc' of an iframe, and the iframe also utilizes the 'sandbox' attribute, effectively preventing DOM-based XSS. No client-side storage is used."
+        }
+    },
+    {
+        "file": "EmbeddedChatNotice.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "ReferralAttributionNote.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "SavedFilterChip.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "ProductSearchHeader.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "DocsPreviewFrame.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+        }
+    },
+    {
+        "file": "ProfileBioPreview.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The component safely renders 'draftBio' using JSX's automatic escaping, preventing DOM-based XSS, and 'profile.bioDraft' is not considered sensitive data requiring encryption in client-side storage."
+        }
+    }
+]
