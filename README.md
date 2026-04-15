@@ -15,12 +15,12 @@
 
 ## Структура репозитория
 
-- `/home/runner/work/LLM-Agents-as-SAST-Tools/LLM-Agents-as-SAST-Tools/parser.py` — парсер сырого markdown-вывода в `.jsx` файлы датасета.
-- `/home/runner/work/LLM-Agents-as-SAST-Tools/LLM-Agents-as-SAST-Tools/benchmark.py` — бенчмарк через локальную модель Ollama.
-- `/home/runner/work/LLM-Agents-as-SAST-Tools/LLM-Agents-as-SAST-Tools/benchmark_gemini.py` — бенчмарк через Gemini API.
-- `/home/runner/work/LLM-Agents-as-SAST-Tools/LLM-Agents-as-SAST-Tools/dataset/vulnerable` — уязвимые компоненты.
-- `/home/runner/work/LLM-Agents-as-SAST-Tools/LLM-Agents-as-SAST-Tools/dataset/patched` — исправленные компоненты.
-- `/home/runner/work/LLM-Agents-as-SAST-Tools/LLM-Agents-as-SAST-Tools/paper` — материалы для статьи.
+- `parser.py` — парсер сырого markdown-вывода в `.jsx` файлы датасета.
+- `benchmark.py` — бенчмарк через локальную модель Ollama.
+- `benchmark_gemini.py` — бенчмарк через Gemini API.
+- `dataset/vulnerable` — уязвимые компоненты.
+- `dataset/patched` — исправленные компоненты.
+- `paper` — материалы для статьи.
 
 ## Требования
 
@@ -54,7 +54,7 @@ python benchmark.py
 ```
 
 Результаты сохраняются в:
-- `/home/runner/work/LLM-Agents-as-SAST-Tools/LLM-Agents-as-SAST-Tools/benchmark_results.json`
+- `benchmark_results.json`
 
 ## Запуск бенчмарка: Gemini
 
@@ -66,7 +66,7 @@ python benchmark_gemini.py
 ```
 
 Результаты сохраняются в:
-- `/home/runner/work/LLM-Agents-as-SAST-Tools/LLM-Agents-as-SAST-Tools/gemini_benchmark_results.json`
+- `gemini_benchmark_results.json`
 
 ## Формат результата
 
