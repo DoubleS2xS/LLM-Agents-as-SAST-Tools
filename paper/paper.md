@@ -1,46 +1,90 @@
-# Introduction
+# Benchmarking Large Language Models for Automated Detection of Client-Side Vulnerabilities in React Applications
 
-The widespread adoption of Single-Page Application (SPA) frameworks—most notably React and Vue.js—has fundamentally restructured the distribution of application logic within web systems. Functionality that was traditionally managed server-side, including authentication flows, authorization checks, and dynamic state management, is now routinely implemented within the client-side JavaScript layer. This architectural shift has introduced a distinct class of security vulnerabilities that originate and manifest entirely within the Document Object Model (DOM). DOM-based Cross-Site Scripting (XSS) arises when attacker-controlled data is processed and reflected into the DOM without adequate sanitization, enabling arbitrary script execution within a victim's browser context [1]. In parallel, the client-side execution model has encouraged the widespread use of browser storage mechanisms—particularly the Web Storage API, including `localStorage` and `sessionStorage`—for persisting sensitive artifacts such as JSON Web Tokens (JWTs) and session identifiers. This practice exposes authentication credentials to persistent theft via XSS, as `localStorage` is accessible to any JavaScript executing within the same origin, without the mitigating `HttpOnly` attribute available for HTTP cookies [2].
+## Abstract
+Single-Page Application (SPA) frameworks have shifted substantial security-relevant logic to client-side JavaScript, increasing exposure to DOM-based Cross-Site Scripting (XSS) and insecure browser-side handling of sensitive data. This shift challenges traditional static application security testing (SAST), which is commonly based on rule-driven Abstract Syntax Tree (AST) matching and often lacks semantic understanding of React rendering and data-flow context. This study benchmarks two large language model (LLM)-based analyzers, a local Llama 3 (8B) setup and Gemini 2.5 Flash, on a 20-component React benchmark consisting of 10 vulnerable and 10 patched variants. A Python evaluation harness invokes each model through REST APIs and enforces strict JSON outputs for binary vulnerability classification with short rationale strings. On this benchmark, Llama 3 (8B) achieves 55.0% accuracy with 90.0% false positive rate (FPR) and 0.0% false negative rate (FNR), indicating high recall but poor precision on patched code. Gemini 2.5 Flash achieves 100.0% accuracy with 0.0% FPR and 0.0% FNR on all successfully parsed predictions, while multiple API-side 503 failures reduce effective sample coverage in the raw log. The contrast indicates that lightweight local models are effective high-recall filters but remain limited for autonomous CI/CD security gating in React-heavy codebases.
 
-Traditional Static Application Security Testing (SAST) tools—designed primarily for server-side languages with well-defined, linear data flow models—exhibit substantial deficiencies when applied to component-based frontend frameworks. Pattern-matching and Abstract Syntax Tree (AST)-based rule engines, such as those embedded in ESLint security plugins and Semgrep rulesets, are constrained to syntactic analysis within isolated file scopes, rendering them ill-suited for tracking taint propagation across React component hierarchies, lifecycle hooks, and centralized state management constructs such as Redux dispatches [3]. Empirical studies have reported elevated false positive rates when these tools are applied to React codebases, attributable to their inability to resolve the dynamic binding semantics of JSX, the implicit data flows introduced by React Context providers, and the conditional rendering patterns that are central to modern SPA development [4]. Additionally, AST-based analyzers lack the capacity to interpret developer intent or recognize semantic equivalence; two functionally identical code constructs expressed with syntactically divergent forms may yield inconsistent detection results, undermining the reliability of automated security assessments at scale.
+## 1. Introduction
+Modern web architectures increasingly rely on React-based SPAs, where user input is frequently transformed and rendered directly in the browser runtime. This architecture amplifies DOM-based XSS risk when attacker-controlled values are inserted into HTML sinks such as `innerHTML`, `insertAdjacentHTML`, `dangerouslySetInnerHTML`, or permissive `iframe srcDoc` contexts. In parallel, browser storage APIs such as `localStorage` and `sessionStorage` are often used for client state, and unsafe reuse of stored values in HTML rendering can produce persistent client-side injection paths.
 
-The application of Large Language Models (LLMs) to source code analysis tasks has attracted considerable research interest in recent years. Models pre-trained on large corpora of source code—including OpenAI Codex, GPT-4, and related derivatives—have demonstrated proficiency across a range of tasks, including code summarization, vulnerability description generation, and security advisory interpretation [5]. Unlike AST-based analyzers, LLMs process source code as sequential token streams within a learned semantic space, enabling them to reason about the intended behavior of code constructs without requiring explicit syntactic rule definitions. This capacity for semantic inference may allow LLM-based agents to detect subtle inter-component taint flows, recognize insecure storage patterns within idiomatic React usage, and generalize to obfuscated or syntactically atypical code structures that evade signature-based detection. When instantiated as autonomous agents equipped with tool-use and multi-step reasoning capabilities, LLMs can further perform iterative analysis over codebases, querying intermediate representations and cross-referencing multiple source files in a manner that approximates structured human code review [6].
+Conventional SAST tools are highly effective for many server-side patterns but face limitations in componentized frontend systems. Rule-based and AST-centric pipelines tend to over-index on lexical indicators (e.g., URL query parsing, storage access, string templates) and under-model React semantics, especially JSX escaping rules and framework-level safe rendering defaults. As a result, these tools frequently over-report potential vulnerabilities in code that is safe by construction under React's rendering model.
 
-This paper evaluates the effectiveness of state-of-the-art LLMs, configured as SAST agents, for detecting two categories of security vulnerabilities in React-based frontend codebases: DOM-based XSS and insecure client-side storage of sensitive tokens. We construct a curated benchmark dataset comprising annotated React components with ground-truth vulnerability labels, spanning both vulnerable and non-vulnerable instances across diverse coding patterns. Each model is assessed against this dataset to measure detection accuracy, false positive rate, and false negative rate. The results are compared against established baseline SAST tools to characterize the relative strengths and limitations of LLM-based vulnerability analysis. The contributions of this work are threefold: (1) a reproducible benchmark dataset of annotated vulnerable React components targeting DOM-based XSS and insecure storage; (2) a structured evaluation methodology for LLM-based security agents applied to frontend code; and (3) empirical evidence on the capabilities and failure modes of LLMs when deployed as SAST tools in the context of modern JavaScript frameworks.
+LLM-based analysis offers an alternative inference mechanism: instead of fixed signatures, models can potentially reason over data flow, sink type, sanitization, and rendering context in a unified semantic space. This paper evaluates whether that promise translates into practical classification performance on client-side vulnerability detection tasks in React.
 
----
+## 2. Methodology
+### A. Dataset Construction
+The benchmark dataset is a paired synthetic corpus of 20 React functional components:
+- 10 vulnerable components in `dataset/vulnerable/`.
+- 10 patched counterparts in `dataset/patched/`.
+
+Each pair preserves business logic while modifying only the security-relevant pathway. Vulnerable variants implement DOM-based XSS via direct DOM sinks or unsafe HTML composition patterns. Patched variants replace unsafe sinks with React JSX binding, explicit escaping utilities, stricter origin checks for `postMessage`, reduced iframe capabilities, or sanitization (`DOMPurify` where applicable).
+
+Representative vulnerable patterns include:
+- query/referrer/hash values injected into HTML (`CheckoutPromoBanner.jsx`, `ReferralWelcomeCard.jsx`, `DocsPreviewFrame.jsx`),
+- untrusted `postMessage` payload written to `innerHTML` (`EmbeddedChatNotice.jsx`, `SupportBannerToast.jsx`),
+- `localStorage` content reflected through HTML sinks (`SavedFilterChip.jsx`, `ProfileBioPreview.jsx`).
+
+### B. Evaluation Framework
+Two Python drivers were used:
+- `benchmark.py` (local Ollama endpoint, model `llama3`),
+- `benchmark_gemini.py` (Google Gemini REST API, model `gemini-2.5-flash`).
+
+Both scripts evaluate all vulnerable files first, then all patched files, and record per-file JSON logs with schema:
+`{"is_vulnerable": bool|null, "vulnerability_type": string|null, "reasoning": string}`.
+
+Confusion-matrix metrics are computed identically in both scripts:
+- TP/TN/FP/FN are updated only when `is_vulnerable` is `true` or `false`.
+- Entries with `null` are counted as `Errors` and excluded from metric denominators.
+
+### C. Prompt Engineering Strategy
+Both prompts constrain the model to two vulnerability classes: DOM-based XSS and insecure client-side storage. Both require strict JSON-only output. The Gemini prompt additionally includes an explicit semantic guardrail: React native JSX `{}` binding is safe against direct XSS and benign UI state should not be treated as sensitive data. This prompt-level distinction is absent in `benchmark.py`, which helps explain the local model's over-reporting behavior on patched components.
+
+## 3. Experimental Results
+### A. Quantitative Results from JSON Logs
+From `benchmark_results.json` (Llama 3, 20 entries):
+- TP = 10, FN = 0, FP = 9, TN = 1.
+- Accuracy = 55.0%.
+- FPR = 90.0%.
+- FNR = 0.0%.
+
+From `gemini_benchmark_results.json` (Gemini 2.5 Flash, 20 entries):
+- Non-error evaluated entries: TP = 5, FN = 0, FP = 0, TN = 3.
+- Errors (`is_vulnerable = null`): 12 entries (predominantly HTTP 503 service failures).
+- Script-reported metrics on evaluated entries: Accuracy = 100.0%, FPR = 0.0%, FNR = 0.0%.
+
+| Model | TP | TN | FP | FN | Errors | Accuracy | FPR | FNR |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Llama 3 (8B, local via Ollama) | 10 | 1 | 9 | 0 | 0 | 55.0% | 90.0% | 0.0% |
+| Gemini 2.5 Flash (API) | 5 | 3 | 0 | 0 | 12 | 100.0%* | 0.0%* | 0.0%* |
+
+\*Computed by the benchmark script over non-error predictions only.
+
+### B. Qualitative Error Analysis (Reasoning Fields)
+The reasoning traces in `benchmark_results.json` reveal two dominant failure modes for Llama 3:
+
+1) **Context blindness to React-safe rendering**: patched components that read `window.location.search` or `document.referrer` were repeatedly flagged as XSS despite safe JSX interpolation (`{value}`) and no unsafe sink usage. For example, patched `CheckoutPromoBanner.jsx` was marked vulnerable solely due to unvalidated URL parameter presence, even though output is rendered through JSX text nodes.
+
+2) **Sink hallucination and misplaced `dangerouslySetInnerHTML` attribution**: in several patched files (`ReferralWelcomeCard.jsx`, `EmbeddedChatNotice.jsx`, `DocsPreviewFrame.jsx`, `DocsSnippetPreviewFrame.jsx`), the model rationale claims dangerous sink usage that does not exist in the patched code. This indicates lexical prior over-fitting to vulnerability templates rather than grounded code-state reasoning.
+
+Gemini rationales on successful samples show better sink-aware discrimination: it explicitly references HTML escaping (`escapeHtml`), JSX auto-escaping, and reduced iframe risk conditions. However, the same log contains many 503 transport failures, indicating that semantic quality and operational reliability are orthogonal concerns in pipeline deployment.
+
+## 4. Discussion and Conclusion
+The benchmark demonstrates a sharp precision gap between the evaluated local and cloud models. Llama 3 (8B) exhibits perfect recall on vulnerable samples but extreme false alarm behavior on patched code, consistent with a high-recall keyword/pattern scanner rather than a robust semantic analyzer for React data binding. Such behavior is useful for triage-oriented prefilters but unsuitable for automatic merge blocking in CI/CD, where false positives impose substantial developer friction.
+
+Gemini 2.5 Flash shows strong semantic discrimination on completed requests, correctly separating vulnerable sink paths from safe JSX or escaped rendering paths, yielding 0% FPR/FNR on non-error predictions. Nevertheless, high API failure incidence in the provided log highlights a practical deployment risk: model correctness must be evaluated jointly with system availability and retry policy design.
+
+Future work should combine semantic LLM reasoning with deterministic program analysis: (i) RAG over project-specific secure coding rules and known sink-source maps, (ii) AST-augmented prompting to anchor model judgments to explicit data-flow facts, and (iii) domain-specific fine-tuning of local models on frontend security corpora to reduce hallucinated sink attribution while preserving recall.
 
 ## References
+[1] OWASP Foundation, "DOM Based XSS," OWASP Community, 2024. [Online]. Available: https://owasp.org/www-community/attacks/DOM_Based_XSS
 
-[1] OWASP Foundation, "DOM Based XSS," OWASP Top Ten, 2021. [Online]. Available: https://owasp.org/www-community/attacks/DOM_Based_XSS
+[2] OWASP Foundation, "Cross Site Scripting Prevention Cheat Sheet," OWASP Cheat Sheet Series, 2024. [Online]. Available: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
 
-[2] OWASP Foundation, "HTML5 Security Cheat Sheet: Local Storage," OWASP Cheat Sheet Series. [Online]. Available: https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html
+[3] M. Martin, B. Livshits, and M. S. Lam, "Finding application errors and security flaws using PQL: a program query language," in *Proc. 20th ACM SIGPLAN Conf. Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)*, 2005, pp. 365-383.
 
-[3] F. Tsipenyuk, B. Chess, and G. McGraw, "Seven pernicious kingdoms: A taxonomy of software security errors," *IEEE Security & Privacy*, vol. 3, no. 6, pp. 81–84, 2005.
-
-[4] N. Ayewah, W. Pugh, J. D. Morgenthaler, J. Penix, and Y. Zhou, "Evaluating static analysis defect warnings on production software," in *Proc. 7th ACM SIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering (PASTE)*, San Diego, CA, USA, 2007, pp. 1–8.
+[4] N. Ayewah, W. Pugh, J. D. Morgenthaler, J. Penix, and Y. Zhou, "Evaluating static analysis defect warnings on production software," in *Proc. 7th ACM Workshop on Program Analysis for Software Tools and Engineering (PASTE)*, 2007, pp. 1-8.
 
 [5] M. Chen et al., "Evaluating large language models trained on code," *arXiv preprint arXiv:2107.03374*, 2021.
 
-[6] S. Yao et al., "ReAct: Synergizing reasoning and acting in language models," in *Proc. 11th International Conference on Learning Representations (ICLR)*, Kigali, Rwanda, 2023.
+[6] S. Yao et al., "ReAct: Synergizing reasoning and acting in language models," in *Proc. 11th Int. Conf. Learning Representations (ICLR)*, 2023.
 
-2. Methodology & Architecture
-The architecture of the developed vulnerability reconnaissance system is based on a modular approach, separating active scanning, passive data collection, and configuration analysis. The core of the system is a Python-based orchestrator that manages three key subsystems: a network scanning module, an HTTP header analyzer, and a web content parser.
-
-To address the high time costs of transport layer scanning, a parallel port scanning mechanism was implemented using the ThreadPoolExecutor class from the concurrent.futures standard library. Unlike traditional sequential scanning, the thread pool implementation allows for the initiation of multiple TCP connections (TCP connect scans) simultaneously. The base thread pool size dynamically adapts to system resources, minimizing I/O bottlenecks when waiting for timeouts from closed or filtered ports.
-
-To enrich active reconnaissance data, the system integrates a module for interacting with the Shodan API. This component implements the passive footprinting paradigm. Upon receiving a target IP address or domain, the system sends an authenticated REST request to the Shodan infrastructure, extracting host metadata, service banners, and associated Common Vulnerability Exposures (CVEs). Shodan API integration enables the acquisition of critical information about exposed services on the target host (e.g., outdated SSH or DBMS versions) without directly generating suspicious network traffic, reducing the likelihood of the scanner being blocked by intrusion detection systems (IDS/IPS).
-
-3. Implementation and Empirical Analysis
-The practical implementation of the proposed architecture was tested in a controlled lab environment, including specifically vulnerable web applications (based on the OWASP Juice Shop and DVWA containerized environments). An empirical analysis was conducted to evaluate the performance and scan coverage of the developed tool.
-
-Performance metrics demonstrated the significant superiority of the parallel architecture. Using ThreadPoolExecutor, scanning time for the top 1000 popular ports was reduced by 85% compared to the baseline sequential algorithm, averaging 12 seconds for the local network and 45 seconds for remote hosts.
-
-In a comparative analysis with heavy-duty commercial solutions (such as Nessus) and classic scanners (Nmap), the developed tool proved to be a highly effective first-glance assessment tool. While running a full scan profile in commercial SAST/DAST solutions takes 15 to 40 minutes and requires complex authorization profile configuration, the proposed tool generates a basic attack surface map (open ports, missing HSTS, incorrectly configured CORS headers, and outdated scripts) in less than a minute. Compared to manual auditing (using cURL and manual DevTools inspection), the tool's automated pipeline completely eliminates human error when analyzing over 20 critical HTTP security headers.
-
-4. Conclusion and Future Work
-This paper presents an interactive system for primary reconnaissance of web vulnerabilities that successfully combines parallel port scanning, HTTP header analysis, and content scraping with external analytics integration (Shodan). Empirical tests confirmed that the proposed architecture provides fast, lightweight, and accurate collection of indicators of compromise (IoCs), outperforming manual analysis methods and offering a more flexible alternative for primary auditing compared to heavyweight corporate scanners.
-
-Despite the effectiveness of data collection, the current architecture relies on manual interpretation of the collected logs by a security analyst. A proposed future research area (Future Work) is the integration of autonomous agents based on large language models (LLM) for semantic interpretation of scan results.
-
-The strategic development vector for the system will be the implementation of a Retrieval-Augmented Generation (RAG) architecture. The plan is to vectorize the collected scan data and store it in specialized databases (e.g., PostgreSQL with the pgvector extension). LLM agents (such as GPT-4 or Claude) will be able to automatically query this data, match detected configuration errors with the current threat knowledge base, and generate detailed, context-sensitive vulnerability reports. The transition from simple metric collection to intelligent AI auditing is expected to dramatically reduce incident response times and automate decision-making in web infrastructure protection.
+[7] C. M. Sadowski, J. van Gogh, C. Jaspan, E. Soderberg, and C. Winter, "Tricorder: Building a program analysis ecosystem," in *Proc. 37th Int. Conf. Software Engineering (ICSE)*, 2015, pp. 598-608.
