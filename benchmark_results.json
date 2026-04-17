@@ -1,0 +1,182 @@
+[
+    {
+        "file": "ReferralWelcomeCard.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses insertAdjacentHTML with user-controlled input (referrer URL parameter) without proper sanitization, allowing for potential DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "SupportBannerToast.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the toastRef.current.innerHTML assignment allows for arbitrary HTML injection, which can lead to DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "CheckoutPromoBanner.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with untrusted user input (`promoCode`) allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "DocsSnippetPreviewFrame.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the iframe's srcDoc attribute allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "EmbeddedChatNotice.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the `noticeRef.current.innerHTML = event.data.body;` line allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "ReferralAttributionNote.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of insertAdjacentHTML with user-controlled input (document.referrer) allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "SavedFilterChip.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with untrusted user data (localStorage) allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "ProductSearchHeader.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with unvalidated user input (query parameter) allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS attack."
+        }
+    },
+    {
+        "file": "DocsPreviewFrame.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the iframe's srcDoc attribute allows an attacker to inject malicious JavaScript code, which can then be executed by the browser."
+        }
+    },
+    {
+        "file": "ProfileBioPreview.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with untrusted user input (draftBio) allows an attacker to inject malicious HTML and execute arbitrary JavaScript code."
+        }
+    },
+    {
+        "file": "ReferralWelcomeCard.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the `referrer` component can lead to DOM-based XSS attacks when untrusted user input is injected into the HTML."
+        }
+    },
+    {
+        "file": "SupportBannerToast.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` and unvalidated HTML content from an external origin (via the `window.addEventListener('message', onMessage)` event listener) allows for potential DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "CheckoutPromoBanner.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` is not present, but the unvalidated URL parameter 'promo' in the `URLSearchParams` object can lead to a DOM-based XSS vulnerability if an attacker injects malicious JavaScript code into the 'promo' parameter."
+        }
+    },
+    {
+        "file": "DocsSnippetPreviewFrame.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the iframe's srcDoc attribute allows an attacker to inject malicious JavaScript code, which can then be executed by the browser."
+        }
+    },
+    {
+        "file": "EmbeddedChatNotice.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the JSX template allows for arbitrary HTML injection, which can be exploited by an attacker to inject malicious JavaScript code."
+        }
+    },
+    {
+        "file": "ReferralAttributionNote.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `document.referrer` and `URLSearchParams.get('campaign')` can lead to a DOM-based XSS vulnerability if an attacker controls the referrer URL or campaign parameter."
+        }
+    },
+    {
+        "file": "SavedFilterChip.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "Insecure Client-Side Storage",
+            "reasoning": "The component stores sensitive data (inventory.savedFilterLabel) in local storage, which can be accessed by an attacker if the user's browser is compromised or if they are using a public computer."
+        }
+    },
+    {
+        "file": "ProductSearchHeader.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "DocsPreviewFrame.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the iframe component allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "ProfileBioPreview.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "Insecure Client-Side Storage",
+            "reasoning": "The application stores sensitive data (profile.bioDraft) in local storage without proper encryption, making it accessible to an attacker who gains access to the user's browser."
+        }
+    }
+]
