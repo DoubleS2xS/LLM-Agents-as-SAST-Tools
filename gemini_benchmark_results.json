@@ -202,41 +202,5 @@
             "reasoning": "The component retrieves a filter label from localStorage, which could potentially store sensitive information if not handled carefully, although in this specific case it appears to be benign UI state.",
             "_attempts": 1
         }
-    },
-    {
-        "file": "ProductSearchHeader.jsx",
-        "true_label": false,
-        "latency_sec": 7.84,
-        "attempts": 3,
-        "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": "",
-            "_attempts": 3
-        }
-    },
-    {
-        "file": "DocsPreviewFrame.jsx",
-        "true_label": false,
-        "latency_sec": 7.65,
-        "attempts": 3,
-        "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": " ",
-            "_attempts": 3
-        }
-    },
-    {
-        "file": "ProfileBioPreview.jsx",
-        "true_label": false,
-        "latency_sec": 8.18,
-        "attempts": 3,
-        "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": " ",
-            "_attempts": 3
-        }
     }
 ]
