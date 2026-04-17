@@ -211,7 +211,7 @@
         "prediction": {
             "is_vulnerable": null,
             "vulnerability_type": "Error",
-            "reasoning": "HTTP 429: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=\"API_KEY\"",
+            "reasoning": "",
             "_attempts": 3
         }
     },
@@ -223,7 +223,7 @@
         "prediction": {
             "is_vulnerable": null,
             "vulnerability_type": "Error",
-            "reasoning": "HTTP 429: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=\"API_KEY\"",
+            "reasoning": " ",
             "_attempts": 3
         }
     },
@@ -235,7 +235,7 @@
         "prediction": {
             "is_vulnerable": null,
             "vulnerability_type": "Error",
-            "reasoning": "HTTP 429: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=\"API_KEY\"",
+            "reasoning": " ",
             "_attempts": 3
         }
     }
