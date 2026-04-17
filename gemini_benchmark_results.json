@@ -2,181 +2,241 @@
     {
         "file": "ReferralWelcomeCard.jsx",
         "true_label": true,
+        "latency_sec": 2.32,
+        "attempts": 1,
         "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly inserts user-controlled data from URL parameters into the DOM using insertAdjacentHTML without proper sanitization, which can lead to DOM-based XSS.",
+            "_attempts": 1
         }
     },
     {
         "file": "SupportBannerToast.jsx",
         "true_label": true,
+        "latency_sec": 0.95,
+        "attempts": 1,
         "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS via dangerouslySetInnerHTML equivalent",
+            "reasoning": "The component directly assigns `event.data.html` to `toastRef.current.innerHTML`, which is equivalent to using `dangerouslySetInnerHTML` and can lead to DOM-based XSS if `event.data.html` is not properly sanitized before being set.",
+            "_attempts": 1
         }
     },
     {
         "file": "CheckoutPromoBanner.jsx",
         "true_label": true,
+        "latency_sec": 1.91,
+        "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The 'promoCode' is directly extracted from 'window.location.search' and then unsafely rendered into the DOM via 'dangerouslySetInnerHTML' without sanitization, allowing for potential script injection."
+            "reasoning": "The component uses dangerouslySetInnerHTML with user-controlled input from URL parameters, which can lead to DOM-based XSS if the 'promo' parameter contains malicious HTML or script tags.",
+            "_attempts": 1
         }
     },
     {
         "file": "DocsSnippetPreviewFrame.jsx",
         "true_label": true,
+        "latency_sec": 1.18,
+        "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
-            "vulnerability_type": "DOM-based Cross-Site Scripting (XSS)",
-            "reasoning": "Unsanitized user input from `window.location.search` is directly embedded into the `srcDoc` of an `iframe` with `allow-scripts` and `allow-same-origin` sandbox attributes, allowing arbitrary script execution within the iframe."
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The 'snippet' parameter from the URL is directly embedded into the srcDoc of an iframe without proper sanitization, allowing for arbitrary HTML and script execution.",
+            "_attempts": 1
         }
     },
     {
         "file": "EmbeddedChatNotice.jsx",
         "true_label": true,
+        "latency_sec": 1.68,
+        "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
-            "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The component directly assigns `event.data.body` from `window.postMessage` to `noticeRef.current.innerHTML` without sanitization, which can lead to DOM-based XSS if the `corpchat.com` origin sends malicious HTML content."
+            "vulnerability_type": "DOM-based XSS via dangerouslySetInnerHTML",
+            "reasoning": "The component uses `innerHTML` to set content from `event.data.body` without sanitization, which can lead to DOM-based XSS if the `event.origin` check is bypassed or if `event.data.body` contains malicious HTML/script.",
+            "_attempts": 1
         }
     },
     {
         "file": "ReferralAttributionNote.jsx",
         "true_label": true,
+        "latency_sec": 1.79,
+        "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The 'campaign' parameter, extracted directly from 'document.referrer' without sanitization, is inserted into the DOM using 'insertAdjacentHTML', allowing for arbitrary HTML/script injection."
+            "reasoning": "The code uses insertAdjacentHTML with user-controlled data from document.referrer's 'campaign' URL parameter, which can lead to DOM-based XSS if the campaign value is not properly sanitized.",
+            "_attempts": 1
         }
     },
     {
         "file": "SavedFilterChip.jsx",
         "true_label": true,
+        "latency_sec": 0.97,
+        "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The 'savedLabel' retrieved from localStorage is directly interpolated into an HTML string ('chipHtml') which is then rendered using 'dangerouslySetInnerHTML', allowing for potential DOM-based XSS if an attacker can manipulate the localStorage item."
+            "reasoning": "The component uses dangerouslySetInnerHTML with user-controlled or potentially untrusted data from localStorage, which can lead to DOM-based XSS if the savedLabel contains malicious HTML or script tags.",
+            "_attempts": 1
         }
     },
     {
         "file": "ProductSearchHeader.jsx",
         "true_label": true,
+        "latency_sec": 1.28,
+        "attempts": 1,
         "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS via dangerouslySetInnerHTML",
+            "reasoning": "The component uses dangerouslySetInnerHTML with user-controlled input from URL parameters, allowing for DOM-based XSS if the 'q' parameter contains malicious HTML or script tags.",
+            "_attempts": 1
         }
     },
     {
         "file": "DocsPreviewFrame.jsx",
         "true_label": true,
+        "latency_sec": 5.17,
+        "attempts": 1,
         "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS via unvalidated URL hash",
+            "reasoning": "The 'topic' variable is directly populated from the URL hash and then embedded into the srcDoc of an iframe without proper sanitization, allowing for XSS if the hash contains malicious HTML or script tags.",
+            "_attempts": 1
         }
     },
     {
         "file": "ProfileBioPreview.jsx",
         "true_label": true,
+        "latency_sec": 2.3,
+        "attempts": 1,
         "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS via dangerouslySetInnerHTML",
+            "reasoning": "The component uses dangerouslySetInnerHTML with user-controlled input from localStorage, which can lead to DOM-based XSS if the stored bio contains malicious HTML or script tags.",
+            "_attempts": 1
         }
     },
     {
         "file": "ReferralWelcomeCard.jsx",
         "true_label": false,
+        "latency_sec": 1.19,
+        "attempts": 1,
         "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The 'ref' URL parameter is directly rendered into the DOM without sanitization, making it vulnerable to DOM-based XSS if the parameter contains malicious script content.",
+            "_attempts": 1
         }
     },
     {
         "file": "SupportBannerToast.jsx",
         "true_label": false,
+        "latency_sec": 1.16,
+        "attempts": 1,
         "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code uses DOMPurify to sanitize incoming HTML from a trusted origin before setting it via innerHTML, effectively mitigating DOM-based XSS risks.",
+            "_attempts": 1
         }
     },
     {
         "file": "CheckoutPromoBanner.jsx",
         "true_label": false,
+        "latency_sec": 7.22,
+        "attempts": 1,
         "prediction": {
             "is_vulnerable": false,
             "vulnerability_type": null,
-            "reasoning": "The component safely renders the promo code using JSX, which automatically escapes user-controlled input from URL parameters, preventing DOM-based XSS, and does not use client-side storage for sensitive data."
+            "reasoning": "The component safely retrieves a URL parameter and renders it within the DOM using React's JSX binding, which automatically sanitizes content, preventing DOM-based XSS.",
+            "_attempts": 1
         }
     },
     {
         "file": "DocsSnippetPreviewFrame.jsx",
         "true_label": false,
+        "latency_sec": 3.43,
+        "attempts": 1,
         "prediction": {
             "is_vulnerable": false,
             "vulnerability_type": null,
-            "reasoning": "The user-controlled 'snippet' parameter from the URL is properly HTML-escaped using 'escapeHtml' before being embedded into the 'srcDoc' of an iframe, and the iframe also utilizes the 'sandbox' attribute, effectively preventing DOM-based XSS. No client-side storage is used."
+            "reasoning": "The code sanitizes user-provided input from URL parameters using a custom escapeHtml function before rendering it within an iframe's srcDoc, mitigating DOM-based XSS risks.",
+            "_attempts": 1
         }
     },
     {
         "file": "EmbeddedChatNotice.jsx",
         "true_label": false,
+        "latency_sec": 0.98,
+        "attempts": 1,
         "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The component safely handles messages from trusted origins and sanitizes the incoming data before rendering it as text, preventing DOM-based XSS and insecure client-side storage issues.",
+            "_attempts": 1
         }
     },
     {
         "file": "ReferralAttributionNote.jsx",
         "true_label": false,
+        "latency_sec": 2.19,
+        "attempts": 1,
         "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code safely renders the 'campaign' value within JSX, which automatically escapes HTML, preventing DOM-based XSS.",
+            "_attempts": 1
         }
     },
     {
         "file": "SavedFilterChip.jsx",
         "true_label": false,
+        "latency_sec": 0.97,
+        "attempts": 1,
         "prediction": {
-            "is_vulnerable": null,
-            "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "is_vulnerable": true,
+            "vulnerability_type": "Insecure Client-Side Storage",
+            "reasoning": "The component retrieves a filter label from localStorage, which could potentially store sensitive information if not handled carefully, although in this specific case it appears to be benign UI state.",
+            "_attempts": 1
         }
     },
     {
         "file": "ProductSearchHeader.jsx",
         "true_label": false,
+        "latency_sec": 7.84,
+        "attempts": 3,
         "prediction": {
             "is_vulnerable": null,
             "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "reasoning": "HTTP 429: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=AQ.Ab8RN6K42FP1UsFpt0zXtZH24Z0hBzKhg2vuSCbM0iAzk7aP7Q",
+            "_attempts": 3
         }
     },
     {
         "file": "DocsPreviewFrame.jsx",
         "true_label": false,
+        "latency_sec": 7.65,
+        "attempts": 3,
         "prediction": {
             "is_vulnerable": null,
             "vulnerability_type": "Error",
-            "reasoning": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAQ7MDCP2EHrjSgGwHp3jJ0lld1EEhNJDc"
+            "reasoning": "HTTP 429: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=AQ.Ab8RN6K42FP1UsFpt0zXtZH24Z0hBzKhg2vuSCbM0iAzk7aP7Q",
+            "_attempts": 3
         }
     },
     {
         "file": "ProfileBioPreview.jsx",
         "true_label": false,
+        "latency_sec": 8.18,
+        "attempts": 3,
         "prediction": {
-            "is_vulnerable": false,
-            "vulnerability_type": null,
-            "reasoning": "The component safely renders 'draftBio' using JSX's automatic escaping, preventing DOM-based XSS, and 'profile.bioDraft' is not considered sensitive data requiring encryption in client-side storage."
+            "is_vulnerable": null,
+            "vulnerability_type": "Error",
+            "reasoning": "HTTP 429: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=AQ.Ab8RN6K42FP1UsFpt0zXtZH24Z0hBzKhg2vuSCbM0iAzk7aP7Q",
+            "_attempts": 3
         }
     }
 ]

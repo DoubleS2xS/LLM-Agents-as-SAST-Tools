@@ -1,0 +1,387 @@
+[
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/CheckoutPromoBanner.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/DocsPreviewFrame.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: iframe srcDoc usage.",
+        "line": 36,
+        "column": 8,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 36,
+        "endColumn": 23
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n import React, { useMemo } from \"react\";\n \n function escapeHtml(value) {\n   return value\n     .replace(/&/g, \"&amp;\")\n     .replace(/</g, \"&lt;\")\n     .replace(/>/g, \"&gt;\")\n     .replace(/\"/g, \"&quot;\")\n     .replace(/'/g, \"&#39;\");\n }\n \n export function DocsPreviewFrame() {\n   const topic = useMemo(() => {\n     const raw = window.location.hash.replace(/^#topic=/, \"\");\n     return decodeURIComponent(raw || \"\");\n   }, []);\n \n   const safeTopic = useMemo(() => escapeHtml(topic), [topic]);\n \n   const srcDoc = `\n     <!doctype html>\n     <html>\n       <body>\n         <h1>${safeTopic || \"Help Center\"}</h1>\n         <p>Read the latest documentation updates.</p>\n       </body>\n     </html>\n   `;\n \n   return (\n     <iframe\n       title=\"Documentation Preview\"\n       className=\"docs-preview\"\n       sandbox=\"allow-same-origin\"\n       srcDoc={srcDoc}\n     />\n   );\n }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/DocsSnippetPreviewFrame.jsx",
+    "messages": [
+      {
+        "ruleId": null,
+        "fatal": true,
+        "severity": 2,
+        "message": "Parsing error: Unterminated string constant",
+        "line": 17,
+        "column": 37,
+        "nodeType": null
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nfunction escapeHtml(value) {\n  return value\n    .replace(/&/g, \"&amp;\")\n    .replace(/</g, \"&lt;\")\n    .replace(/>/g, \"&gt;\")\n    .replace(/\"/g, \"&quot;\")\n    .replace(/'/g, \"&#39;\");\n}\n\nexport function DocsSnippetPreviewFrame() {\n  const snippet = useMemo(() => {\n    const params = new\n    URLSearchParams(window.location.search);\n    return params.get(\"snippet\") ?? \"No snippet\n    provided.\";\n  }, []);\n\n  const safeSnippet = useMemo(() =>\n    escapeHtml(snippet), [snippet]);\n\n  const srcDoc = useMemo(\n    () => `<!doctype html>\n   <html>\n     <body>\n       <h4>Snippet Preview</h4>\n       <pre>${safeSnippet}</pre>\n     </body>\n   </html>`,\n    [safeSnippet]\n  );\n\n  return (\n    <iframe\n      title=\"Docs Snippet Preview\"\n      className=\"docs-preview\"\n      sandbox=\"\"\n      srcDoc={srcDoc}\n    />\n  );\n}",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/EmbeddedChatNotice.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ProductSearchHeader.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ProfileBioPreview.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ReferralAttributionNote.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ReferralWelcomeCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/SavedFilterChip.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/SupportBannerToast.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 21,
+        "column": 8,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 21,
+        "endColumn": 45
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n import React, { useEffect, useRef } from \"react\";\n import DOMPurify from \"dompurify\";\n \n const TRUSTED_SUPPORT_ORIGIN = \"https://support.example.com\";\n \n export function SupportBannerToast() {\n   const toastRef = useRef(null);\n \n   useEffect(() => {\n     function onMessage(event) {\n       if (event.origin !== TRUSTED_SUPPORT_ORIGIN) return;\n       if (event.data?.type !== \"SUPPORT_BANNER\") return;\n       if (!toastRef.current) return;\n \n       const safeHtml = DOMPurify.sanitize(event.data.html ?? \"\", {\n         ALLOWED_TAGS: [\"b\", \"strong\", \"i\", \"em\", \"a\", \"br\"],\n         ALLOWED_ATTR: [\"href\", \"target\", \"rel\"],\n       });\n \n       toastRef.current.innerHTML = safeHtml;\n       toastRef.current.classList.add(\"visible\");\n     }\n \n     window.addEventListener(\"message\", onMessage);\n     return () => window.removeEventListener(\"message\", onMessage);\n   }, []);\n \n   return <aside ref={toastRef} className=\"support-toast\" aria-live=\"polite\" />;\n }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/CheckoutPromoBanner.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 20,
+        "column": 10,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 21,
+        "endColumn": 5
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n   import React, { useMemo } from \"react\";\n   \n   export function CheckoutPromoBanner() {\n     const promoCode = useMemo(() => {\n       const params = new \n  URLSearchParams(window.location.search);\n       return params.get(\"promo\") ?? \"WELCOME10\";\n     }, []);\n   \n     const bannerHtml = useMemo(\n       () => `Promo applied: \n  <strong>${promoCode}</strong>`,\n       [promoCode]\n     );\n   \n     return (\n       <p\n         className=\"promo-banner\"\n         dangerouslySetInnerHTML={{ __html: bannerHtml \n  }}\n       />\n     );\n   }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/DocsPreviewFrame.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: iframe srcDoc usage.",
+        "line": 25,
+        "column": 8,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 25,
+        "endColumn": 23
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n import React, { useMemo } from \"react\";\n \n export function DocsPreviewFrame() {\n   const topic = useMemo(() => {\n     const raw = window.location.hash.replace(/^#topic=/, \"\");\n     return decodeURIComponent(raw || \"\");\n   }, []);\n \n   const srcDoc = `\n     <!doctype html>\n     <html>\n       <body>\n         <h1>${topic || \"Help Center\"}</h1>\n         <p>Read the latest documentation updates.</p>\n       </body>\n     </html>\n   `;\n \n   return (\n     <iframe\n       title=\"Documentation Preview\"\n       className=\"docs-preview\"\n       sandbox=\"allow-scripts allow-same-origin\"\n       srcDoc={srcDoc}\n     />\n   );\n }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/DocsSnippetPreviewFrame.jsx",
+    "messages": [
+      {
+        "ruleId": null,
+        "fatal": true,
+        "severity": 2,
+        "message": "Parsing error: Unterminated string constant",
+        "line": 8,
+        "column": 40,
+        "nodeType": null
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n   import React, { useMemo } from \"react\";\n   \n   export function DocsSnippetPreviewFrame() {\n     const snippet = useMemo(() => {\n       const params = new \n  URLSearchParams(window.location.search);\n       return params.get(\"snippet\") ?? \"<p>No snippet \n  provided.</p>\";\n     }, []);\n   \n     const srcDoc = useMemo(\n       () => `<!doctype html>\n   <html>\n     <body>\n       <h4>Snippet Preview</h4>\n       ${snippet}\n     </body>\n   </html>`,\n       [snippet]\n     );\n   \n     return (\n       <iframe\n         title=\"Docs Snippet Preview\"\n         className=\"docs-preview\"\n         sandbox=\"allow-scripts allow-same-origin\"\n         srcDoc={srcDoc}\n       />\n     );\n   }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/EmbeddedChatNotice.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 15,
+        "column": 10,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 15,
+        "endColumn": 55
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n   import React, { useEffect, useRef } from \"react\";\n   \n   export function EmbeddedChatNotice() {\n     const noticeRef = useRef(null);\n   \n     useEffect(() => {\n       const onMessage = (event) => {\n         if (!event.origin.includes(\"corpchat.com\")) \n  return;\n         if (event.data?.type !== \"CHAT_NOTICE\") \n  return;\n         if (!noticeRef.current) return;\n   \n         noticeRef.current.innerHTML = event.data.body;\n       };\n   \n       window.addEventListener(\"message\", onMessage);\n       return () => \n  window.removeEventListener(\"message\", onMessage);\n     }, []);\n   \n     return <div ref={noticeRef} \n  className=\"chat-notice\" />;\n   }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ProductSearchHeader.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 18,
+        "column": 8,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 18,
+        "endColumn": 57
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n import React, { useMemo } from \"react\";\n \n export function ProductSearchHeader() {\n   const query = useMemo(() => {\n     const params = new URLSearchParams(window.location.search);\n     return params.get(\"q\") ?? \"\";\n   }, []);\n \n   const summaryHtml = useMemo(() => {\n     if (!query) return \"Showing all products\";\n     return `Showing results for <mark>${query}</mark>`;\n   }, [query]);\n \n   return (\n     <h2\n       className=\"text-xl font-semibold\"\n       dangerouslySetInnerHTML={{ __html: summaryHtml }}\n     />\n   );\n }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ProfileBioPreview.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 17,
+        "column": 11,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 17,
+        "endColumn": 60
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n import React, { useMemo } from \"react\";\n \n export function ProfileBioPreview() {\n   const draftBio = useMemo(\n     () => localStorage.getItem(\"profile.bioDraft\") ?? \"\",\n     []\n   );\n \n   const previewHtml = useMemo(() => {\n     return draftBio.replace(/\\n/g, \"<br />\");\n   }, [draftBio]);\n \n   return (\n     <section className=\"card\">\n       <h3>Bio Preview</h3>\n       <p dangerouslySetInnerHTML={{ __html: previewHtml }} />\n     </section>\n   );\n }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ReferralAttributionNote.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: insertAdjacentHTML call.",
+        "line": 16,
+        "column": 8,
+        "nodeType": "CallExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 20,
+        "endColumn": 9
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n   import React, { useEffect, useRef } from \"react\";\n   \n   export function ReferralAttributionNote() {\n     const noteRef = useRef(null);\n   \n     useEffect(() => {\n       if (!document.referrer || !noteRef.current) \n  return;\n   \n       const campaign =\n         new \n  URL(document.referrer).searchParams.get(\"campaign\") \n  ?? \"direct\";\n   \n       noteRef.current.insertAdjacentHTML(\n         \"beforeend\",\n         `You're viewing this page from campaign: \n  <b>${campaign}</b>`\n       );\n     }, []);\n   \n     return <small ref={noteRef} \n  className=\"referral-note\" />;\n   }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ReferralWelcomeCard.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: insertAdjacentHTML call.",
+        "line": 12,
+        "column": 6,
+        "nodeType": "CallExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 15,
+        "endColumn": 7
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n import React, { useEffect, useRef } from \"react\";\n \n export function ReferralWelcomeCard() {\n   const messageRef = useRef(null);\n \n   useEffect(() => {\n     const referrer =\n       new URLSearchParams(window.location.search).get(\"ref\") ?? \"a teammate\";\n \n     if (!messageRef.current) return;\n     messageRef.current.insertAdjacentHTML(\n       \"beforeend\",\n       `<strong>Welcome aboard!</strong> Referred by ${referrer}.`\n     );\n   }, []);\n \n   return <div ref={messageRef} className=\"welcome-card\" />;\n }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/SavedFilterChip.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 22,
+        "column": 10,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 22,
+        "endColumn": 56
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n   import React, { useMemo } from \"react\";\n   \n   export function SavedFilterChip() {\n     const savedLabel = useMemo(\n       () => \n  localStorage.getItem(\"inventory.savedFilterLabel\") ??\n   \"All products\",\n       []\n     );\n   \n     const chipHtml = useMemo(\n       () => `<span \n  class=\"chip-label\">${savedLabel}</span>`,\n       [savedLabel]\n     );\n   \n     return (\n       <button\n         type=\"button\"\n         className=\"filter-chip\"\n         dangerouslySetInnerHTML={{ __html: chipHtml }}\n       />\n     );\n   }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/SupportBannerToast.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 12,
+        "column": 8,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 12,
+        "endColumn": 52
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\n import React, { useEffect, useRef } from \"react\";\n \n export function SupportBannerToast() {\n   const toastRef = useRef(null);\n \n   useEffect(() => {\n     function onMessage(event) {\n       if (event.data?.type !== \"SUPPORT_BANNER\") return;\n       if (!toastRef.current) return;\n \n       toastRef.current.innerHTML = event.data.html;\n       toastRef.current.classList.add(\"visible\");\n     }\n \n     window.addEventListener(\"message\", onMessage);\n     return () => window.removeEventListener(\"message\", onMessage);\n   }, []);\n \n   return <aside ref={toastRef} className=\"support-toast\" aria-live=\"polite\" />;\n }\n\n",
+    "usedDeprecatedRules": []
+  }
+]

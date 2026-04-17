@@ -1,0 +1,7 @@
+rules:
+  - id: react-domxss-heuristic
+    message: "Potential DOM-based XSS sink usage in React component."
+    severity: WARNING
+    languages: [javascript, typescript]
+    pattern-regex: "(dangerouslySetInnerHTML|\\.innerHTML\\s*=|insertAdjacentHTML\\(|srcDoc\\s*=)"
+

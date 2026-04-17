@@ -1,0 +1,13 @@
+{
+  "name": "llm-agents-as-sast-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Baselines and benchmarks for DOM XSS detection in React components",
+  "scripts": {
+    "baseline:eslint": "python3 baseline_eslint.py"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1"
+  }
+}
+

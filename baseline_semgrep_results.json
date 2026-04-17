@@ -1,0 +1,242 @@
+{
+  "tool": "semgrep",
+  "metrics": {
+    "TP": 10,
+    "FP": 3,
+    "TN": 7,
+    "FN": 0,
+    "Errors": 0,
+    "Accuracy": 0.85,
+    "FPR": 0.3,
+    "FNR": 0.0,
+    "Total": 20
+  },
+  "results": [
+    {
+      "file": "CheckoutPromoBanner.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "DocsPreviewFrame.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 2,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "DocsSnippetPreviewFrame.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 2,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "EmbeddedChatNotice.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ProductSearchHeader.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ProfileBioPreview.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ReferralAttributionNote.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ReferralWelcomeCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "SavedFilterChip.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "SupportBannerToast.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "CheckoutPromoBanner.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "DocsPreviewFrame.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 2,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "DocsSnippetPreviewFrame.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 2,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "EmbeddedChatNotice.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ProductSearchHeader.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ProfileBioPreview.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ReferralAttributionNote.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ReferralWelcomeCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SavedFilterChip.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SupportBannerToast.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    }
+  ]
+}
