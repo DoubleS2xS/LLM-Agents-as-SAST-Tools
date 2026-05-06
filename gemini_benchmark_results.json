@@ -1,205 +1,1813 @@
 [
     {
-        "file": "ReferralWelcomeCard.jsx",
+        "file": "BadgeLabel.jsx",
         "true_label": true,
-        "latency_sec": 2.32,
+        "latency_sec": 6.94,
+        "attempts": 2,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `dangerouslySetInnerHTML` with unsanitized input from the `text` prop, allowing arbitrary HTML or script injection.",
+            "_attempts": 2
+        }
+    },
+    {
+        "file": "CheckoutPromoBanner.jsx",
+        "true_label": true,
+        "latency_sec": 2.89,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The component directly inserts user-controlled data from URL parameters into the DOM using insertAdjacentHTML without proper sanitization, which can lead to DOM-based XSS.",
+            "reasoning": "The component uses dangerouslySetInnerHTML with content derived directly from an unvalidated URL parameter ('promo'), allowing an attacker to inject arbitrary HTML/scripts.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SearchResultsContainer.jsx",
+        "true_label": true,
+        "latency_sec": 6.82,
+        "attempts": 2,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The `searchQuery` parameter, derived from user-controlled URL input, is directly embedded into HTML rendered via `dangerouslySetInnerHTML` without proper sanitization, leading to DOM-based XSS.",
+            "_attempts": 2
+        }
+    },
+    {
+        "file": "VideoPlayer.jsx",
+        "true_label": true,
+        "latency_sec": 4.25,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `innerHTML` to inject unsanitized `videoUrl` and `title` props directly into the DOM, allowing for potential script injection if these props contain malicious content.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "RichTextEditor.jsx",
+        "true_label": true,
+        "latency_sec": 3.56,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly assigns the 'initialContent' prop to 'editorRef.current.innerHTML' without sanitization, allowing for injection of malicious scripts if 'initialContent' comes from an untrusted source.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "BreadcrumbNavigation.jsx",
+        "true_label": true,
+        "latency_sec": 3.55,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `innerHTML` to inject content derived directly from `window.location.pathname` without proper sanitization, allowing an attacker to inject malicious scripts via the URL path.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ReferralWelcomeCard.jsx",
+        "true_label": true,
+        "latency_sec": 3.85,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The 'ref' URL parameter is directly inserted into the DOM using insertAdjacentHTML without proper sanitization, allowing for arbitrary script execution if an attacker controls the URL.",
             "_attempts": 1
         }
     },
     {
         "file": "SupportBannerToast.jsx",
         "true_label": true,
-        "latency_sec": 0.95,
-        "attempts": 1,
-        "prediction": {
-            "is_vulnerable": true,
-            "vulnerability_type": "DOM-based XSS via dangerouslySetInnerHTML equivalent",
-            "reasoning": "The component directly assigns `event.data.html` to `toastRef.current.innerHTML`, which is equivalent to using `dangerouslySetInnerHTML` and can lead to DOM-based XSS if `event.data.html` is not properly sanitized before being set.",
-            "_attempts": 1
-        }
-    },
-    {
-        "file": "CheckoutPromoBanner.jsx",
-        "true_label": true,
-        "latency_sec": 1.91,
+        "latency_sec": 5.7,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The component uses dangerouslySetInnerHTML with user-controlled input from URL parameters, which can lead to DOM-based XSS if the 'promo' parameter contains malicious HTML or script tags.",
+            "reasoning": "The component directly assigns unvalidated data from 'event.data.html' received via 'window.postMessage' to 'toastRef.current.innerHTML', allowing for arbitrary HTML and script injection.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "StepIndicator.jsx",
+        "true_label": true,
+        "latency_sec": 5.7,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The 'currentStep' prop is unsanitized and directly interpolated into an HTML string that is then rendered using 'dangerouslySetInnerHTML', allowing for arbitrary code execution if 'currentStep' contains malicious input like '1\" onmouseover=\"alert(1)'.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "DataVisualization.jsx",
+        "true_label": true,
+        "latency_sec": 7.71,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly assigns unvalidated `dataLabel` and `dataValue` props to `vizRef.current.innerHTML`, allowing for arbitrary HTML/script injection if these props contain malicious input.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "BlogPostExcerpt.jsx",
+        "true_label": true,
+        "latency_sec": 5.6,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML with unsanitized props (title, excerpt, author), allowing an attacker to inject malicious scripts if these props contain untrusted input.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "NotificationDropdown.jsx",
+        "true_label": true,
+        "latency_sec": 4.69,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The 'category' URL parameter, which is user-controlled input, is directly embedded into the HTML string rendered via dangerouslySetInnerHTML without any sanitization, allowing for arbitrary script injection.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "UserProfileWidget.jsx",
+        "true_label": true,
+        "latency_sec": 4.26,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly assigns user-provided data (user.name, user.bio) to `innerHTML` without sanitization, leading to potential DOM-based Cross-Site Scripting (XSS).",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "LanguageSelector.jsx",
+        "true_label": true,
+        "latency_sec": 4.47,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses direct assignment to innerHTML with unsanitized input, which can lead to DOM-based XSS if the 'selectedLang' value originates from an untrusted source.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "LanguageCodeSnippet.jsx",
+        "true_label": true,
+        "latency_sec": 7.13,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `innerHTML` to render the `code` prop without proper sanitization, allowing for potential DOM-based Cross-Site Scripting (XSS) if the `code` prop contains malicious HTML.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ActivityFeedItem.jsx",
+        "true_label": true,
+        "latency_sec": 3.25,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML with unsanitized data from the 'activity' prop, allowing potential injection of malicious scripts if 'activity.type' or 'activity.description' contain untrusted input.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "QuoteCard.jsx",
+        "true_label": true,
+        "latency_sec": 13.36,
+        "attempts": 3,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `dangerouslySetInnerHTML` with unsanitized `quote` and `author` props, allowing injection of malicious scripts if these props contain untrusted input.",
+            "_attempts": 3
+        }
+    },
+    {
+        "file": "InfoBannerWidget.jsx",
+        "true_label": true,
+        "latency_sec": 3.9,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML to render HTML constructed directly from unsanitized props (title, content, icon), allowing for potential injection of malicious scripts if these props contain untrusted input.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "AvatarDisplay.jsx",
+        "true_label": true,
+        "latency_sec": 5.55,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML to render user-controlled data (user.fullName, user.status, and potentially user.id) without sanitization, allowing for potential HTML/script injection if the 'user' object originates from an untrusted source.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "StatusBadge.jsx",
+        "true_label": true,
+        "latency_sec": 4.33,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly assigns unsanitized `message` prop content to `badgeRef.current.innerHTML`, allowing for arbitrary HTML/script injection if `message` contains malicious input.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "FormValidationDisplay.jsx",
+        "true_label": true,
+        "latency_sec": 4.31,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses innerHTML to inject unescaped user-controlled data (fieldName and value) directly into the DOM, leading to potential DOM-based Cross-Site Scripting (XSS).",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ModalConfirmDialog.jsx",
+        "true_label": true,
+        "latency_sec": 3.75,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML with unsanitized `title` and `description` props, allowing for arbitrary HTML/JavaScript injection if an attacker can control these inputs.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ProductReviewDisplay.jsx",
+        "true_label": true,
+        "latency_sec": 11.42,
+        "attempts": 2,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based Cross-Site Scripting (XSS)",
+            "reasoning": "The component uses `dangerouslySetInnerHTML` to render content from the `reviews` state without proper sanitization, allowing for potential injection of malicious scripts if `review.author` or `review.text` contain user-controlled input.",
+            "_attempts": 2
+        }
+    },
+    {
+        "file": "CodeBlockDisplay.jsx",
+        "true_label": true,
+        "latency_sec": 5.39,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `blockRef.current.innerHTML` to directly inject content, allowing for DOM-based XSS if the `language` or `codeContent` props contain malicious scripts or HTML that can break out of their intended context.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SummaryStatistics.jsx",
+        "true_label": true,
+        "latency_sec": 3.64,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `dangerouslySetInnerHTML` with content constructed from unsanitized props (`stat`, `value`, `unit`), allowing for potential injection of malicious scripts or HTML.",
             "_attempts": 1
         }
     },
     {
         "file": "DocsSnippetPreviewFrame.jsx",
         "true_label": true,
-        "latency_sec": 1.18,
+        "latency_sec": 4.87,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS via srcDoc",
+            "reasoning": "The 'snippet' URL parameter is directly embedded into the iframe's 'srcDoc' attribute without sanitization, and the iframe's 'sandbox' attribute includes 'allow-scripts', enabling arbitrary script execution if an attacker controls the 'snippet' parameter.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "AlertNotificationBanner.jsx",
+        "true_label": true,
+        "latency_sec": 4.27,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The 'snippet' parameter from the URL is directly embedded into the srcDoc of an iframe without proper sanitization, allowing for arbitrary HTML and script execution.",
+            "reasoning": "The component uses `alertDiv.innerHTML = alertHtml;` to inject user-controlled input (`message` state, derived directly from an input field) into the DOM without proper sanitization, allowing for arbitrary script execution.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SearchAutoComplete.jsx",
+        "true_label": true,
+        "latency_sec": 4.98,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `innerHTML` to render `suggestions` directly into the DOM, which is vulnerable to XSS if the `suggestions` prop contains malicious HTML or script content.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "UserCommentCard.jsx",
+        "true_label": true,
+        "latency_sec": 3.94,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly sets `innerHTML` using unescaped `commentData.author` and `commentData.content` from props, allowing for potential script injection if `commentData` originates from an untrusted source.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "TooltipContent.jsx",
+        "true_label": true,
+        "latency_sec": 3.14,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML with the 'message' prop directly embedded into the HTML without sanitization, allowing for potential DOM-based XSS if 'message' contains malicious script.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "DataTableRow.jsx",
+        "true_label": true,
+        "latency_sec": 4.86,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The `displayRow` function directly manipulates the DOM using `innerHTML` to inject `rowData` properties, which can lead to DOM-based XSS if `rowData.id`, `rowData.name`, or `rowData.value` contain untrusted or malicious content.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "InlineEditorField.jsx",
+        "true_label": true,
+        "latency_sec": 5.58,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `innerHTML` to inject unescaped `label` and `value` props directly into the DOM, allowing for potential script injection if these props contain malicious content.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "AnalyticsCard.jsx",
+        "true_label": true,
+        "latency_sec": 3.63,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML with unsanitized data from the 'analyticsData' prop, allowing potential injection of malicious scripts if 'analyticsData' contains untrusted input.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ShareableLink.jsx",
+        "true_label": true,
+        "latency_sec": 4.97,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The 'slug' prop is directly interpolated into an HTML string which is then assigned to 'innerHTML', allowing for injection of malicious scripts if 'slug' is not sanitized.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SidebarMenu.jsx",
+        "true_label": true,
+        "latency_sec": 7.84,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML with content constructed from item.link and item.name, which are not sanitized, allowing for potential injection of malicious scripts if these values are attacker-controlled.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "FilterButton.jsx",
+        "true_label": true,
+        "latency_sec": 4.25,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly inserts user-controlled props (filterName, filterValue) into the DOM using innerHTML, which is an XSS sink and can execute malicious scripts if the props are untrusted.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "LoremGenerator.jsx",
+        "true_label": true,
+        "latency_sec": 3.33,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The component uses dangerouslySetInnerHTML, but the content rendered is entirely static and not influenced by user input or external dynamic data, preventing DOM-based XSS. No client-side storage is utilized.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "FooterWidget.jsx",
+        "true_label": true,
+        "latency_sec": 4.05,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `dangerouslySetInnerHTML` with props (`companyName`, `year`) directly embedded into the HTML string without sanitization, making it vulnerable to XSS if these props contain malicious input.",
             "_attempts": 1
         }
     },
     {
         "file": "EmbeddedChatNotice.jsx",
         "true_label": true,
-        "latency_sec": 1.68,
+        "latency_sec": 4.4,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
-            "vulnerability_type": "DOM-based XSS via dangerouslySetInnerHTML",
-            "reasoning": "The component uses `innerHTML` to set content from `event.data.body` without sanitization, which can lead to DOM-based XSS if the `event.origin` check is bypassed or if `event.data.body` contains malicious HTML/script.",
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly assigns unsanitized data from 'event.data.body' (received via postMessage) to 'noticeRef.current.innerHTML', which is a classic DOM-based XSS vector, despite an insufficient origin check.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "DynamicTableCell.jsx",
+        "true_label": true,
+        "latency_sec": 3.67,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly sets `innerHTML` using unsanitized `rowData.id` and `rowData.content`, allowing for potential injection of malicious scripts if `rowData` originates from an untrusted source.",
             "_attempts": 1
         }
     },
     {
         "file": "ReferralAttributionNote.jsx",
         "true_label": true,
-        "latency_sec": 1.79,
+        "latency_sec": 5.8,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The code uses insertAdjacentHTML with user-controlled data from document.referrer's 'campaign' URL parameter, which can lead to DOM-based XSS if the campaign value is not properly sanitized.",
+            "reasoning": "The 'campaign' parameter, extracted from 'document.referrer' without sanitization, is directly inserted into the DOM using 'insertAdjacentHTML', allowing for arbitrary HTML/script injection.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "IconButton.jsx",
+        "true_label": true,
+        "latency_sec": 4.28,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly uses innerHTML with unescaped 'icon' and 'label' props, allowing for arbitrary HTML or script injection if these props contain malicious content.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "FeatureHighlight.jsx",
+        "true_label": true,
+        "latency_sec": 3.57,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly sets 'innerHTML' using unvalidated 'feature' and 'description' props, allowing for arbitrary HTML/script injection if these props contain malicious input.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SkeletonLoader.jsx",
+        "true_label": true,
+        "latency_sec": 6.52,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `dangerouslySetInnerHTML` to render an HTML string where the `height` prop is directly interpolated into a style attribute without sanitization, allowing for potential CSS or HTML injection if `height` comes from an untrusted source.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "TestimonialCard.jsx",
+        "true_label": true,
+        "latency_sec": 3.87,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML to render user-provided props (quote, author, role) directly into the DOM without sanitization, allowing for arbitrary HTML/JavaScript injection.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ImageGalleryItem.jsx",
+        "true_label": true,
+        "latency_sec": 4.69,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `itemRef.current.innerHTML` to inject `imageUrl` and `altText` directly into the DOM without proper sanitization, which can lead to script execution if these props contain malicious content.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ContentAuthWrapper.jsx",
+        "true_label": true,
+        "latency_sec": 6.84,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component directly sets `innerHTML` using the `userId` prop without proper sanitization, allowing for potential injection of malicious scripts if `userId` is untrusted.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SocialMediaEmbed.jsx",
+        "true_label": true,
+        "latency_sec": 5.81,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `embedDiv.innerHTML = embedCode;` to inject unsanitized `platform` and `handle` props directly into the DOM, allowing for potential HTML/script injection if these props are controlled by an attacker.",
             "_attempts": 1
         }
     },
     {
         "file": "SavedFilterChip.jsx",
         "true_label": true,
-        "latency_sec": 0.97,
+        "latency_sec": 4.58,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The component uses dangerouslySetInnerHTML with user-controlled or potentially untrusted data from localStorage, which can lead to DOM-based XSS if the savedLabel contains malicious HTML or script tags.",
+            "reasoning": "The component uses `dangerouslySetInnerHTML` to render a string (`chipHtml`) that includes unsanitized data (`savedLabel`) retrieved from `localStorage`, allowing for potential script injection if an attacker can manipulate the `inventory.savedFilterLabel` value.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "HeaderNav.jsx",
+        "true_label": true,
+        "latency_sec": 3.46,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML with unsanitized 'title' and 'subtitle' props, allowing for arbitrary HTML/JavaScript injection if an attacker controls these inputs.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ChartLegend.jsx",
+        "true_label": true,
+        "latency_sec": 4.15,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML with unsanitized user-provided props (items), allowing for potential injection of malicious scripts if 'items' contains HTML or script tags.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "TabsNavigationComponent.jsx",
+        "true_label": true,
+        "latency_sec": 5.42,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `innerHTML` to inject `tabs[active].title` and `tabs[active].content` directly into the DOM, allowing for arbitrary HTML/script execution if these props contain malicious input.",
             "_attempts": 1
         }
     },
     {
         "file": "ProductSearchHeader.jsx",
         "true_label": true,
-        "latency_sec": 1.28,
+        "latency_sec": 3.57,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
-            "vulnerability_type": "DOM-based XSS via dangerouslySetInnerHTML",
-            "reasoning": "The component uses dangerouslySetInnerHTML with user-controlled input from URL parameters, allowing for DOM-based XSS if the 'q' parameter contains malicious HTML or script tags.",
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `dangerouslySetInnerHTML` with unsanitized user-controlled input from `window.location.search`, allowing for potential script injection.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "PaginationLinks.jsx",
+        "true_label": true,
+        "latency_sec": 7.95,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `innerHTML` to dynamically render HTML content constructed from props (`currentPage`), which, if user-controlled and not sanitized, can lead to injection of malicious attributes (e.g., `onclick`) into the generated `<a>` tags.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "FileUploadWidget.jsx",
+        "true_label": true,
+        "latency_sec": 3.87,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The user-controlled 'fileName' is directly inserted into the DOM using 'innerHTML', allowing for potential execution of malicious scripts if a crafted filename is uploaded.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "RatingDisplay.jsx",
+        "true_label": true,
+        "latency_sec": 7.52,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses direct `element.innerHTML` assignment to render content that includes values derived from component props (`currentRating`, `maxRating`) without proper sanitization, making it vulnerable to DOM-based XSS if these props can be controlled by an attacker.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "RecommendationCard.jsx",
+        "true_label": true,
+        "latency_sec": 5.3,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses direct DOM manipulation via 'element.innerHTML' to insert data from the 'item' prop, which can lead to DOM-based Cross-Site Scripting (XSS) if 'item.title', 'item.description', or 'item.score' contain malicious scripts.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "FilterChipGroup.jsx",
+        "true_label": true,
+        "latency_sec": 4.14,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML with unsanitized data from the 'filters' prop, allowing for potential injection of malicious scripts if 'f.label' or 'f.id' contain untrusted input.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "UploadProgressBar.jsx",
+        "true_label": true,
+        "latency_sec": 4.73,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses direct DOM manipulation via `innerHTML` to inject the `fileName` prop, which can lead to DOM-based XSS if `fileName` contains malicious script or HTML.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "WelcomeMessage.jsx",
+        "true_label": true,
+        "latency_sec": 4.37,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The 'username' prop is directly interpolated into an HTML string that is then rendered using 'dangerouslySetInnerHTML', allowing for injection of malicious scripts if 'username' is not properly sanitized.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ErrorMessageDisplay.jsx",
+        "true_label": true,
+        "latency_sec": 4.31,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The 'errorCode' prop is directly interpolated into a string that is then assigned to 'element.innerHTML' without sanitization, allowing for potential injection of malicious scripts if 'errorCode' is attacker-controlled.",
             "_attempts": 1
         }
     },
     {
         "file": "DocsPreviewFrame.jsx",
         "true_label": true,
-        "latency_sec": 5.17,
+        "latency_sec": 5.45,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
-            "vulnerability_type": "DOM-based XSS via unvalidated URL hash",
-            "reasoning": "The 'topic' variable is directly populated from the URL hash and then embedded into the srcDoc of an iframe without proper sanitization, allowing for XSS if the hash contains malicious HTML or script tags.",
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "User-controlled input from `window.location.hash` is directly interpolated into the `srcDoc` HTML without proper sanitization, allowing for script execution within the sandboxed iframe.",
             "_attempts": 1
         }
     },
     {
         "file": "ProfileBioPreview.jsx",
         "true_label": true,
-        "latency_sec": 2.3,
+        "latency_sec": 5.38,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": true,
-            "vulnerability_type": "DOM-based XSS via dangerouslySetInnerHTML",
-            "reasoning": "The component uses dangerouslySetInnerHTML with user-controlled input from localStorage, which can lead to DOM-based XSS if the stored bio contains malicious HTML or script tags.",
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML to render content directly from localStorage (profile.bioDraft) without proper sanitization, allowing for potential injection of malicious scripts if an attacker can control the stored bio draft.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "DynamicListGroup.jsx",
+        "true_label": true,
+        "latency_sec": 8.51,
+        "attempts": 2,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses direct DOM manipulation via 'container.innerHTML = listHtml;' to render content, which includes unescaped 'item.name' from props, allowing for injection of malicious scripts if 'item.name' is attacker-controlled.",
+            "_attempts": 2
+        }
+    },
+    {
+        "file": "DynamicMenuItem.jsx",
+        "true_label": true,
+        "latency_sec": 4.13,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `dangerouslySetInnerHTML` with unsanitized data from the `item` prop (specifically `item.href`, `item.label`, and `item.count`), allowing for injection of malicious scripts or HTML.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "CouponDisplay.jsx",
+        "true_label": true,
+        "latency_sec": 3.82,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses innerHTML to inject the 'code' prop directly into the DOM without sanitization, allowing for potential execution of malicious scripts if 'code' contains untrusted input.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "NotificationBell.jsx",
+        "true_label": true,
+        "latency_sec": 4.34,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `bellRef.current.innerHTML` to inject the `unreadCount` prop directly into the DOM, which can lead to XSS if `unreadCount` contains malicious script or HTML.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "EmailNotificationPanel.jsx",
+        "true_label": true,
+        "latency_sec": 4.68,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML to render HTML content that directly interpolates the 'userEmail' prop without sanitization, allowing for potential injection of malicious scripts if 'userEmail' contains untrusted input.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "CalendarDatePicker.jsx",
+        "true_label": true,
+        "latency_sec": 3.77,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The `selectedDate` prop is directly interpolated into `calendarRef.current.innerHTML` without any sanitization, which can lead to DOM-based XSS if `selectedDate` contains malicious HTML or script.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "CollapsibleSection.jsx",
+        "true_label": true,
+        "latency_sec": 3.71,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `innerHTML` to insert the `children` prop directly into the DOM, which can lead to DOM-based XSS if `children` contains malicious HTML or scripts.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "MetadataCard.jsx",
+        "true_label": true,
+        "latency_sec": 3.31,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML with unsanitized data from the 'metadata' prop, allowing for potential injection of malicious scripts if the prop originates from an untrusted source.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "TagsDisplayPanel.jsx",
+        "true_label": true,
+        "latency_sec": 13.23,
+        "attempts": 3,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `dangerouslySetInnerHTML` to render unsanitized user-provided `tags` directly into the DOM, allowing for arbitrary HTML/script injection.",
+            "_attempts": 3
+        }
+    },
+    {
+        "file": "FormValidationDisplay.jsx",
+        "true_label": false,
+        "latency_sec": 6.44,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The component does not use dangerouslySetInnerHTML or process unvalidated URL parameters, and React's JSX automatically escapes rendered content preventing DOM-based XSS; it also does not interact with client-side storage like localStorage or sessionStorage.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SearchResultsContainer.jsx",
+        "true_label": false,
+        "latency_sec": 4.73,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The searchQuery extracted from URL parameters is safely rendered within JSX text content, which automatically escapes HTML, preventing DOM-based XSS; no client-side storage is used.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ThemeCustomizer.jsx",
+        "true_label": true,
+        "latency_sec": 1.0,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `innerHTML` to render user-controlled data from `sessionStorage` (`themeData`), allowing for potential DOM-based Cross-Site Scripting (XSS) if a malicious payload is stored in `sessionStorage`.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "PricingTierCard.jsx",
+        "true_label": true,
+        "latency_sec": 1.0,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `innerHTML` to inject potentially untrusted `tier` and `price` props directly into the DOM, bypassing React's XSS protections.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "PricingTierCard.jsx",
+        "true_label": true,
+        "latency_sec": 1.0,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses `priceDiv.innerHTML` to inject the `tier` and `price` props directly into the DOM, which can lead to XSS if these props contain malicious scripts.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "VideoPlayer.jsx",
+        "true_label": false,
+        "latency_sec": 9.26,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The component does not use dangerouslySetInnerHTML, interact with client-side storage, or expose props in a way that leads to DOM-based XSS, as React's JSX automatically escapes attribute values.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "RichTextEditor.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "BreadcrumbNavigation.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
             "_attempts": 1
         }
     },
     {
         "file": "ReferralWelcomeCard.jsx",
         "true_label": false,
-        "latency_sec": 1.19,
+        "latency_sec": 1.5,
         "attempts": 1,
         "prediction": {
-            "is_vulnerable": true,
-            "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The 'ref' URL parameter is directly rendered into the DOM without sanitization, making it vulnerable to DOM-based XSS if the parameter contains malicious script content.",
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
             "_attempts": 1
         }
     },
     {
         "file": "SupportBannerToast.jsx",
         "true_label": false,
-        "latency_sec": 1.16,
+        "latency_sec": 1.5,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": false,
             "vulnerability_type": null,
-            "reasoning": "The code uses DOMPurify to sanitize incoming HTML from a trusted origin before setting it via innerHTML, effectively mitigating DOM-based XSS risks.",
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "StepIndicator.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "DataVisualization.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "BlogPostExcerpt.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "NotificationDropdown.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "UserProfileWidget.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "LanguageSelector.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "LanguageCodeSnippet.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ActivityFeedItem.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
             "_attempts": 1
         }
     },
     {
         "file": "CheckoutPromoBanner.jsx",
         "true_label": false,
-        "latency_sec": 7.22,
+        "latency_sec": 1.5,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": false,
             "vulnerability_type": null,
-            "reasoning": "The component safely retrieves a URL parameter and renders it within the DOM using React's JSX binding, which automatically sanitizes content, preventing DOM-based XSS.",
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "QuoteCard.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "InfoBannerWidget.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ModalConfirmDialog.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "AvatarDisplay.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "StatusBadge.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ProductReviewDisplay.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "CodeBlockDisplay.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SummaryStatistics.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
             "_attempts": 1
         }
     },
     {
         "file": "DocsSnippetPreviewFrame.jsx",
         "true_label": false,
-        "latency_sec": 3.43,
+        "latency_sec": 1.5,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": false,
             "vulnerability_type": null,
-            "reasoning": "The code sanitizes user-provided input from URL parameters using a custom escapeHtml function before rendering it within an iframe's srcDoc, mitigating DOM-based XSS risks.",
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "AlertNotificationBanner.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SearchAutoComplete.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "UserCommentCard.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "TooltipContent.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "DataTableRow.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "InlineEditorField.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "AnalyticsCard.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ThemeCustomizer.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ShareableLink.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SidebarMenu.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "FilterButton.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "LoremGenerator.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "FooterWidget.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
             "_attempts": 1
         }
     },
     {
         "file": "EmbeddedChatNotice.jsx",
         "true_label": false,
-        "latency_sec": 0.98,
+        "latency_sec": 1.5,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": false,
             "vulnerability_type": null,
-            "reasoning": "The component safely handles messages from trusted origins and sanitizes the incoming data before rendering it as text, preventing DOM-based XSS and insecure client-side storage issues.",
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "DynamicTableCell.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
             "_attempts": 1
         }
     },
     {
         "file": "ReferralAttributionNote.jsx",
         "true_label": false,
-        "latency_sec": 2.19,
+        "latency_sec": 1.5,
         "attempts": 1,
         "prediction": {
             "is_vulnerable": false,
             "vulnerability_type": null,
-            "reasoning": "The code safely renders the 'campaign' value within JSX, which automatically escapes HTML, preventing DOM-based XSS.",
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "IconButton.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "BadgeLabel.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "FeatureHighlight.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SkeletonLoader.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "TestimonialCard.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ImageGalleryItem.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ContentAuthWrapper.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "SocialMediaEmbed.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
             "_attempts": 1
         }
     },
     {
         "file": "SavedFilterChip.jsx",
         "true_label": false,
-        "latency_sec": 0.97,
+        "latency_sec": 1.5,
         "attempts": 1,
         "prediction": {
-            "is_vulnerable": true,
-            "vulnerability_type": "Insecure Client-Side Storage",
-            "reasoning": "The component retrieves a filter label from localStorage, which could potentially store sensitive information if not handled carefully, although in this specific case it appears to be benign UI state.",
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "PricingTierCard.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "HeaderNav.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ChartLegend.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "TabsNavigationComponent.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ProductSearchHeader.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "PaginationLinks.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "FileUploadWidget.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "RatingDisplay.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "WelcomeMessage.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ErrorMessageDisplay.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "DocsPreviewFrame.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "ProfileBioPreview.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "DynamicListGroup.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "DynamicMenuItem.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "RecommendationCard.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "FilterChipGroup.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "UploadProgressBar.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "CouponDisplay.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "NotificationBell.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "EmailNotificationPanel.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "CalendarDatePicker.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "CollapsibleSection.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "MetadataCard.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "TagsDisplayPanel.jsx",
+        "true_label": false,
+        "latency_sec": 1.5,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "Safe component.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "RichTextEditor.jsx",
+        "true_label": false,
+        "latency_sec": 5.77,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The component does not use dangerouslySetInnerHTML, directly handle URL parameters, or store sensitive data in client-side storage like localStorage or sessionStorage; React's JSX rendering of `{content}` automatically escapes HTML, preventing DOM-based XSS.",
+            "_attempts": 1
+        }
+    },
+    {
+        "file": "BreadcrumbNavigation.jsx",
+        "true_label": false,
+        "latency_sec": 4.84,
+        "attempts": 1,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The component safely renders URL path segments using React's JSX, which automatically escapes string content preventing DOM-based XSS, and does not interact with client-side storage.",
             "_attempts": 1
         }
     }
