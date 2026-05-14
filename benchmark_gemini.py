@@ -16,6 +16,7 @@ MAX_RETRIES = int(os.getenv("GEMINI_MAX_RETRIES", "2"))
 BASE_BACKOFF_SEC = float(os.getenv("GEMINI_BASE_BACKOFF_SEC", "2"))
 MAX_BACKOFF_SEC = float(os.getenv("GEMINI_MAX_BACKOFF_SEC", "60"))
 RETRYABLE_STATUS_CODES = {429, 500, 502, 503, 504}
+TARGET_SPLIT = os.getenv("GEMINI_TARGET_SPLIT", "both").strip().lower()
 
 
 def _build_url():
@@ -30,8 +31,43 @@ def _compute_backoff(attempt):
     return exp + random.uniform(0, 1)
 
 
-RESULTS_JSONL = "gemini_benchmark_results.jsonl"
-RESULTS_JSON = "gemini_benchmark_results.json"
+if TARGET_SPLIT == "both":
+    RESULTS_JSONL = "gemini_benchmark_results.jsonl"
+    RESULTS_JSON = "gemini_benchmark_results.json"
+else:
+    RESULTS_JSONL = f"gemini_benchmark_results_{TARGET_SPLIT}.jsonl"
+    RESULTS_JSON = f"gemini_benchmark_results_{TARGET_SPLIT}.json"
+
+
+def _dataset_specs():
+    if TARGET_SPLIT == "patched":
+        return [("patched", "dataset/patched", False)]
+    if TARGET_SPLIT == "vulnerable":
+        return [("vulnerable", "dataset/vulnerable", True)]
+    return [
+        ("vulnerable", "dataset/vulnerable", True),
+        ("patched", "dataset/patched", False),
+    ]
+
+
+def _format_rate(value):
+    return "n/a" if value is None else f"{value * 100:.1f}%"
+
+
+def _result_split(obj):
+    split_name = obj.get("dataset_split")
+    if split_name in {"vulnerable", "patched"}:
+        return split_name
+    return "vulnerable" if obj.get("true_label") is True else "patched"
+
+
+def _result_key(obj):
+    return (_result_split(obj), obj.get("file"))
+
+
+def _is_successful_result(obj):
+    pred = obj.get("prediction", {})
+    return pred.get("is_vulnerable") in {True, False}
 
 
 def _atomic_write_json_from_list(list_obj, dest_path):
@@ -181,9 +217,10 @@ def run_benchmark():
         )
 
     print(f"🚀 Запуск бенчмарка на модели: {MODEL_NAME}...\n")
+    print(f"Режим датасета: {TARGET_SPLIT}")
 
     metrics = {"TP": 0, "FP": 0, "TN": 0, "FN": 0, "Errors": 0}
-    results_log = []
+    results_log = {}
 
     def _append_result_and_persist(result_obj):
         # Append single JSON line to JSONL and atomically rebuild JSON file
@@ -224,13 +261,13 @@ def run_benchmark():
                         continue
                     try:
                         obj = json.loads(line)
-                        results_log.append(obj)
-                        if "file" in obj:
-                            processed_files.add((obj.get("true_label"), obj["file"]))
+                        if "file" in obj and _is_successful_result(obj):
+                            results_log[_result_key(obj)] = obj
+                            processed_files.add(_result_key(obj))
                     except Exception:
                         # Пропустить некорректную строку
                         continue
-            print(f"Загружено {len(results_log)} записей из {RESULTS_JSONL} (resume)")
+            print(f"Загружено {len(results_log)} успешных записей из {RESULTS_JSONL} (resume)")
         except Exception as e:
             print(f"Не удалось прочитать {RESULTS_JSONL}: {e}")
     elif os.path.exists(RESULTS_JSON):
@@ -238,94 +275,64 @@ def run_benchmark():
             with open(RESULTS_JSON, "r", encoding="utf-8") as jf:
                 arr = json.load(jf)
                 for obj in arr:
-                    results_log.append(obj)
-                    if "file" in obj:
-                        processed_files.add((obj.get("true_label"), obj["file"]))
-            print(f"Загружено {len(results_log)} записей из {RESULTS_JSON} (resume)")
+                    if "file" in obj and _is_successful_result(obj):
+                        results_log[_result_key(obj)] = obj
+                        processed_files.add(_result_key(obj))
+            print(f"Загружено {len(results_log)} успешных записей из {RESULTS_JSON} (resume)")
         except Exception as e:
             print(f"Не удалось прочитать {RESULTS_JSON}: {e}")
 
-    print("--- 🔴 Тестирование Vulnerable компонентов ---")
-    for filename in os.listdir('dataset/vulnerable'):
-        if not filename.endswith('.jsx'):
-            continue
+    for split_name, dir_path, true_label in _dataset_specs():
+        header = "--- 🔴 Тестирование Vulnerable компонентов ---" if true_label else "\n--- 🟢 Тестирование Patched компонентов ---"
+        print(header)
+        for filename in os.listdir(dir_path):
+            if not filename.endswith('.jsx'):
+                continue
 
-        if (True, filename) in processed_files:
-            print(f"Пропущен {filename} (уже обработан)")
-            continue
+            if (split_name, filename) in processed_files:
+                print(f"Пропущен {filename} (уже обработан)")
+                continue
 
-        with open(f'dataset/vulnerable/{filename}', 'r', encoding='utf-8') as f:
-            code = f.read()
+            with open(f'{dir_path}/{filename}', 'r', encoding='utf-8') as f:
+                code = f.read()
 
-        print(f"Анализ {filename}...", end=" ")
-        start_time = time.time()
-        prediction = evaluate_code_gemini(code)
-        latency = time.time() - start_time
-        attempts = prediction.get("_attempts", 1)
+            print(f"Анализ {filename}...", end=" ")
+            start_time = time.time()
+            prediction = evaluate_code_gemini(code)
+            latency = time.time() - start_time
+            attempts = prediction.get("_attempts", 1)
 
-        if prediction.get("is_vulnerable") is True:
-            metrics["TP"] += 1
-            print(f"✅ Уязвимость найдена ({latency:.1f}s)")
-        elif prediction.get("is_vulnerable") is False:
-            metrics["FN"] += 1
-            print(f"❌ Пропуск (False Negative) ({latency:.1f}s)")
-        else:
-            metrics["Errors"] += 1
-            print(f"⚠️ Ошибка парсинга (попыток: {attempts})")
+            if prediction.get("is_vulnerable") is True and true_label is True:
+                metrics["TP"] += 1
+                print(f"✅ Уязвимость найдена ({latency:.1f}s)")
+            elif prediction.get("is_vulnerable") is False and true_label is True:
+                metrics["FN"] += 1
+                print(f"❌ Пропуск (False Negative) ({latency:.1f}s)")
+            elif prediction.get("is_vulnerable") is False and true_label is False:
+                metrics["TN"] += 1
+                print(f"✅ Корректно признан безопасным ({latency:.1f}s)")
+            elif prediction.get("is_vulnerable") is True and true_label is False:
+                metrics["FP"] += 1
+                print(f"❌ Ложное срабатывание (False Positive) ({latency:.1f}s)")
+            else:
+                metrics["Errors"] += 1
+                print(f"⚠️ Ошибка парсинга (попыток: {attempts})")
 
-        res_obj = {
-            "file": filename,
-            "true_label": True,
-            "latency_sec": round(latency, 2),
-            "attempts": attempts,
-            "prediction": prediction,
-        }
-        results_log.append(res_obj)
-        _append_result_and_persist(res_obj)
-        time.sleep(REQUEST_DELAY_SEC)
-
-    print("\n--- 🟢 Тестирование Patched компонентов ---")
-    for filename in os.listdir('dataset/patched'):
-        if not filename.endswith('.jsx'):
-            continue
-
-        if (False, filename) in processed_files:
-            print(f"Пропущен {filename} (уже обработан)")
-            continue
-
-        with open(f'dataset/patched/{filename}', 'r', encoding='utf-8') as f:
-            code = f.read()
-
-        print(f"Анализ {filename}...", end=" ")
-        start_time = time.time()
-        prediction = evaluate_code_gemini(code)
-        latency = time.time() - start_time
-        attempts = prediction.get("_attempts", 1)
-
-        if prediction.get("is_vulnerable") is False:
-            metrics["TN"] += 1
-            print(f"✅ Корректно признан безопасным ({latency:.1f}s)")
-        elif prediction.get("is_vulnerable") is True:
-            metrics["FP"] += 1
-            print(f"❌ Ложное срабатывание (False Positive) ({latency:.1f}s)")
-        else:
-            metrics["Errors"] += 1
-            print(f"⚠️ Ошибка парсинга (попыток: {attempts})")
-
-        res_obj = {
-            "file": filename,
-            "true_label": False,
-            "latency_sec": round(latency, 2),
-            "attempts": attempts,
-            "prediction": prediction,
-        }
-        results_log.append(res_obj)
-        _append_result_and_persist(res_obj)
-        time.sleep(REQUEST_DELAY_SEC)
+            res_obj = {
+                "file": filename,
+                "dataset_split": split_name,
+                "true_label": true_label,
+                "latency_sec": round(latency, 2),
+                "attempts": attempts,
+                "prediction": prediction,
+            }
+            results_log[(split_name, filename)] = res_obj
+            _append_result_and_persist(res_obj)
+            time.sleep(REQUEST_DELAY_SEC)
 
     # Пересчитать метрики из накопленного results_log (учитывает resume)
     metrics = {"TP": 0, "FP": 0, "TN": 0, "FN": 0, "Errors": 0}
-    for obj in results_log:
+    for obj in results_log.values():
         true_label = obj.get("true_label")
         pred = obj.get("prediction", {})
         is_vuln = pred.get("is_vulnerable")
@@ -342,8 +349,8 @@ def run_benchmark():
 
     total = metrics["TP"] + metrics["TN"] + metrics["FP"] + metrics["FN"]
     accuracy = (metrics["TP"] + metrics["TN"]) / total if total > 0 else 0
-    fpr = metrics["FP"] / (metrics["FP"] + metrics["TN"]) if (metrics["FP"] + metrics["TN"]) > 0 else 0
-    fnr = metrics["FN"] / (metrics["FN"] + metrics["TP"]) if (metrics["FN"] + metrics["TP"]) > 0 else 0
+    fpr = metrics["FP"] / (metrics["FP"] + metrics["TN"]) if (metrics["FP"] + metrics["TN"]) > 0 else None
+    fnr = metrics["FN"] / (metrics["FN"] + metrics["TP"]) if (metrics["FN"] + metrics["TP"]) > 0 else None
     total_samples = total + metrics["Errors"]
     coverage = total / total_samples if total_samples > 0 else 0
     effective_accuracy = (metrics["TP"] + metrics["TN"]) / total_samples if total_samples > 0 else 0
@@ -354,8 +361,8 @@ def run_benchmark():
     print(f"Accuracy (Точность):        {accuracy * 100:.1f}%")
     print(f"Coverage (Без ошибок API):  {coverage * 100:.1f}%")
     print(f"Effective Accuracy (all):   {effective_accuracy * 100:.1f}%")
-    print(f"False Positive Rate (FPR):  {fpr * 100:.1f}% (Ложные тревоги)")
-    print(f"False Negative Rate (FNR):  {fnr * 100:.1f}% (Пропущенные уязвимости)")
+    print(f"False Positive Rate (FPR):  {_format_rate(fpr)} (Ложные тревоги)")
+    print(f"False Negative Rate (FNR):  {_format_rate(fnr)} (Пропущенные уязвимости)")
     print(f"Errors (API/JSON):          {metrics['Errors']}")
 
     # Results are written incrementally to JSONL and atomically mirrored to JSON during the run.

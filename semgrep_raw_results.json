@@ -1,5 +1,5 @@
 {
-  "version": "1.159.0",
+  "version": "1.161.0",
   "results": [
     {
       "check_id": "semgrep.react-domxss-heuristic",
@@ -118,6 +118,213 @@
     },
     {
       "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/ActivityFeedItem.jsx",
+      "start": {
+        "line": 21,
+        "col": 7,
+        "offset": 490
+      },
+      "end": {
+        "line": 21,
+        "col": 30,
+        "offset": 513
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/AlertNotificationBanner.jsx",
+      "start": {
+        "line": 16,
+        "col": 15,
+        "offset": 441
+      },
+      "end": {
+        "line": 16,
+        "col": 27,
+        "offset": 453
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/AnalyticsCard.jsx",
+      "start": {
+        "line": 19,
+        "col": 7,
+        "offset": 441
+      },
+      "end": {
+        "line": 19,
+        "col": 30,
+        "offset": 464
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/AvatarDisplay.jsx",
+      "start": {
+        "line": 19,
+        "col": 7,
+        "offset": 428
+      },
+      "end": {
+        "line": 19,
+        "col": 30,
+        "offset": 451
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/BadgeLabel.jsx",
+      "start": {
+        "line": 17,
+        "col": 7,
+        "offset": 421
+      },
+      "end": {
+        "line": 17,
+        "col": 30,
+        "offset": 444
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/BlogPostExcerpt.jsx",
+      "start": {
+        "line": 19,
+        "col": 7,
+        "offset": 451
+      },
+      "end": {
+        "line": 19,
+        "col": 30,
+        "offset": 474
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/BreadcrumbNavigation.jsx",
+      "start": {
+        "line": 14,
+        "col": 21,
+        "offset": 405
+      },
+      "end": {
+        "line": 14,
+        "col": 33,
+        "offset": 417
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/CalendarDatePicker.jsx",
+      "start": {
+        "line": 9,
+        "col": 26,
+        "offset": 236
+      },
+      "end": {
+        "line": 9,
+        "col": 38,
+        "offset": 248
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/ChartLegend.jsx",
+      "start": {
+        "line": 18,
+        "col": 7,
+        "offset": 446
+      },
+      "end": {
+        "line": 18,
+        "col": 30,
+        "offset": 469
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
       "path": "dataset/vulnerable/CheckoutPromoBanner.jsx",
       "start": {
         "line": 20,
@@ -128,6 +335,144 @@
         "line": 20,
         "col": 33,
         "offset": 485
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/CodeBlockDisplay.jsx",
+      "start": {
+        "line": 9,
+        "col": 23,
+        "offset": 233
+      },
+      "end": {
+        "line": 9,
+        "col": 35,
+        "offset": 245
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/CollapsibleSection.jsx",
+      "start": {
+        "line": 10,
+        "col": 17,
+        "offset": 300
+      },
+      "end": {
+        "line": 10,
+        "col": 29,
+        "offset": 312
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/ContentAuthWrapper.jsx",
+      "start": {
+        "line": 10,
+        "col": 17,
+        "offset": 272
+      },
+      "end": {
+        "line": 10,
+        "col": 29,
+        "offset": 284
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/CouponDisplay.jsx",
+      "start": {
+        "line": 10,
+        "col": 17,
+        "offset": 286
+      },
+      "end": {
+        "line": 10,
+        "col": 29,
+        "offset": 298
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/DataTableRow.jsx",
+      "start": {
+        "line": 10,
+        "col": 15,
+        "offset": 288
+      },
+      "end": {
+        "line": 10,
+        "col": 27,
+        "offset": 300
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/DataVisualization.jsx",
+      "start": {
+        "line": 9,
+        "col": 21,
+        "offset": 238
+      },
+      "end": {
+        "line": 9,
+        "col": 33,
+        "offset": 250
       },
       "extra": {
         "message": "Potential DOM-based XSS sink usage in React component.",
@@ -233,6 +578,98 @@
     },
     {
       "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/DynamicListGroup.jsx",
+      "start": {
+        "line": 17,
+        "col": 16,
+        "offset": 528
+      },
+      "end": {
+        "line": 17,
+        "col": 28,
+        "offset": 540
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/DynamicMenuItem.jsx",
+      "start": {
+        "line": 16,
+        "col": 10,
+        "offset": 364
+      },
+      "end": {
+        "line": 16,
+        "col": 33,
+        "offset": 387
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/DynamicTableCell.jsx",
+      "start": {
+        "line": 9,
+        "col": 22,
+        "offset": 212
+      },
+      "end": {
+        "line": 9,
+        "col": 34,
+        "offset": 224
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/EmailNotificationPanel.jsx",
+      "start": {
+        "line": 21,
+        "col": 7,
+        "offset": 578
+      },
+      "end": {
+        "line": 21,
+        "col": 30,
+        "offset": 601
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
       "path": "dataset/vulnerable/EmbeddedChatNotice.jsx",
       "start": {
         "line": 15,
@@ -243,6 +680,512 @@
         "line": 15,
         "col": 39,
         "offset": 409
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/ErrorMessageDisplay.jsx",
+      "start": {
+        "line": 11,
+        "col": 15,
+        "offset": 330
+      },
+      "end": {
+        "line": 11,
+        "col": 27,
+        "offset": 342
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/FeatureHighlight.jsx",
+      "start": {
+        "line": 9,
+        "col": 27,
+        "offset": 240
+      },
+      "end": {
+        "line": 9,
+        "col": 39,
+        "offset": 252
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/FileUploadWidget.jsx",
+      "start": {
+        "line": 10,
+        "col": 17,
+        "offset": 286
+      },
+      "end": {
+        "line": 10,
+        "col": 29,
+        "offset": 298
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/FilterButton.jsx",
+      "start": {
+        "line": 10,
+        "col": 20,
+        "offset": 293
+      },
+      "end": {
+        "line": 10,
+        "col": 32,
+        "offset": 305
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/FilterChipGroup.jsx",
+      "start": {
+        "line": 14,
+        "col": 7,
+        "offset": 309
+      },
+      "end": {
+        "line": 14,
+        "col": 30,
+        "offset": 332
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/FooterWidget.jsx",
+      "start": {
+        "line": 17,
+        "col": 10,
+        "offset": 416
+      },
+      "end": {
+        "line": 17,
+        "col": 33,
+        "offset": 439
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/FormValidationDisplay.jsx",
+      "start": {
+        "line": 16,
+        "col": 19,
+        "offset": 467
+      },
+      "end": {
+        "line": 16,
+        "col": 31,
+        "offset": 479
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/HeaderNav.jsx",
+      "start": {
+        "line": 16,
+        "col": 7,
+        "offset": 349
+      },
+      "end": {
+        "line": 16,
+        "col": 30,
+        "offset": 372
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/IconButton.jsx",
+      "start": {
+        "line": 9,
+        "col": 24,
+        "offset": 231
+      },
+      "end": {
+        "line": 9,
+        "col": 36,
+        "offset": 243
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/ImageGalleryItem.jsx",
+      "start": {
+        "line": 9,
+        "col": 22,
+        "offset": 223
+      },
+      "end": {
+        "line": 9,
+        "col": 34,
+        "offset": 235
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/InfoBannerWidget.jsx",
+      "start": {
+        "line": 20,
+        "col": 7,
+        "offset": 450
+      },
+      "end": {
+        "line": 20,
+        "col": 30,
+        "offset": 473
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/InlineEditorField.jsx",
+      "start": {
+        "line": 9,
+        "col": 23,
+        "offset": 219
+      },
+      "end": {
+        "line": 9,
+        "col": 35,
+        "offset": 231
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/LanguageCodeSnippet.jsx",
+      "start": {
+        "line": 9,
+        "col": 22,
+        "offset": 219
+      },
+      "end": {
+        "line": 9,
+        "col": 34,
+        "offset": 231
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/LanguageSelector.jsx",
+      "start": {
+        "line": 16,
+        "col": 12,
+        "offset": 467
+      },
+      "end": {
+        "line": 16,
+        "col": 24,
+        "offset": 479
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/LoremGenerator.jsx",
+      "start": {
+        "line": 14,
+        "col": 7,
+        "offset": 474
+      },
+      "end": {
+        "line": 14,
+        "col": 30,
+        "offset": 497
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/MetadataCard.jsx",
+      "start": {
+        "line": 20,
+        "col": 14,
+        "offset": 542
+      },
+      "end": {
+        "line": 20,
+        "col": 37,
+        "offset": 565
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/ModalConfirmDialog.jsx",
+      "start": {
+        "line": 24,
+        "col": 7,
+        "offset": 632
+      },
+      "end": {
+        "line": 24,
+        "col": 30,
+        "offset": 655
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/NotificationBell.jsx",
+      "start": {
+        "line": 9,
+        "col": 22,
+        "offset": 224
+      },
+      "end": {
+        "line": 9,
+        "col": 34,
+        "offset": 236
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/NotificationDropdown.jsx",
+      "start": {
+        "line": 22,
+        "col": 7,
+        "offset": 594
+      },
+      "end": {
+        "line": 22,
+        "col": 30,
+        "offset": 617
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/PaginationLinks.jsx",
+      "start": {
+        "line": 13,
+        "col": 28,
+        "offset": 420
+      },
+      "end": {
+        "line": 13,
+        "col": 40,
+        "offset": 432
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/PricingTierCard.jsx",
+      "start": {
+        "line": 10,
+        "col": 15,
+        "offset": 288
+      },
+      "end": {
+        "line": 10,
+        "col": 27,
+        "offset": 300
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/ProductReviewDisplay.jsx",
+      "start": {
+        "line": 20,
+        "col": 7,
+        "offset": 529
+      },
+      "end": {
+        "line": 20,
+        "col": 30,
+        "offset": 552
       },
       "extra": {
         "message": "Potential DOM-based XSS sink usage in React component.",
@@ -302,6 +1245,75 @@
     },
     {
       "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/QuoteCard.jsx",
+      "start": {
+        "line": 16,
+        "col": 7,
+        "offset": 362
+      },
+      "end": {
+        "line": 16,
+        "col": 30,
+        "offset": 385
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/RatingDisplay.jsx",
+      "start": {
+        "line": 11,
+        "col": 16,
+        "offset": 387
+      },
+      "end": {
+        "line": 11,
+        "col": 28,
+        "offset": 399
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/RecommendationCard.jsx",
+      "start": {
+        "line": 10,
+        "col": 13,
+        "offset": 273
+      },
+      "end": {
+        "line": 10,
+        "col": 25,
+        "offset": 285
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
       "path": "dataset/vulnerable/ReferralAttributionNote.jsx",
       "start": {
         "line": 16,
@@ -348,6 +1360,29 @@
     },
     {
       "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/RichTextEditor.jsx",
+      "start": {
+        "line": 9,
+        "col": 24,
+        "offset": 230
+      },
+      "end": {
+        "line": 9,
+        "col": 36,
+        "offset": 242
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
       "path": "dataset/vulnerable/SavedFilterChip.jsx",
       "start": {
         "line": 22,
@@ -371,6 +1406,213 @@
     },
     {
       "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/SearchAutoComplete.jsx",
+      "start": {
+        "line": 13,
+        "col": 17,
+        "offset": 405
+      },
+      "end": {
+        "line": 13,
+        "col": 29,
+        "offset": 417
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/SearchResultsContainer.jsx",
+      "start": {
+        "line": 22,
+        "col": 7,
+        "offset": 580
+      },
+      "end": {
+        "line": 22,
+        "col": 30,
+        "offset": 603
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/ShareableLink.jsx",
+      "start": {
+        "line": 17,
+        "col": 16,
+        "offset": 498
+      },
+      "end": {
+        "line": 17,
+        "col": 28,
+        "offset": 510
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/SidebarMenu.jsx",
+      "start": {
+        "line": 18,
+        "col": 7,
+        "offset": 447
+      },
+      "end": {
+        "line": 18,
+        "col": 30,
+        "offset": 470
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/SkeletonLoader.jsx",
+      "start": {
+        "line": 17,
+        "col": 7,
+        "offset": 400
+      },
+      "end": {
+        "line": 17,
+        "col": 30,
+        "offset": 423
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/SocialMediaEmbed.jsx",
+      "start": {
+        "line": 15,
+        "col": 15,
+        "offset": 459
+      },
+      "end": {
+        "line": 15,
+        "col": 27,
+        "offset": 471
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/StatusBadge.jsx",
+      "start": {
+        "line": 14,
+        "col": 23,
+        "offset": 364
+      },
+      "end": {
+        "line": 14,
+        "col": 35,
+        "offset": 376
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/StepIndicator.jsx",
+      "start": {
+        "line": 18,
+        "col": 7,
+        "offset": 475
+      },
+      "end": {
+        "line": 18,
+        "col": 30,
+        "offset": 498
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/SummaryStatistics.jsx",
+      "start": {
+        "line": 17,
+        "col": 7,
+        "offset": 412
+      },
+      "end": {
+        "line": 17,
+        "col": 30,
+        "offset": 435
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
       "path": "dataset/vulnerable/SupportBannerToast.jsx",
       "start": {
         "line": 12,
@@ -381,6 +1623,236 @@
         "line": 12,
         "col": 36,
         "offset": 317
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/TabsNavigationComponent.jsx",
+      "start": {
+        "line": 10,
+        "col": 13,
+        "offset": 303
+      },
+      "end": {
+        "line": 10,
+        "col": 25,
+        "offset": 315
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/TagsDisplayPanel.jsx",
+      "start": {
+        "line": 18,
+        "col": 7,
+        "offset": 373
+      },
+      "end": {
+        "line": 18,
+        "col": 30,
+        "offset": 396
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/TestimonialCard.jsx",
+      "start": {
+        "line": 19,
+        "col": 7,
+        "offset": 487
+      },
+      "end": {
+        "line": 19,
+        "col": 30,
+        "offset": 510
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/ThemeCustomizer.jsx",
+      "start": {
+        "line": 10,
+        "col": 27,
+        "offset": 267
+      },
+      "end": {
+        "line": 10,
+        "col": 39,
+        "offset": 279
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/TooltipContent.jsx",
+      "start": {
+        "line": 13,
+        "col": 7,
+        "offset": 330
+      },
+      "end": {
+        "line": 13,
+        "col": 30,
+        "offset": 353
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/UploadProgressBar.jsx",
+      "start": {
+        "line": 10,
+        "col": 24,
+        "offset": 298
+      },
+      "end": {
+        "line": 10,
+        "col": 36,
+        "offset": 310
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/UserCommentCard.jsx",
+      "start": {
+        "line": 9,
+        "col": 25,
+        "offset": 228
+      },
+      "end": {
+        "line": 9,
+        "col": 37,
+        "offset": 240
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/UserProfileWidget.jsx",
+      "start": {
+        "line": 16,
+        "col": 25,
+        "offset": 421
+      },
+      "end": {
+        "line": 16,
+        "col": 37,
+        "offset": 433
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/VideoPlayer.jsx",
+      "start": {
+        "line": 9,
+        "col": 24,
+        "offset": 222
+      },
+      "end": {
+        "line": 9,
+        "col": 36,
+        "offset": 234
+      },
+      "extra": {
+        "message": "Potential DOM-based XSS sink usage in React component.",
+        "metadata": {},
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "semgrep.react-domxss-heuristic",
+      "path": "dataset/vulnerable/WelcomeMessage.jsx",
+      "start": {
+        "line": 21,
+        "col": 14,
+        "offset": 547
+      },
+      "end": {
+        "line": 21,
+        "col": 37,
+        "offset": 570
       },
       "extra": {
         "message": "Potential DOM-based XSS sink usage in React component.",
@@ -475,36 +1947,164 @@
   ],
   "paths": {
     "scanned": [
+      "dataset/patched/ActivityFeedItem.jsx",
+      "dataset/patched/AlertNotificationBanner.jsx",
+      "dataset/patched/AnalyticsCard.jsx",
+      "dataset/patched/AvatarDisplay.jsx",
+      "dataset/patched/BadgeLabel.jsx",
+      "dataset/patched/BlogPostExcerpt.jsx",
+      "dataset/patched/BreadcrumbNavigation.jsx",
+      "dataset/patched/CalendarDatePicker.jsx",
+      "dataset/patched/ChartLegend.jsx",
       "dataset/patched/CheckoutPromoBanner.jsx",
+      "dataset/patched/CodeBlockDisplay.jsx",
+      "dataset/patched/CollapsibleSection.jsx",
+      "dataset/patched/ContentAuthWrapper.jsx",
+      "dataset/patched/CouponDisplay.jsx",
+      "dataset/patched/DataTableRow.jsx",
+      "dataset/patched/DataVisualization.jsx",
       "dataset/patched/DocsPreviewFrame.jsx",
       "dataset/patched/DocsSnippetPreviewFrame.jsx",
+      "dataset/patched/DynamicListGroup.jsx",
+      "dataset/patched/DynamicMenuItem.jsx",
+      "dataset/patched/DynamicTableCell.jsx",
+      "dataset/patched/EmailNotificationPanel.jsx",
       "dataset/patched/EmbeddedChatNotice.jsx",
+      "dataset/patched/ErrorMessageDisplay.jsx",
+      "dataset/patched/FeatureHighlight.jsx",
+      "dataset/patched/FileUploadWidget.jsx",
+      "dataset/patched/FilterButton.jsx",
+      "dataset/patched/FilterChipGroup.jsx",
+      "dataset/patched/FooterWidget.jsx",
+      "dataset/patched/FormValidationDisplay.jsx",
+      "dataset/patched/HeaderNav.jsx",
+      "dataset/patched/IconButton.jsx",
+      "dataset/patched/ImageGalleryItem.jsx",
+      "dataset/patched/InfoBannerWidget.jsx",
+      "dataset/patched/InlineEditorField.jsx",
+      "dataset/patched/LanguageCodeSnippet.jsx",
+      "dataset/patched/LanguageSelector.jsx",
+      "dataset/patched/LoremGenerator.jsx",
+      "dataset/patched/MetadataCard.jsx",
+      "dataset/patched/ModalConfirmDialog.jsx",
+      "dataset/patched/NotificationBell.jsx",
+      "dataset/patched/NotificationDropdown.jsx",
+      "dataset/patched/PaginationLinks.jsx",
+      "dataset/patched/PricingTierCard.jsx",
+      "dataset/patched/ProductReviewDisplay.jsx",
       "dataset/patched/ProductSearchHeader.jsx",
       "dataset/patched/ProfileBioPreview.jsx",
+      "dataset/patched/QuoteCard.jsx",
+      "dataset/patched/RatingDisplay.jsx",
+      "dataset/patched/RecommendationCard.jsx",
       "dataset/patched/ReferralAttributionNote.jsx",
       "dataset/patched/ReferralWelcomeCard.jsx",
+      "dataset/patched/RichTextEditor.jsx",
       "dataset/patched/SavedFilterChip.jsx",
+      "dataset/patched/SearchAutoComplete.jsx",
+      "dataset/patched/SearchResultsContainer.jsx",
+      "dataset/patched/ShareableLink.jsx",
+      "dataset/patched/SidebarMenu.jsx",
+      "dataset/patched/SkeletonLoader.jsx",
+      "dataset/patched/SocialMediaEmbed.jsx",
+      "dataset/patched/StatusBadge.jsx",
+      "dataset/patched/StepIndicator.jsx",
+      "dataset/patched/SummaryStatistics.jsx",
       "dataset/patched/SupportBannerToast.jsx",
+      "dataset/patched/TabsNavigationComponent.jsx",
+      "dataset/patched/TagsDisplayPanel.jsx",
+      "dataset/patched/TestimonialCard.jsx",
+      "dataset/patched/ThemeCustomizer.jsx",
+      "dataset/patched/TooltipContent.jsx",
+      "dataset/patched/UploadProgressBar.jsx",
+      "dataset/patched/UserCommentCard.jsx",
+      "dataset/patched/UserProfileWidget.jsx",
+      "dataset/patched/VideoPlayer.jsx",
+      "dataset/patched/WelcomeMessage.jsx",
+      "dataset/vulnerable/ActivityFeedItem.jsx",
+      "dataset/vulnerable/AlertNotificationBanner.jsx",
+      "dataset/vulnerable/AnalyticsCard.jsx",
+      "dataset/vulnerable/AvatarDisplay.jsx",
+      "dataset/vulnerable/BadgeLabel.jsx",
+      "dataset/vulnerable/BlogPostExcerpt.jsx",
+      "dataset/vulnerable/BreadcrumbNavigation.jsx",
+      "dataset/vulnerable/CalendarDatePicker.jsx",
+      "dataset/vulnerable/ChartLegend.jsx",
       "dataset/vulnerable/CheckoutPromoBanner.jsx",
+      "dataset/vulnerable/CodeBlockDisplay.jsx",
+      "dataset/vulnerable/CollapsibleSection.jsx",
+      "dataset/vulnerable/ContentAuthWrapper.jsx",
+      "dataset/vulnerable/CouponDisplay.jsx",
+      "dataset/vulnerable/DataTableRow.jsx",
+      "dataset/vulnerable/DataVisualization.jsx",
       "dataset/vulnerable/DocsPreviewFrame.jsx",
       "dataset/vulnerable/DocsSnippetPreviewFrame.jsx",
+      "dataset/vulnerable/DynamicListGroup.jsx",
+      "dataset/vulnerable/DynamicMenuItem.jsx",
+      "dataset/vulnerable/DynamicTableCell.jsx",
+      "dataset/vulnerable/EmailNotificationPanel.jsx",
       "dataset/vulnerable/EmbeddedChatNotice.jsx",
+      "dataset/vulnerable/ErrorMessageDisplay.jsx",
+      "dataset/vulnerable/FeatureHighlight.jsx",
+      "dataset/vulnerable/FileUploadWidget.jsx",
+      "dataset/vulnerable/FilterButton.jsx",
+      "dataset/vulnerable/FilterChipGroup.jsx",
+      "dataset/vulnerable/FooterWidget.jsx",
+      "dataset/vulnerable/FormValidationDisplay.jsx",
+      "dataset/vulnerable/HeaderNav.jsx",
+      "dataset/vulnerable/IconButton.jsx",
+      "dataset/vulnerable/ImageGalleryItem.jsx",
+      "dataset/vulnerable/InfoBannerWidget.jsx",
+      "dataset/vulnerable/InlineEditorField.jsx",
+      "dataset/vulnerable/LanguageCodeSnippet.jsx",
+      "dataset/vulnerable/LanguageSelector.jsx",
+      "dataset/vulnerable/LoremGenerator.jsx",
+      "dataset/vulnerable/MetadataCard.jsx",
+      "dataset/vulnerable/ModalConfirmDialog.jsx",
+      "dataset/vulnerable/NotificationBell.jsx",
+      "dataset/vulnerable/NotificationDropdown.jsx",
+      "dataset/vulnerable/PaginationLinks.jsx",
+      "dataset/vulnerable/PricingTierCard.jsx",
+      "dataset/vulnerable/ProductReviewDisplay.jsx",
       "dataset/vulnerable/ProductSearchHeader.jsx",
       "dataset/vulnerable/ProfileBioPreview.jsx",
+      "dataset/vulnerable/QuoteCard.jsx",
+      "dataset/vulnerable/RatingDisplay.jsx",
+      "dataset/vulnerable/RecommendationCard.jsx",
       "dataset/vulnerable/ReferralAttributionNote.jsx",
       "dataset/vulnerable/ReferralWelcomeCard.jsx",
+      "dataset/vulnerable/RichTextEditor.jsx",
       "dataset/vulnerable/SavedFilterChip.jsx",
-      "dataset/vulnerable/SupportBannerToast.jsx"
+      "dataset/vulnerable/SearchAutoComplete.jsx",
+      "dataset/vulnerable/SearchResultsContainer.jsx",
+      "dataset/vulnerable/ShareableLink.jsx",
+      "dataset/vulnerable/SidebarMenu.jsx",
+      "dataset/vulnerable/SkeletonLoader.jsx",
+      "dataset/vulnerable/SocialMediaEmbed.jsx",
+      "dataset/vulnerable/StatusBadge.jsx",
+      "dataset/vulnerable/StepIndicator.jsx",
+      "dataset/vulnerable/SummaryStatistics.jsx",
+      "dataset/vulnerable/SupportBannerToast.jsx",
+      "dataset/vulnerable/TabsNavigationComponent.jsx",
+      "dataset/vulnerable/TagsDisplayPanel.jsx",
+      "dataset/vulnerable/TestimonialCard.jsx",
+      "dataset/vulnerable/ThemeCustomizer.jsx",
+      "dataset/vulnerable/TooltipContent.jsx",
+      "dataset/vulnerable/UploadProgressBar.jsx",
+      "dataset/vulnerable/UserCommentCard.jsx",
+      "dataset/vulnerable/UserProfileWidget.jsx",
+      "dataset/vulnerable/VideoPlayer.jsx",
+      "dataset/vulnerable/WelcomeMessage.jsx"
     ]
   },
   "time": {
     "rules": [],
-    "rules_parse_time": 0.0020580291748046875,
+    "rules_parse_time": 0.0035610198974609375,
     "profiling_times": {
-      "config_time": 0.1303088665008545,
-      "core_time": 0.3076930046081543,
-      "ignores_time": 3.4809112548828125e-05,
-      "total_time": 0.4429290294647217
+      "config_time": 0.17928194999694824,
+      "core_time": 0.4860248565673828,
+      "ignores_time": 7.581710815429688e-05,
+      "total_time": 0.6766049861907959
     },
     "parsing_time": {
       "total_time": 0.0,
@@ -519,10 +2119,10 @@
       "very_slow_files": []
     },
     "scanning_time": {
-      "total_time": 0.0852653980255127,
+      "total_time": 0.1844794750213623,
       "per_file_time": {
-        "mean": 0.004263269901275635,
-        "std_dev": 2.280626371472749e-05
+        "mean": 0.0012464829393335286,
+        "std_dev": 3.340967210392535e-06
       },
       "very_slow_stats": {
         "time_ratio": 0.0,
@@ -560,12 +2160,12 @@
       "file_level_time": 0.0,
       "rules_with_project_prefilters_ratio": 0.0,
       "rules_with_file_prefilters_ratio": 1.0,
-      "rules_selected_ratio": 0.65,
-      "rules_matched_ratio": 0.65
+      "rules_selected_ratio": 0.5202702702702703,
+      "rules_matched_ratio": 0.5202702702702703
     },
     "targets": [],
     "total_bytes": 0,
-    "max_memory_bytes": 147256576
+    "max_memory_bytes": 164372480
   },
   "engine_requested": "OSS",
   "skipped_rules": [],

@@ -1,19 +1,199 @@
 {
   "tool": "semgrep",
   "metrics": {
-    "TP": 10,
+    "TP": 74,
     "FP": 3,
-    "TN": 7,
+    "TN": 71,
     "FN": 0,
     "Errors": 0,
-    "Accuracy": 0.85,
-    "FPR": 0.3,
+    "Accuracy": 0.9797,
+    "FPR": 0.0405,
     "FNR": 0.0,
-    "Total": 20
+    "Total": 148
   },
   "results": [
     {
+      "file": "ActivityFeedItem.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "AlertNotificationBanner.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "AnalyticsCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "AvatarDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "BadgeLabel.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "BlogPostExcerpt.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "BreadcrumbNavigation.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "CalendarDatePicker.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ChartLegend.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
       "file": "CheckoutPromoBanner.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "CodeBlockDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "CollapsibleSection.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ContentAuthWrapper.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "CouponDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "DataTableRow.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "DataVisualization.jsx",
       "true_label": true,
       "prediction": {
         "is_vulnerable": true,
@@ -49,7 +229,319 @@
       }
     },
     {
+      "file": "DynamicListGroup.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "DynamicMenuItem.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "DynamicTableCell.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "EmailNotificationPanel.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
       "file": "EmbeddedChatNotice.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ErrorMessageDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "FeatureHighlight.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "FileUploadWidget.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "FilterButton.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "FilterChipGroup.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "FooterWidget.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "FormValidationDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "HeaderNav.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "IconButton.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ImageGalleryItem.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "InfoBannerWidget.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "InlineEditorField.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "LanguageCodeSnippet.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "LanguageSelector.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "LoremGenerator.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "MetadataCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ModalConfirmDialog.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "NotificationBell.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "NotificationDropdown.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "PaginationLinks.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "PricingTierCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ProductReviewDisplay.jsx",
       "true_label": true,
       "prediction": {
         "is_vulnerable": true,
@@ -85,6 +577,42 @@
       }
     },
     {
+      "file": "QuoteCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "RatingDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "RecommendationCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
       "file": "ReferralAttributionNote.jsx",
       "true_label": true,
       "prediction": {
@@ -109,7 +637,127 @@
       }
     },
     {
+      "file": "RichTextEditor.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
       "file": "SavedFilterChip.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "SearchAutoComplete.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "SearchResultsContainer.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ShareableLink.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "SidebarMenu.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "SkeletonLoader.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "SocialMediaEmbed.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "StatusBadge.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "StepIndicator.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "SummaryStatistics.jsx",
       "true_label": true,
       "prediction": {
         "is_vulnerable": true,
@@ -133,7 +781,277 @@
       }
     },
     {
+      "file": "TabsNavigationComponent.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "TagsDisplayPanel.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "TestimonialCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ThemeCustomizer.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "TooltipContent.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "UploadProgressBar.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "UserCommentCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "UserProfileWidget.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "VideoPlayer.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "WelcomeMessage.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "semgrep",
+        "match_count": 1,
+        "rule_ids": [
+          "semgrep.react-domxss-heuristic"
+        ]
+      }
+    },
+    {
+      "file": "ActivityFeedItem.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "AlertNotificationBanner.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "AnalyticsCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "AvatarDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "BadgeLabel.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "BlogPostExcerpt.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "BreadcrumbNavigation.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "CalendarDatePicker.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ChartLegend.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
       "file": "CheckoutPromoBanner.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "CodeBlockDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "CollapsibleSection.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ContentAuthWrapper.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "CouponDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "DataTableRow.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "DataVisualization.jsx",
       "true_label": false,
       "prediction": {
         "is_vulnerable": false,
@@ -167,7 +1085,267 @@
       }
     },
     {
+      "file": "DynamicListGroup.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "DynamicMenuItem.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "DynamicTableCell.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "EmailNotificationPanel.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
       "file": "EmbeddedChatNotice.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ErrorMessageDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FeatureHighlight.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FileUploadWidget.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FilterButton.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FilterChipGroup.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FooterWidget.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FormValidationDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "HeaderNav.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "IconButton.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ImageGalleryItem.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "InfoBannerWidget.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "InlineEditorField.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "LanguageCodeSnippet.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "LanguageSelector.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "LoremGenerator.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "MetadataCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ModalConfirmDialog.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "NotificationBell.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "NotificationDropdown.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "PaginationLinks.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "PricingTierCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ProductReviewDisplay.jsx",
       "true_label": false,
       "prediction": {
         "is_vulnerable": false,
@@ -197,6 +1375,36 @@
       }
     },
     {
+      "file": "QuoteCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "RatingDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "RecommendationCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
       "file": "ReferralAttributionNote.jsx",
       "true_label": false,
       "prediction": {
@@ -217,7 +1425,107 @@
       }
     },
     {
+      "file": "RichTextEditor.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
       "file": "SavedFilterChip.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SearchAutoComplete.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SearchResultsContainer.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ShareableLink.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SidebarMenu.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SkeletonLoader.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SocialMediaEmbed.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "StatusBadge.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "StepIndicator.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SummaryStatistics.jsx",
       "true_label": false,
       "prediction": {
         "is_vulnerable": false,
@@ -236,6 +1544,106 @@
         "rule_ids": [
           "semgrep.react-domxss-heuristic"
         ]
+      }
+    },
+    {
+      "file": "TabsNavigationComponent.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "TagsDisplayPanel.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "TestimonialCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ThemeCustomizer.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "TooltipContent.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "UploadProgressBar.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "UserCommentCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "UserProfileWidget.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "VideoPlayer.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "WelcomeMessage.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "semgrep",
+        "match_count": 0,
+        "rule_ids": []
       }
     }
   ]

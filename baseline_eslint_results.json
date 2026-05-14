@@ -1,19 +1,199 @@
 {
   "tool": "eslint",
   "metrics": {
-    "TP": 10,
+    "TP": 74,
     "FP": 3,
-    "TN": 7,
+    "TN": 71,
     "FN": 0,
     "Errors": 0,
-    "Accuracy": 0.85,
-    "FPR": 0.3,
+    "Accuracy": 0.9797,
+    "FPR": 0.0405,
     "FNR": 0.0,
-    "Total": 20
+    "Total": 148
   },
   "results": [
     {
+      "file": "ActivityFeedItem.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "AlertNotificationBanner.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "AnalyticsCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "AvatarDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "BadgeLabel.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "BlogPostExcerpt.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "BreadcrumbNavigation.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "CalendarDatePicker.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "ChartLegend.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
       "file": "CheckoutPromoBanner.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "CodeBlockDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "CollapsibleSection.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "ContentAuthWrapper.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "CouponDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "DataTableRow.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "DataVisualization.jsx",
       "true_label": true,
       "prediction": {
         "is_vulnerable": true,
@@ -47,7 +227,319 @@
       }
     },
     {
+      "file": "DynamicListGroup.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "DynamicMenuItem.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "DynamicTableCell.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "EmailNotificationPanel.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
       "file": "EmbeddedChatNotice.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "ErrorMessageDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "FeatureHighlight.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "FileUploadWidget.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "FilterButton.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "FilterChipGroup.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "FooterWidget.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "FormValidationDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "HeaderNav.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "IconButton.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "ImageGalleryItem.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "InfoBannerWidget.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "InlineEditorField.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "LanguageCodeSnippet.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "LanguageSelector.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "LoremGenerator.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "MetadataCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "ModalConfirmDialog.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "NotificationBell.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "NotificationDropdown.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "PaginationLinks.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "PricingTierCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "ProductReviewDisplay.jsx",
       "true_label": true,
       "prediction": {
         "is_vulnerable": true,
@@ -83,6 +575,42 @@
       }
     },
     {
+      "file": "QuoteCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "RatingDisplay.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "RecommendationCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
       "file": "ReferralAttributionNote.jsx",
       "true_label": true,
       "prediction": {
@@ -107,7 +635,127 @@
       }
     },
     {
+      "file": "RichTextEditor.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
       "file": "SavedFilterChip.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "SearchAutoComplete.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "SearchResultsContainer.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "ShareableLink.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "SidebarMenu.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "SkeletonLoader.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "SocialMediaEmbed.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "StatusBadge.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "StepIndicator.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "SummaryStatistics.jsx",
       "true_label": true,
       "prediction": {
         "is_vulnerable": true,
@@ -131,7 +779,277 @@
       }
     },
     {
+      "file": "TabsNavigationComponent.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "TagsDisplayPanel.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "TestimonialCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "ThemeCustomizer.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "TooltipContent.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "UploadProgressBar.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "UserCommentCard.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "UserProfileWidget.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "VideoPlayer.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "WelcomeMessage.jsx",
+      "true_label": true,
+      "prediction": {
+        "is_vulnerable": true,
+        "tool": "eslint",
+        "match_count": 1,
+        "rule_ids": [
+          "no-restricted-syntax"
+        ]
+      }
+    },
+    {
+      "file": "ActivityFeedItem.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "AlertNotificationBanner.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "AnalyticsCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "AvatarDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "BadgeLabel.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "BlogPostExcerpt.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "BreadcrumbNavigation.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "CalendarDatePicker.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ChartLegend.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
       "file": "CheckoutPromoBanner.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "CodeBlockDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "CollapsibleSection.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ContentAuthWrapper.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "CouponDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "DataTableRow.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "DataVisualization.jsx",
       "true_label": false,
       "prediction": {
         "is_vulnerable": false,
@@ -163,7 +1081,267 @@
       }
     },
     {
+      "file": "DynamicListGroup.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "DynamicMenuItem.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "DynamicTableCell.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "EmailNotificationPanel.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
       "file": "EmbeddedChatNotice.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ErrorMessageDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FeatureHighlight.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FileUploadWidget.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FilterButton.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FilterChipGroup.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FooterWidget.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "FormValidationDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "HeaderNav.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "IconButton.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ImageGalleryItem.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "InfoBannerWidget.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "InlineEditorField.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "LanguageCodeSnippet.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "LanguageSelector.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "LoremGenerator.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "MetadataCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ModalConfirmDialog.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "NotificationBell.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "NotificationDropdown.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "PaginationLinks.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "PricingTierCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ProductReviewDisplay.jsx",
       "true_label": false,
       "prediction": {
         "is_vulnerable": false,
@@ -193,6 +1371,36 @@
       }
     },
     {
+      "file": "QuoteCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "RatingDisplay.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "RecommendationCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
       "file": "ReferralAttributionNote.jsx",
       "true_label": false,
       "prediction": {
@@ -213,7 +1421,107 @@
       }
     },
     {
+      "file": "RichTextEditor.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
       "file": "SavedFilterChip.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SearchAutoComplete.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SearchResultsContainer.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ShareableLink.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SidebarMenu.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SkeletonLoader.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SocialMediaEmbed.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "StatusBadge.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "StepIndicator.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "SummaryStatistics.jsx",
       "true_label": false,
       "prediction": {
         "is_vulnerable": false,
@@ -232,6 +1540,106 @@
         "rule_ids": [
           "no-restricted-syntax"
         ]
+      }
+    },
+    {
+      "file": "TabsNavigationComponent.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "TagsDisplayPanel.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "TestimonialCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "ThemeCustomizer.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "TooltipContent.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "UploadProgressBar.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "UserCommentCard.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "UserProfileWidget.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "VideoPlayer.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
+      }
+    },
+    {
+      "file": "WelcomeMessage.jsx",
+      "true_label": false,
+      "prediction": {
+        "is_vulnerable": false,
+        "tool": "eslint",
+        "match_count": 0,
+        "rule_ids": []
       }
     }
   ]

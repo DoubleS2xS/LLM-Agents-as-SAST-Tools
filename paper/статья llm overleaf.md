@@ -1,7 +1,28 @@
 ::: IEEEkeywords
-Large Language Models, Static Application Security Testing, React,
-Cross-Site Scripting, Cybersecurity.
+Large Language Models, Static Application Security Testing,
+React,Cross-Site Scripting, Cybersecurity.
 :::
+
+# Abstract
+The migration of rendering logic to the browser has increased the
+prevalence of DOM-based cross-site scripting (DOM-based XSS) in
+single-page applications (SPAs). This study evaluates whether large
+language models (LLMs) can serve as practical static application
+security testing (SAST) agents for React code and compares their
+performance with deterministic rule-based baselines. The experiment
+employs a paired dataset of 148 React components (74 vulnerable, 74
+patched) covering four DOM-based XSS sink types. Four tools are
+evaluated: Llama 3 (8B, local inference via Ollama), Gemini 2.5
+Flash-Lite (cloud API, tested on a 74-component subset), Semgrep, and
+ESLint. Llama 3 achieves 89.9\% accuracy with 18.9\% FPR and 1.4\%
+FNR. Gemini 2.5 Flash-Lite achieves 98.6\% accuracy on successful
+requests (FPR 0.0\%) but incurs two API-level failures, reducing
+coverage. Semgrep and ESLint each achieve 98.0\% accuracy, 4.1\% FPR,
+0.0\% FNR, and 100\% coverage. Deterministic baselines deliver
+superior operational stability, while the cloud LLM provides the best
+discrimination on completed requests. The findings motivate a hybrid
+pipeline in which deterministic tools perform first-stage filtering and
+LLM analysis provides contextual false-positive elimination.
 
 # Introduction
 
@@ -12,7 +33,7 @@ the threat landscape, notably increasing the attack surface for
 DOM-based Cross-Site Scripting (DOM XSS). Unlike reflected or stored
 XSS, DOM XSS occurs entirely within the browser when client-side
 JavaScript processes data from an untrusted source and writes it to the
-DOM without adequate sanitization [@b1]. Dangerous sinks in React
+DOM without adequate sanitization[@b1]. Dangerous sinks in React
 applications include `dangerouslySetInnerHTML`, direct `innerHTML`
 assignment, `insertAdjacentHTML`, permissive `srcDoc` in iframes, and
 unvalidated `postMessage` payloads.
@@ -33,11 +54,12 @@ and two deterministic baselines (Semgrep, ESLint) on a paired dataset of
 vulnerable and patched React components, quantifying the trade-offs
 between AI-assisted and rule-based vulnerability detection.
 
-**Contributions:** (1) A paired benchmark dataset of 148 React components
-covering four DOM-based XSS sink types; (2) a unified confusion-matrix
-evaluation of two LLM backends and two deterministic baselines; (3)
-empirical evidence that a hybrid pipeline combining deterministic
-filtering with LLM triage is preferable to either approach alone.
+**Contributions:** (1) A paired benchmark dataset of 148 React
+components covering four DOM-based XSS sink types; (2) a unified
+confusion-matrix evaluation of two LLM backends and two deterministic
+baselines; (3) empirical evidence that a hybrid pipeline combining
+deterministic filtering with LLM triage is preferable to either approach
+alone.
 
 # Methodology
 
@@ -108,12 +130,14 @@ Four tools were applied to the dataset:
     keys `is_vulnerable`, `vulnerability_type`, and `reasoning`.
 
 -   **Gemini 2.5 Flash-Lite (API) [@b9]:** Queried via the Google
-    Generative Language REST API. Tested on all 148 components. Temperature 0.1; `responseMimeType`
-    set to `application/json`. Exponential backoff with up to six
-    retries on HTTP 429/5xx errors. The prompt included an explicit
-    semantic guardrail stating that React's native JSX `{}` binding is
-    safe against XSS; this guardrail was absent from the Llama prompt,
-    constituting a methodological asymmetry discussed in Section IV.
+    Generative Language REST API. Tested on a subset of 74 components
+    due to API limits. Temperature 0.1; `responseMimeType` set to
+    `application/json`. Exponential backoff with up to six retries on
+    HTTP 429/5xx errors. The prompt included an explicit semantic
+    guardrail stating that React's native JSX `{}` binding is safe
+    against XSS; this guardrail was absent from the Llama prompt,
+    constituting a methodological asymmetry discussed in Section IV
+    (Threats to Validity).
 
 -   **Semgrep:** Heuristic regex-pattern rules matching four dangerous
     sink patterns (`dangerouslySetInnerHTML`, `innerHTML` assignment,
@@ -143,25 +167,25 @@ Coverage and Effective Accuracy.
 
 Table [\[tab:results\]](#tab:results){reference-type="ref"
 reference="tab:results"} presents the full confusion-matrix results
-across all four tools based on our latest benchmark data.
+across all four tools.
 
 ::: center
-
-| Tool | TP | TN | FP | FN | Accuracy | FPR | FNR |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Llama 3 (8B)** | 73 | 60 | 14 | 1 | 89.9% | 18.9% | 1.4% |
-| **Gemini 2.5 Flash-Lite** | 73 | 74 | 0 | 1 | 99.3% | 0.0% | 1.4% |
-| **Semgrep** | 74 | 71 | 3 | 0 | 98.0% | 4.1% | 0.0% |
-| **ESLint** | 74 | 71 | 3 | 0 | 98.0% | 4.1% | 0.0% |
-
 []{#tab:results label="tab:results"}
 :::
 
 ## LLM Performance
 
-**Llama 3 (8B)** achieved 89.9% accuracy with an 18.9% FPR. Analysis of reasoning traces reveals occasional failure modes: context blindness to React's JSX auto-escaping, leading to false positives where safe JSX text nodes are flagged, and occasional hallucinated sink attribution. However, it achieved excellent recall (1.4% FNR).
+**Llama 3 (8B)** achieved 89.9% accuracy with an 18.9% FPR. Analysis of
+reasoning traces reveals occasional failure modes: context blindness to
+React's JSX auto-escaping, leading to false positives where safe JSX
+text nodes are flagged, and occasional hallucinated sink attribution.
+However, it achieved excellent recall (1.4% FNR).
 
-**Gemini 2.5 Flash-Lite** displayed exceptional 99.3% accuracy across all components (FPR 0.0%). The explicit semantic guardrail in the prompt effectively suppressed false positives related to native text escaping, while successfully distinguishing between sensitive and benign bindings.
+**Gemini 2.5 Flash-Lite** displayed 98.6% accuracy on successful API
+calls (FPR 0.0%). Two requests failed after exhausting retries (HTTP
+503), demonstrating that semantic quality and operational reliability
+are orthogonal concerns. The explicit semantic guardrail in the prompt
+effectively suppressed false positives related to native text escaping.
 
 ## Deterministic Baseline Performance
 
@@ -175,39 +199,54 @@ a reliable first-stage filter.
 
 # Threats to Validity
 
-
-**Limited sample size.** While N=148 is improved, it provides point estimates; further scaling is required. Results
-should be treated as indicative rather than conclusive.
+**Limited sample size.** While N=148 is improved, it provides point
+estimates; further scaling is required. Results should be treated as
+indicative rather than conclusive.
 
 **Synthetic dataset.** All components were generated from a controlled
 prompt. This controls confounds but does not capture real-world code
 distribution, multi-file dataflow, or co-occurring safe and unsafe
 patterns.
 
-**Prompt asymmetry.** The Llama and Gemini prompts differ in the
-inclusion of a React-JSX safety guardrail in the latter. Observed
-performance differences may reflect prompt engineering as much as
-intrinsic model capability; ablation of this variable is left for future
-work.
-
-**Single-trial evaluation.** LLMs are stochastic; a single run at
-temperature 0.1 does not capture output variance. Repeated trials with
-aggregated statistics are needed to establish confidence intervals.
+**Prompt asymmetry between Llama 3 and Gemini 2.5 Flash-Lite.** The
+Gemini prompt included an explicit semantic guardrail instructing the
+model that React's native JSX `{}` text-node binding is inherently safe
+against XSS injection; no equivalent guidance was provided to Llama 3.
+Because the dominant false-positive mode for Llama 3 was precisely this
+misclassification of safe JSX bindings, the guardrail gives Gemini a
+structural advantage in FPR. Consequently, Gemini's reported FPR of 0.0%
+should be interpreted as an upper bound on the model's intrinsic
+discrimination ability under favourable prompting, rather than a fair
+head-to-head comparison with Llama 3's 18.9% FPR. Future work should
+equalize prompts across models (prompt ablation) to isolate model
+capability from prompt engineering effects.
 
 # Discussion and Conclusion
 
-The new benchmark data highlights surprising parity and shifts in the performance landscape compared to initial small-scale trials. Deterministic baselines (Semgrep, ESLint) excel dramatically in identifying vulnerabilities without failures, providing full-coverage operation with a low false-positive rate (4.1%), challenging the assumption of excessive false positives for well-tuned rules.
+The new benchmark data highlights surprising parity and shifts in the
+performance landscape compared to initial small-scale trials.
+Deterministic baselines (Semgrep, ESLint) excel dramatically in
+identifying vulnerabilities without failures, providing full-coverage
+operation with a low false-positive rate (4.1%), challenging the
+assumption of excessive false positives for well-tuned rules.
 
-The local LLM achieved strong recall but at the cost of a moderately higher false-positive rate. The cloud LLM achieved near perfect scores for both precision and recall, distinguishing unsafe patterns seamlessly.
+The local LLM achieved strong recall but at the cost of a moderately
+higher false-positive rate. The cloud LLM achieves nearly perfect
+precision but with reduced coverage and infrastructure dependency
+leading to API errors.
 
-These characteristics reinforce a hybrid pipeline design: deterministic tools perform fast, reproducible first-stage filtering; only flagged files are forwarded to LLM analysis for semantic disambiguation to eliminate the remaining ~4% false positives.
+These characteristics reinforce a hybrid pipeline design: deterministic
+tools perform fast, reproducible first-stage filtering; only flagged
+files are forwarded to LLM analysis for semantic disambiguation to
+eliminate the remaining  4% false positives.
 
 In summary: Semgrep and ESLint provide an exceptional operationally
-stable baseline; Gemini 2.5 Flash-Lite achieves the best discrimination on
-completed requests; Llama 3 8B provides high recall and acts as a strong local alternative. Future work should scale
-the dataset to real-world repositories, conduct repeated trials for
-statistical confidence, perform prompt ablation, and evaluate the hybrid
-pipeline end-to-end on CI/CD traffic.
+stable baseline; Gemini 2.5 Flash-Lite achieves the best discrimination
+on completed requests; Llama 3 8B provides high recall and acts as a
+strong local alternative. Future work should scale the dataset to
+real-world repositories, conduct repeated trials for statistical
+confidence, perform prompt ablation, and evaluate the hybrid pipeline
+end-to-end on CI/CD traffic.
 
 # Data Availability {#data-availability .unnumbered}
 

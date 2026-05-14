@@ -1,6 +1,171 @@
 [
   {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ActivityFeedItem.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/AlertNotificationBanner.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/AnalyticsCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/AvatarDisplay.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/BadgeLabel.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/BlogPostExcerpt.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/BreadcrumbNavigation.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/CalendarDatePicker.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ChartLegend.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
     "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/CheckoutPromoBanner.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/CodeBlockDisplay.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/CollapsibleSection.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ContentAuthWrapper.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/CouponDisplay.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/DataTableRow.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/DataVisualization.jsx",
     "messages": [],
     "suppressedMessages": [],
     "errorCount": 0,
@@ -57,7 +222,293 @@
     "usedDeprecatedRules": []
   },
   {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/DynamicListGroup.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/DynamicMenuItem.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/DynamicTableCell.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/EmailNotificationPanel.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
     "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/EmbeddedChatNotice.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ErrorMessageDisplay.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/FeatureHighlight.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/FileUploadWidget.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/FilterButton.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/FilterChipGroup.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/FooterWidget.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/FormValidationDisplay.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/HeaderNav.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/IconButton.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ImageGalleryItem.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/InfoBannerWidget.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/InlineEditorField.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/LanguageCodeSnippet.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/LanguageSelector.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/LoremGenerator.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/MetadataCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ModalConfirmDialog.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/NotificationBell.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/NotificationDropdown.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/PaginationLinks.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/PricingTierCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ProductReviewDisplay.jsx",
     "messages": [],
     "suppressedMessages": [],
     "errorCount": 0,
@@ -90,6 +541,39 @@
     "usedDeprecatedRules": []
   },
   {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/QuoteCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/RatingDisplay.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/RecommendationCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
     "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ReferralAttributionNote.jsx",
     "messages": [],
     "suppressedMessages": [],
@@ -112,7 +596,117 @@
     "usedDeprecatedRules": []
   },
   {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/RichTextEditor.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
     "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/SavedFilterChip.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/SearchAutoComplete.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/SearchResultsContainer.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ShareableLink.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/SidebarMenu.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/SkeletonLoader.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/SocialMediaEmbed.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/StatusBadge.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/StepIndicator.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/SummaryStatistics.jsx",
     "messages": [],
     "suppressedMessages": [],
     "errorCount": 0,
@@ -147,6 +741,332 @@
     "usedDeprecatedRules": []
   },
   {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/TabsNavigationComponent.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/TagsDisplayPanel.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/TestimonialCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/ThemeCustomizer.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/TooltipContent.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/UploadProgressBar.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/UserCommentCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/UserProfileWidget.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/VideoPlayer.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/patched/WelcomeMessage.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ActivityFeedItem.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 21,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 21,
+        "endColumn": 61
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function ActivityFeedItem({ activity }) {\n  const [expanded, setExpanded] = useState(false);\n\n  const renderActivity = () => {\n    if (!expanded) return \"\";\n    return `\n      <div class=\"activity-details\">\n        <p><strong>${activity.type}</strong></p>\n        <p>${activity.description}</p>\n        <span class=\"activity-time\">${activity.timestamp}</span>\n      </div>\n    `;\n  };\n\n  return (\n    <div\n      className=\"feed-item\"\n      dangerouslySetInnerHTML={{ __html: renderActivity() }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/AlertNotificationBanner.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 16,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 37
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function AlertNotificationBanner({ alertType }) {\n  const [message, setMessage] = useState(\"\");\n\n  const showAlert = () => {\n    const alertDiv = document.getElementById(\"alert-container\");\n    const alertHtml = `\n      <div class=\"alert alert-${alertType}\">\n        <strong>${alertType.toUpperCase()}</strong>\n        <p>${message}</p>\n      </div>\n    `;\n    if (alertDiv) {\n      alertDiv.innerHTML = alertHtml;\n    }\n  };\n\n  return (\n    <div>\n      <input onChange={(e) => setMessage(e.target.value)} placeholder=\"Alert message\" />\n      <button onClick={showAlert}>Show Alert</button>\n      <div id=\"alert-container\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/AnalyticsCard.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 19,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 19,
+        "endColumn": 56
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function AnalyticsCard({ analyticsData }) {\n  const displayHtml = useMemo(() => {\n    const data = analyticsData || {};\n    return `\n      <div class=\"analytics-card\">\n        <h4>User: ${data.userName}</h4>\n        <p>Visits: ${data.visits}</p>\n        <p>Last Visit: ${data.lastVisit}</p>\n      </div>\n    `;\n  }, [analyticsData]);\n\n  return (\n    <div\n      className=\"card-wrapper\"\n      dangerouslySetInnerHTML={{ __html: displayHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/AvatarDisplay.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 19,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 19,
+        "endColumn": 55
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function AvatarDisplay({ user }) {\n  const avatarHtml = useMemo(() => {\n    if (!user) return \"\";\n    return `\n      <div class=\"avatar-card\">\n        <img src=\"avatars/${user.id}.jpg\" alt=\"avatar\" />\n        <h4>${user.fullName}</h4>\n        <p class=\"user-status\">${user.status}</p>\n      </div>\n    `;\n  }, [user]);\n\n  return (\n    <div\n      className=\"avatar-wrapper\"\n      dangerouslySetInnerHTML={{ __html: avatarHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/BadgeLabel.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 17,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 17,
+        "endColumn": 54
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function BadgeLabel({ text, variant }) {\n  const badgeHtml = useMemo(() => {\n    const variants = {\n      primary: \"badge-primary\",\n      success: \"badge-success\",\n      danger: \"badge-danger\"\n    };\n    const className = variants[variant] || \"badge-default\";\n    return `<span class=\"badge ${className}\">${text}</span>`;\n  }, [text, variant]);\n\n  return (\n    <div\n      dangerouslySetInnerHTML={{ __html: badgeHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/BlogPostExcerpt.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 19,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 19,
+        "endColumn": 53
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function BlogPostExcerpt({ title, excerpt, author }) {\n  const postHtml = useMemo(() => {\n    return `\n      <article class=\"blog-excerpt\">\n        <h2>${title}</h2>\n        <p class=\"excerpt-text\">${excerpt}</p>\n        <footer class=\"blog-footer\">\n          By <span class=\"author\">${author}</span>\n        </footer>\n      </article>\n    `;\n  }, [title, excerpt, author]);\n\n  return (\n    <div\n      dangerouslySetInnerHTML={{ __html: postHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/BreadcrumbNavigation.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 14,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 14,
+        "endColumn": 83
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useEffect, useRef } from \"react\";\n\nexport function BreadcrumbNavigation() {\n  const navRef = useRef(null);\n\n  useEffect(() => {\n    const pathSegments = window.location.pathname.split(\"/\").filter(Boolean);\n    const breadcrumbHtml = pathSegments.map(segment => \n      `<span class=\"breadcrumb-item\">${segment}</span>`\n    ).join(\" > \");\n    \n    if (navRef.current) {\n      navRef.current.innerHTML = `<nav class=\"breadcrumb\">${breadcrumbHtml}</nav>`;\n    }\n  }, []);\n\n  return <div ref={navRef} />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/CalendarDatePicker.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useRef } from \"react\";\n\nexport function CalendarDatePicker({ selectedDate }) {\n  const calendarRef = useRef(null);\n\n  const showCalendar = () => {\n    if (calendarRef.current && selectedDate) {\n      calendarRef.current.innerHTML = `\n        <div class=\"calendar-popup\">\n          <h3>Selected Date: ${selectedDate}</h3>\n          <div class=\"calendar-grid\">\n            <button class=\"date-btn\">${selectedDate}</button>\n          </div>\n        </div>\n      `;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={showCalendar}>Open Calendar</button>\n      <div ref={calendarRef} className=\"calendar-container\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ChartLegend.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 18,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 18,
+        "endColumn": 55
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function ChartLegend({ items, colors }) {\n  const legendHtml = useMemo(() => {\n    return `\n      <ul class=\"legend-list\">\n        ${items.map((item, idx) => \n          `<li class=\"legend-item\"><span class=\"legend-color\" style=\"background: ${colors[idx]}\"></span>${item}</li>`\n        ).join(\"\")}\n      </ul>\n    `;\n  }, [items, colors]);\n\n  return (\n    <div\n      className=\"chart-legend\"\n      dangerouslySetInnerHTML={{ __html: legendHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
     "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/CheckoutPromoBanner.jsx",
     "messages": [
       {
@@ -168,6 +1088,150 @@
     "fixableErrorCount": 0,
     "fixableWarningCount": 0,
     "source": "\n   import React, { useMemo } from \"react\";\n   \n   export function CheckoutPromoBanner() {\n     const promoCode = useMemo(() => {\n       const params = new \n  URLSearchParams(window.location.search);\n       return params.get(\"promo\") ?? \"WELCOME10\";\n     }, []);\n   \n     const bannerHtml = useMemo(\n       () => `Promo applied: \n  <strong>${promoCode}</strong>`,\n       [promoCode]\n     );\n   \n     return (\n       <p\n         className=\"promo-banner\"\n         dangerouslySetInnerHTML={{ __html: bannerHtml \n  }}\n       />\n     );\n   }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/CodeBlockDisplay.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 13,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useEffect, useRef } from \"react\";\n\nexport function CodeBlockDisplay({ codeContent, language }) {\n  const blockRef = useRef(null);\n\n  useEffect(() => {\n    if (blockRef.current && codeContent) {\n      blockRef.current.innerHTML = `\n        <pre class=\"code-block language-${language}\">\n          <code>${codeContent}</code>\n        </pre>\n      `;\n    }\n  }, [codeContent, language]);\n\n  return <div ref={blockRef} className=\"code-display-wrapper\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/CollapsibleSection.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 14,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function CollapsibleSection({ heading, children }) {\n  const [isExpanded, setIsExpanded] = useState(false);\n\n  const toggleContent = () => {\n    const contentDiv = document.getElementById(\"collapsible-content\");\n    if (contentDiv) {\n      contentDiv.innerHTML = isExpanded ? \"\" : `\n        <div class=\"section-content\">\n          <p>${children}</p>\n        </div>\n      `;\n      setIsExpanded(!isExpanded);\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={toggleContent}>{heading}</button>\n      <div id=\"collapsible-content\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ContentAuthWrapper.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 15,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState, useEffect } from \"react\";\n\nexport function ContentAuthWrapper({ userId }) {\n  const [content, setContent] = useState(\"\");\n\n  useEffect(() => {\n    const contentDiv = document.getElementById(\"auth-content\");\n    if (contentDiv) {\n      contentDiv.innerHTML = `\n        <div class=\"auth-wrapper\">\n          <h2>Authenticated Content for User: ${userId}</h2>\n          <p>User ID: ${userId}</p>\n        </div>\n      `;\n    }\n  }, [userId]);\n\n  return <div id=\"auth-content\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/CouponDisplay.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function CouponDisplay({ code, discount }) {\n  const [claimed, setClaimed] = useState(false);\n\n  const displayCoupon = () => {\n    const couponArea = document.getElementById(\"coupon-zone\");\n    if (couponArea && code) {\n      couponArea.innerHTML = `\n        <div class=\"coupon-box\">\n          <p class=\"coupon-code\">${code}</p>\n          <p class=\"coupon-discount\">${discount}% OFF</p>\n          <button class=\"claim-btn\">Claim Now</button>\n        </div>\n      `;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={displayCoupon}>Show Coupon</button>\n      <div id=\"coupon-zone\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/DataTableRow.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function DataTableRow({ rowData, rowIndex }) {\n  const [selected, setSelected] = useState(false);\n\n  const displayRow = () => {\n    const tableRow = document.getElementById(`row-${rowIndex}`);\n    if (tableRow && rowData) {\n      tableRow.innerHTML = `\n        <tr class=\"data-row\">\n          <td class=\"row-id\">${rowData.id}</td>\n          <td class=\"row-name\">${rowData.name}</td>\n          <td class=\"row-value\">${rowData.value}</td>\n        </tr>\n      `;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={displayRow}>Load Row {rowIndex}</button>\n      <div id={`row-${rowIndex}`} />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/DataVisualization.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useRef, useEffect } from \"react\";\n\nexport function DataVisualization({ dataLabel, dataValue }) {\n  const vizRef = useRef(null);\n\n  useEffect(() => {\n    if (vizRef.current && dataLabel && dataValue) {\n      vizRef.current.innerHTML = `\n        <div class=\"data-viz\">\n          <div class=\"viz-label\">${dataLabel}</div>\n          <div class=\"viz-bar\" style=\"width: ${dataValue}%\">\n            <span class=\"viz-text\">${dataValue}%</span>\n          </div>\n        </div>\n      `;\n    }\n  }, [dataLabel, dataValue]);\n\n  return <div ref={vizRef} className=\"viz-wrapper\" />;\n}\n\n\n",
     "usedDeprecatedRules": []
   },
   {
@@ -217,6 +1281,102 @@
     "usedDeprecatedRules": []
   },
   {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/DynamicListGroup.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 17,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 17,
+        "endColumn": 37
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function DynamicListGroup({ items }) {\n  const [selectedIdx, setSelectedIdx] = useState(0);\n\n  const renderList = () => {\n    const container = document.getElementById(\"list-container\");\n    if (container && items.length > 0) {\n      const listHtml = `\n        <ul class=\"dynamic-list\">\n          ${items.map((item, idx) => \n            `<li class=\"list-item ${idx === selectedIdx ? \"active\" : \"\"}\">${item.name}</li>`\n          ).join(\"\")}\n        </ul>\n      `;\n      container.innerHTML = listHtml;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={renderList}>Render List</button>\n      <div id=\"list-container\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/DynamicMenuItem.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 16,
+        "column": 10,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 56
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function DynamicMenuItem({ item }) {\n  const menuHtml = useMemo(() => {\n    if (!item) return \"\";\n    return `\n      <li class=\"menu-item\">\n        <a href=\"${item.href}\" class=\"menu-link\">${item.label}</a>\n        <span class=\"menu-badge\">${item.count}</span>\n      </li>\n    `;\n  }, [item]);\n\n  return (\n    <div dangerouslySetInnerHTML={{ __html: menuHtml }} />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/DynamicTableCell.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 14,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useEffect, useRef } from \"react\";\n\nexport function DynamicTableCell({ rowData }) {\n  const cellRef = useRef(null);\n\n  useEffect(() => {\n    if (cellRef.current && rowData) {\n      cellRef.current.innerHTML = `\n        <td class=\"data-cell\">\n          <span>${rowData.id}</span> - \n          <span>${rowData.content}</span>\n        </td>\n      `;\n    }\n  }, [rowData]);\n\n  return <div ref={cellRef} />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/EmailNotificationPanel.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 21,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 21,
+        "endColumn": 60
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState, useCallback } from \"react\";\n\nexport function EmailNotificationPanel({ userEmail }) {\n  const [settings, setSettings] = useState({});\n\n  const generatePanel = useCallback(() => {\n    const emailDisplay = userEmail || \"no-email@example.com\";\n    return `\n      <div class=\"email-panel\">\n        <h2>Email Preferences</h2>\n        <p>Current email: <strong>${emailDisplay}</strong></p>\n        <p>You can modify your email settings below.</p>\n      </div>\n    `;\n  }, [userEmail]);\n\n  return (\n    <div\n      className=\"notification-panel-wrapper\"\n      dangerouslySetInnerHTML={{ __html: generatePanel() }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
     "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/EmbeddedChatNotice.jsx",
     "messages": [
       {
@@ -238,6 +1398,534 @@
     "fixableErrorCount": 0,
     "fixableWarningCount": 0,
     "source": "\n   import React, { useEffect, useRef } from \"react\";\n   \n   export function EmbeddedChatNotice() {\n     const noticeRef = useRef(null);\n   \n     useEffect(() => {\n       const onMessage = (event) => {\n         if (!event.origin.includes(\"corpchat.com\")) \n  return;\n         if (event.data?.type !== \"CHAT_NOTICE\") \n  return;\n         if (!noticeRef.current) return;\n   \n         noticeRef.current.innerHTML = event.data.body;\n       };\n   \n       window.addEventListener(\"message\", onMessage);\n       return () => \n  window.removeEventListener(\"message\", onMessage);\n     }, []);\n   \n     return <div ref={noticeRef} \n  className=\"chat-notice\" />;\n   }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ErrorMessageDisplay.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 11,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 11,
+        "endColumn": 77
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function ErrorMessageDisplay({ errorCode }) {\n  const [message, setMessage] = useState(\"\");\n\n  const showError = () => {\n    const errorMsg = `Error ${errorCode}: Something went wrong`;\n    const errorDiv = document.getElementById(\"error-area\");\n    if (errorDiv) {\n      errorDiv.innerHTML = `<div class=\"error-box\"><p>${errorMsg}</p></div>`;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={showError}>Show Error</button>\n      <div id=\"error-area\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/FeatureHighlight.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 14,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useEffect, useRef } from \"react\";\n\nexport function FeatureHighlight({ feature, description }) {\n  const highlightRef = useRef(null);\n\n  useEffect(() => {\n    if (highlightRef.current && feature) {\n      highlightRef.current.innerHTML = `\n        <div class=\"feature-box\">\n          <h3 class=\"feature-title\">${feature}</h3>\n          <p class=\"feature-desc\">${description}</p>\n        </div>\n      `;\n    }\n  }, [feature, description]);\n\n  return <div ref={highlightRef} className=\"highlight-wrapper\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/FileUploadWidget.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 15,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function FileUploadWidget({ maxSize }) {\n  const [fileName, setFileName] = useState(\"\");\n\n  const handleUpload = () => {\n    const uploadArea = document.getElementById(\"upload-status\");\n    if (uploadArea && fileName) {\n      uploadArea.innerHTML = `\n        <div class=\"upload-result\">\n          <p>File uploaded: <strong>${fileName}</strong></p>\n          <p>Max size: ${maxSize}MB</p>\n        </div>\n      `;\n    }\n  };\n\n  return (\n    <div>\n      <input \n        type=\"file\" \n        onChange={(e) => setFileName(e.target.files?.[0]?.name || \"\")}\n      />\n      <button onClick={handleUpload}>Upload</button>\n      <div id=\"upload-status\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/FilterButton.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 15,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function FilterButton({ filterName, filterValue }) {\n  const [applied, setApplied] = useState(false);\n\n  const applyFilter = () => {\n    const filterDisplay = document.getElementById(\"filter-info\");\n    if (filterDisplay) {\n      filterDisplay.innerHTML = `\n        <div class=\"filter-chip\">\n          <span class=\"filter-name\">${filterName}</span>\n          <span class=\"filter-value\">${filterValue}</span>\n        </div>\n      `;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={applyFilter}>{filterName}: {filterValue}</button>\n      <div id=\"filter-info\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/FilterChipGroup.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 14,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 14,
+        "endColumn": 53
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function FilterChipGroup({ filters }) {\n  const chipHtml = useMemo(() => {\n    return filters.map(f => \n      `<span class=\"chip\" data-filter=\"${f.id}\">${f.label}</span>`\n    ).join(\"\");\n  }, [filters]);\n\n  return (\n    <div\n      className=\"chip-group\"\n      dangerouslySetInnerHTML={{ __html: chipHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/FooterWidget.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 17,
+        "column": 10,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 17,
+        "endColumn": 58
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function FooterWidget({ companyName, year }) {\n  const footerHtml = useMemo(() => {\n    return `\n      <footer class=\"app-footer\">\n        <p>&copy; ${year} ${companyName}</p>\n        <nav class=\"footer-links\">\n          <a href=\"/privacy\">Privacy</a> | <a href=\"/terms\">Terms</a>\n        </nav>\n      </footer>\n    `;\n  }, [companyName, year]);\n\n  return (\n    <div dangerouslySetInnerHTML={{ __html: footerHtml }} />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/FormValidationDisplay.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 16,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 35
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function FormValidationDisplay({ fieldName, value }) {\n  const [validationMsg, setValidationMsg] = useState(\"\");\n\n  const showValidation = () => {\n    const msgContainer = document.getElementById(\"validation-messages\");\n    const msg = `\n      <div class=\"validation-message\">\n        <strong>${fieldName}</strong>: ${value}\n        <p>Value accepted</p>\n      </div>\n    `;\n    if (msgContainer) {\n      msgContainer.innerHTML = msg;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={showValidation}>Validate</button>\n      <div id=\"validation-messages\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/HeaderNav.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 16,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 55
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function HeaderNav({ title, subtitle }) {\n  const headerHtml = useMemo(() => {\n    return `\n      <header class=\"page-header\">\n        <h1 class=\"header-title\">${title}</h1>\n        <p class=\"header-subtitle\">${subtitle}</p>\n      </header>\n    `;\n  }, [title, subtitle]);\n\n  return (\n    <div\n      dangerouslySetInnerHTML={{ __html: headerHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/IconButton.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 14,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useRef, useEffect } from \"react\";\n\nexport function IconButton({ icon, label, onClick }) {\n  const buttonRef = useRef(null);\n\n  useEffect(() => {\n    if (buttonRef.current && icon && label) {\n      buttonRef.current.innerHTML = `\n        <button class=\"icon-btn\" aria-label=\"${label}\">\n          <span class=\"btn-icon\">${icon}</span>\n          <span class=\"btn-label\">${label}</span>\n        </button>\n      `;\n    }\n  }, [icon, label]);\n\n  return <div ref={buttonRef} className=\"button-wrapper\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ImageGalleryItem.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 14,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useRef, useEffect } from \"react\";\n\nexport function ImageGalleryItem({ imageUrl, altText }) {\n  const itemRef = useRef(null);\n\n  useEffect(() => {\n    if (itemRef.current && imageUrl) {\n      itemRef.current.innerHTML = `\n        <div class=\"gallery-item\">\n          <img src=\"${imageUrl}\" alt=\"${altText}\" />\n          <p class=\"item-caption\">${altText}</p>\n        </div>\n      `;\n    }\n  }, [imageUrl, altText]);\n\n  return <div ref={itemRef} className=\"gallery-wrapper\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/InfoBannerWidget.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 20,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 20,
+        "endColumn": 55
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function InfoBannerWidget({ title, content, icon }) {\n  const bannerHtml = useMemo(() => {\n    return `\n      <div class=\"info-banner\">\n        <div class=\"banner-icon\">${icon}</div>\n        <div class=\"banner-content\">\n          <h3>${title}</h3>\n          <p>${content}</p>\n        </div>\n      </div>\n    `;\n  }, [title, content, icon]);\n\n  return (\n    <div\n      className=\"banner-wrapper\"\n      dangerouslySetInnerHTML={{ __html: bannerHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/InlineEditorField.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 14,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useEffect, useRef } from \"react\";\n\nexport function InlineEditorField({ label, value }) {\n  const fieldRef = useRef(null);\n\n  useEffect(() => {\n    if (fieldRef.current && value) {\n      fieldRef.current.innerHTML = `\n        <div class=\"inline-field\">\n          <label>${label}</label>\n          <input type=\"text\" value=\"${value}\" />\n        </div>\n      `;\n    }\n  }, [label, value]);\n\n  return <div ref={fieldRef} />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/LanguageCodeSnippet.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 13,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useRef, useEffect } from \"react\";\n\nexport function LanguageCodeSnippet({ code, language }) {\n  const codeRef = useRef(null);\n\n  useEffect(() => {\n    if (codeRef.current && code) {\n      codeRef.current.innerHTML = `\n        <pre class=\"code-snippet language-${language}\">\n          <code>${code}</code>\n        </pre>\n      `;\n    }\n  }, [code, language]);\n\n  return <div ref={codeRef} className=\"snippet-wrapper\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/LanguageSelector.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 16,
+        "column": 5,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 33
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function LanguageSelector() {\n  const [lang, setLang] = useState(\"en\");\n\n  const handleLanguageChange = (selectedLang) => {\n    const menuHtml = `\n      <div class=\"language-menu\">\n        <div class=\"lang-item active\">${selectedLang.toUpperCase()}</div>\n        <p>Interface language set to: <strong>${selectedLang}</strong></p>\n      </div>\n    `;\n    \n    const tempDiv = document.createElement(\"div\");\n    tempDiv.innerHTML = menuHtml;\n    document.getElementById(\"lang-container\").appendChild(tempDiv);\n  };\n\n  return (\n    <div>\n      <button onClick={() => handleLanguageChange(\"en\")}>English</button>\n      <button onClick={() => handleLanguageChange(\"fr\")}>Français</button>\n      <div id=\"lang-container\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/LoremGenerator.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 14,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 14,
+        "endColumn": 54
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function LoremGenerator({ count }) {\n  const loremHtml = useMemo(() => {\n    const paragraphs = Array.from({ length: count }).map((_, i) => \n      `<p class=\"lorem-paragraph\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`\n    ).join(\"\");\n    return `<div class=\"lorem-container\">${paragraphs}</div>`;\n  }, [count]);\n\n  return (\n    <div\n      dangerouslySetInnerHTML={{ __html: loremHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/MetadataCard.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 20,
+        "column": 14,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 20,
+        "endColumn": 68
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState, useCallback } from \"react\";\n\nexport function MetadataCard({ metadata }) {\n  const [visible, setVisible] = useState(true);\n\n  const renderMetadata = useCallback(() => {\n    if (!visible || !metadata) return \"\";\n    return `\n      <div class=\"metadata-card\">\n        <div class=\"metadata-content\">\n          <strong>${metadata.key}</strong>: ${metadata.value}\n        </div>\n        <span class=\"metadata-timestamp\">${metadata.timestamp}</span>\n      </div>\n    `;\n  }, [visible, metadata]);\n\n  return (\n    <article dangerouslySetInnerHTML={{ __html: renderMetadata() }} />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ModalConfirmDialog.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 24,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 24,
+        "endColumn": 75
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState, useCallback } from \"react\";\n\nexport function ModalConfirmDialog({ title, description }) {\n  const [isOpen, setIsOpen] = useState(false);\n\n  const renderModal = useCallback(() => {\n    if (!isOpen) return null;\n    return `\n      <div class=\"modal-overlay\">\n        <div class=\"modal-content\">\n          <h2 class=\"modal-title\">${title}</h2>\n          <p class=\"modal-description\">${description}</p>\n          <div class=\"modal-actions\">\n            <button class=\"confirm\">Confirm</button>\n          </div>\n        </div>\n      </div>\n    `;\n  }, [isOpen, title, description]);\n\n  return (\n    <div\n      dangerouslySetInnerHTML={{ __html: renderModal() || \"<div></div>\" }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/NotificationBell.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 13,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useRef, useEffect } from \"react\";\n\nexport function NotificationBell({ unreadCount }) {\n  const bellRef = useRef(null);\n\n  useEffect(() => {\n    if (bellRef.current && unreadCount > 0) {\n      bellRef.current.innerHTML = `\n        <div class=\"bell-icon\">\n          <span class=\"bell-badge\" data-count=\"${unreadCount}\">${unreadCount}</span>\n        </div>\n      `;\n    }\n  }, [unreadCount]);\n\n  return <div ref={bellRef} className=\"notification-bell\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/NotificationDropdown.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 22,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 22,
+        "endColumn": 68
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function NotificationDropdown() {\n  const [notifications, setNotifications] = useState([]);\n  \n  const buildNotificationList = () => {\n    const userCategory = new URLSearchParams(window.location.search).get(\"category\") || \"all\";\n    return `\n      <div class=\"notifications-header\">\n        <h3>Notifications for: ${userCategory}</h3>\n      </div>\n      <ul class=\"notification-list\">\n        ${notifications.map(n => `<li>${n.message}</li>`).join('')}\n      </ul>\n    `;\n  };\n  \n  return (\n    <div\n      className=\"dropdown-container\"\n      dangerouslySetInnerHTML={{ __html: buildNotificationList() }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/PaginationLinks.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 13,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 13,
+        "endColumn": 90
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useEffect, useRef } from \"react\";\n\nexport function PaginationLinks({ currentPage, totalPages }) {\n  const paginationRef = useRef(null);\n\n  useEffect(() => {\n    if (paginationRef.current) {\n      const links = [];\n      for (let i = 1; i <= totalPages; i++) {\n        links.push(`<a href=\"/page/${i}\" class=\"page-link ${i === currentPage ? \"active\" : \"\"}\">${i}</a>`);\n      }\n      paginationRef.current.innerHTML = `<nav class=\"pagination\">${links.join(\"\")}</nav>`;\n    }\n  }, [currentPage, totalPages]);\n\n  return <div ref={paginationRef} />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/PricingTierCard.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState, useEffect } from \"react\";\n\nexport function PricingTierCard({ tier, price }) {\n  const [highlighted, setHighlighted] = useState(false);\n\n  useEffect(() => {\n    const priceDiv = document.getElementById(\"pricing-info\");\n    if (priceDiv && price) {\n      priceDiv.innerHTML = `\n        <div class=\"pricing-card\">\n          <h3>${tier}</h3>\n          <p class=\"price\">$${price}/month</p>\n          <button class=\"select-btn\">Select ${tier}</button>\n        </div>\n      `;\n    }\n  }, [tier, price]);\n\n  return <div id=\"pricing-info\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ProductReviewDisplay.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 20,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 20,
+        "endColumn": 61
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState, useCallback } from \"react\";\n\nexport function ProductReviewDisplay({ productId }) {\n  const [reviews, setReviews] = useState([]);\n\n  const displayReviews = useCallback(() => {\n    const review = reviews[0] || { author: \"Anonymous\", text: \"No reviews yet\" };\n    return `\n      <div class=\"review-section\">\n        <h3>Review by: ${review.author}</h3>\n        <p class=\"review-text\">${review.text}</p>\n      </div>\n    `;\n  }, [reviews]);\n\n  return (\n    <article\n      className=\"product-reviews\"\n      dangerouslySetInnerHTML={{ __html: displayReviews() }}\n    />\n  );\n}\n\n\n",
     "usedDeprecatedRules": []
   },
   {
@@ -289,6 +1977,78 @@
     "usedDeprecatedRules": []
   },
   {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/QuoteCard.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 16,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 54
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function QuoteCard({ quote, author }) {\n  const quoteHtml = useMemo(() => {\n    return `\n      <blockquote class=\"quote-card\">\n        <p class=\"quote-text\">\"${quote}\"</p>\n        <footer class=\"quote-author\">— ${author}</footer>\n      </blockquote>\n    `;\n  }, [quote, author]);\n\n  return (\n    <section\n      dangerouslySetInnerHTML={{ __html: quoteHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/RatingDisplay.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 11,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function RatingDisplay({ rating, maxRating }) {\n  const [currentRating, setCurrentRating] = useState(rating);\n\n  const displayRating = () => {\n    const ratingDiv = document.getElementById(\"rating-container\");\n    if (ratingDiv) {\n      const stars = \"★\".repeat(currentRating) + \"☆\".repeat(maxRating - currentRating);\n      ratingDiv.innerHTML = `\n        <div class=\"rating-display\">\n          <span class=\"stars\">${stars}</span>\n          <p class=\"rating-text\">${currentRating}/${maxRating}</p>\n        </div>\n      `;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={displayRating}>Show Rating</button>\n      <div id=\"rating-container\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/RecommendationCard.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function RecommendationCard({ item }) {\n  const [shown, setShown] = useState(false);\n\n  const displayRecommendation = () => {\n    const recDiv = document.getElementById(\"rec-display\");\n    if (recDiv && item) {\n      recDiv.innerHTML = `\n        <div class=\"recommendation\">\n          <h3>${item.title}</h3>\n          <p>${item.description}</p>\n          <span class=\"rec-score\">${item.score}</span>\n        </div>\n      `;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={displayRecommendation}>Show Recommendation</button>\n      <div id=\"rec-display\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
     "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ReferralAttributionNote.jsx",
     "messages": [
       {
@@ -337,6 +2097,30 @@
     "usedDeprecatedRules": []
   },
   {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/RichTextEditor.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 9,
+        "endColumn": 51
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useEffect, useRef } from \"react\";\n\nexport function RichTextEditor({ initialContent }) {\n  const editorRef = useRef(null);\n\n  useEffect(() => {\n    if (editorRef.current && initialContent) {\n      editorRef.current.innerHTML = initialContent;\n    }\n  }, [initialContent]);\n\n  return (\n    <div\n      ref={editorRef}\n      className=\"rich-text-editor\"\n      contentEditable={true}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
     "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/SavedFilterChip.jsx",
     "messages": [
       {
@@ -361,6 +2145,222 @@
     "usedDeprecatedRules": []
   },
   {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/SearchAutoComplete.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 13,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 17,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function SearchAutoComplete({ suggestions }) {\n  const [query, setQuery] = useState(\"\");\n\n  const displaySuggestions = () => {\n    const suggestDiv = document.getElementById(\"suggestions-list\");\n    if (suggestDiv) {\n      const filteredSuggestions = suggestions.filter(s => \n        s.toLowerCase().includes(query.toLowerCase())\n      );\n      suggestDiv.innerHTML = `\n        <ul class=\"suggestions\">\n          ${filteredSuggestions.map(s => `<li>${s}</li>`).join(\"\")}\n        </ul>\n      `;\n    }\n  };\n\n  return (\n    <div>\n      <input \n        type=\"search\"\n        value={query}\n        onChange={(e) => { setQuery(e.target.value); displaySuggestions(); }}\n        placeholder=\"Search...\"\n      />\n      <div id=\"suggestions-list\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/SearchResultsContainer.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 22,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 22,
+        "endColumn": 56
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function SearchResultsContainer() {\n  const searchQuery = useMemo(() => {\n    const params = new URLSearchParams(window.location.search);\n    return params.get(\"q\") || \"\";\n  }, []);\n\n  const resultsHtml = useMemo(() => {\n    return `\n      <div class=\"results-header\">\n        <p>Search results for: <span class=\"query-text\">${searchQuery}</span></p>\n      </div>\n      <div class=\"results-count\">Found ${searchQuery.length} matches</div>\n    `;\n  }, [searchQuery]);\n\n  return (\n    <section\n      className=\"search-results\"\n      dangerouslySetInnerHTML={{ __html: resultsHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ShareableLink.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 17,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 17,
+        "endColumn": 38
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function ShareableLink({ slug }) {\n  const [copied, setCopied] = useState(false);\n\n  const generateShareUrl = () => {\n    const baseUrl = window.location.origin;\n    const shareHtml = `\n      <div class=\"share-container\">\n        <input type=\"text\" value=\"${baseUrl}/share/${slug}\" readonly />\n        <button>Copy Link</button>\n      </div>\n    `;\n    const container = document.getElementById(\"share-widget\");\n    if (container) {\n      container.innerHTML = shareHtml;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={generateShareUrl}>Generate Share Link</button>\n      <div id=\"share-widget\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/SidebarMenu.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 18,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 18,
+        "endColumn": 53
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function SidebarMenu({ items, activeItem }) {\n  const menuHtml = useMemo(() => {\n    return `\n      <nav class=\"sidebar-menu\">\n        ${items.map(item => \n          `<a href=\"${item.link}\" class=\"menu-link ${item.link === activeItem ? \"active\" : \"\"}\">${item.name}</a>`\n        ).join(\"\")}\n      </nav>\n    `;\n  }, [items, activeItem]);\n\n  return (\n    <div\n      className=\"sidebar-wrapper\"\n      dangerouslySetInnerHTML={{ __html: menuHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/SkeletonLoader.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 17,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 17,
+        "endColumn": 58
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function SkeletonLoader({ count, height }) {\n  const skeletonsHtml = useMemo(() => {\n    return `\n      <div class=\"skeleton-container\">\n        ${Array.from({ length: count }).map(() =>\n          `<div class=\"skeleton-item\" style=\"height: ${height}px\"></div>`\n        ).join(\"\")}\n      </div>\n    `;\n  }, [count, height]);\n\n  return (\n    <div\n      dangerouslySetInnerHTML={{ __html: skeletonsHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/SocialMediaEmbed.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 15,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 15,
+        "endColumn": 37
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function SocialMediaEmbed({ platform, handle }) {\n  const [embedded, setEmbedded] = useState(false);\n\n  const generateEmbed = () => {\n    const embedDiv = document.getElementById(\"social-embed\");\n    if (embedDiv) {\n      const embedCode = `\n        <div class=\"social-widget\">\n          <iframe src=\"https://${platform}.com/${handle}\" width=\"300\" height=\"400\"></iframe>\n        </div>\n      `;\n      embedDiv.innerHTML = embedCode;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={generateEmbed}>Load {platform}</button>\n      <div id=\"social-embed\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/StatusBadge.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 14,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 14,
+        "endColumn": 45
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useEffect, useRef } from \"react\";\n\nexport function StatusBadge({ status, message }) {\n  const badgeRef = useRef(null);\n\n  useEffect(() => {\n    if (badgeRef.current) {\n      const badgeHtml = `\n        <span class=\"status-badge\" data-status=\"${status}\">\n          ${status.toUpperCase()}: ${message}\n        </span>\n      `;\n      badgeRef.current.innerHTML = badgeHtml;\n    }\n  }, [status, message]);\n\n  return <div ref={badgeRef} className=\"badge-container\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/StepIndicator.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 18,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 18,
+        "endColumn": 54
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function StepIndicator({ currentStep, totalSteps }) {\n  const stepsHtml = useMemo(() => {\n    const steps = Array.from({ length: totalSteps }, (_, i) => i + 1);\n    return `\n      <div class=\"step-indicator\">\n        ${steps.map(step => \n          `<span class=\"step ${step <= currentStep ? \"completed\" : \"\"}\">${step}</span>`\n        ).join(\"\")}\n      </div>\n    `;\n  }, [currentStep, totalSteps]);\n\n  return (\n    <div\n      dangerouslySetInnerHTML={{ __html: stepsHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/SummaryStatistics.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 17,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 17,
+        "endColumn": 56
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function SummaryStatistics({ stat, value, unit }) {\n  const summaryHtml = useMemo(() => {\n    return `\n      <div class=\"stat-card\">\n        <h4 class=\"stat-name\">${stat}</h4>\n        <p class=\"stat-value\">${value} <span class=\"stat-unit\">${unit}</span></p>\n      </div>\n    `;\n  }, [stat, value, unit]);\n\n  return (\n    <div\n      className=\"stat-wrapper\"\n      dangerouslySetInnerHTML={{ __html: summaryHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
     "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/SupportBannerToast.jsx",
     "messages": [
       {
@@ -382,6 +2382,246 @@
     "fixableErrorCount": 0,
     "fixableWarningCount": 0,
     "source": "\n import React, { useEffect, useRef } from \"react\";\n \n export function SupportBannerToast() {\n   const toastRef = useRef(null);\n \n   useEffect(() => {\n     function onMessage(event) {\n       if (event.data?.type !== \"SUPPORT_BANNER\") return;\n       if (!toastRef.current) return;\n \n       toastRef.current.innerHTML = event.data.html;\n       toastRef.current.classList.add(\"visible\");\n     }\n \n     window.addEventListener(\"message\", onMessage);\n     return () => window.removeEventListener(\"message\", onMessage);\n   }, []);\n \n   return <aside ref={toastRef} className=\"support-toast\" aria-live=\"polite\" />;\n }\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/TabsNavigationComponent.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 15,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function TabsNavigationComponent({ tabs, activeTab }) {\n  const [active, setActive] = useState(activeTab || 0);\n\n  const renderTabContent = () => {\n    const tabDiv = document.getElementById(\"tab-content\");\n    if (tabDiv && tabs[active]) {\n      tabDiv.innerHTML = `\n        <div class=\"tab-pane active\">\n          <h3>${tabs[active].title}</h3>\n          <p>${tabs[active].content}</p>\n        </div>\n      `;\n    }\n  };\n\n  return (\n    <div>\n      <div class=\"tab-buttons\">\n        {tabs.map((tab, idx) => (\n          <button key={idx} onClick={() => { setActive(idx); renderTabContent(); }}>\n            {tab.title}\n          </button>\n        ))}\n      </div>\n      <div id=\"tab-content\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/TagsDisplayPanel.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 18,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 18,
+        "endColumn": 53
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function TagsDisplayPanel({ tags }) {\n  const tagsHtml = useMemo(() => {\n    return `\n      <div class=\"tags-panel\">\n        <h3>Tags</h3>\n        <div class=\"tags-list\">\n          ${tags.map(tag => `<span class=\"tag\">${tag}</span>`).join(\"\")}\n        </div>\n      </div>\n    `;\n  }, [tags]);\n\n  return (\n    <section\n      dangerouslySetInnerHTML={{ __html: tagsHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/TestimonialCard.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 19,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 19,
+        "endColumn": 60
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function TestimonialCard({ quote, author, role }) {\n  const testimonialHtml = useMemo(() => {\n    return `\n      <div class=\"testimonial-card\">\n        <blockquote class=\"testimonial-quote\">\"${quote}\"</blockquote>\n        <div class=\"testimonial-author\">\n          <strong>${author}</strong>\n          <span class=\"author-role\">${role}</span>\n        </div>\n      </div>\n    `;\n  }, [quote, author, role]);\n\n  return (\n    <article\n      dangerouslySetInnerHTML={{ __html: testimonialHtml }}\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/ThemeCustomizer.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 15,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useEffect, useRef } from \"react\";\n\nexport function ThemeCustomizer() {\n  const containerRef = useRef(null);\n\n  useEffect(() => {\n    const themeData = sessionStorage.getItem(\"theme\") || \"{}\";\n    if (containerRef.current) {\n      containerRef.current.innerHTML = `\n        <div class=\"theme-preview\">\n          <h3>Your Theme: ${themeData}</h3>\n          <p>Customize your appearance</p>\n        </div>\n      `;\n    }\n  }, []);\n\n  return <div ref={containerRef} className=\"theme-customizer\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/TooltipContent.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 13,
+        "column": 7,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 13,
+        "endColumn": 56
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function TooltipContent({ message }) {\n  const tooltipHtml = useMemo(() => {\n    const processedMessage = message || \"No message\";\n    return `<div class=\"tooltip-box\"><p>${processedMessage}</p></div>`;\n  }, [message]);\n\n  return (\n    <div\n      className=\"tooltip-wrapper\"\n      dangerouslySetInnerHTML={{ __html: tooltipHtml }}\n      title=\"Hover tooltip\"\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/UploadProgressBar.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 18,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useState } from \"react\";\n\nexport function UploadProgressBar({ fileName }) {\n  const [progress, setProgress] = useState(0);\n\n  const displayProgress = () => {\n    const progressContainer = document.getElementById(\"progress-box\");\n    if (progressContainer) {\n      progressContainer.innerHTML = `\n        <div class=\"upload-progress\">\n          <p>Uploading: ${fileName}</p>\n          <div class=\"progress-bar\">\n            <span class=\"progress-fill\" style=\"width: ${progress}%\"></span>\n          </div>\n          <p class=\"progress-text\">${progress}%</p>\n        </div>\n      `;\n    }\n  };\n\n  return (\n    <div>\n      <button onClick={displayProgress}>Show Progress</button>\n      <div id=\"progress-box\" />\n    </div>\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/UserCommentCard.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 12,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useEffect, useRef } from \"react\";\n\nexport function UserCommentCard({ commentData }) {\n  const contentRef = useRef(null);\n\n  useEffect(() => {\n    if (contentRef.current && commentData) {\n      contentRef.current.innerHTML = `\n        <div class=\"comment-author\">${commentData.author}</div>\n        <div class=\"comment-content\">${commentData.content}</div>\n      `;\n    }\n  }, [commentData]);\n\n  return (\n    <div \n      ref={contentRef}\n      className=\"comment-card\"\n    />\n  );\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/UserProfileWidget.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 16,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 16,
+        "endColumn": 46
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useRef, useEffect } from \"react\";\n\nexport function UserProfileWidget({ user }) {\n  const profileRef = useRef(null);\n\n  useEffect(() => {\n    if (profileRef.current && user) {\n      const userInfo = `\n        <div class=\"profile-widget\">\n          <img src=\"avatar.png\" alt=\"user\" />\n          <h3>${user.name}</h3>\n          <p class=\"bio\">${user.bio}</p>\n        </div>\n      `;\n      profileRef.current.innerHTML = userInfo;\n    }\n  }, [user]);\n\n  return <div ref={profileRef} className=\"profile-container\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/VideoPlayer.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: assignment to innerHTML.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "AssignmentExpression",
+        "messageId": "restrictedSyntax",
+        "endLine": 13,
+        "endColumn": 8
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useRef, useEffect } from \"react\";\n\nexport function VideoPlayer({ videoUrl, title }) {\n  const playerRef = useRef(null);\n\n  useEffect(() => {\n    if (playerRef.current && videoUrl) {\n      playerRef.current.innerHTML = `\n        <div class=\"video-player\">\n          <video src=\"${videoUrl}\" title=\"${title}\" controls></video>\n        </div>\n      `;\n    }\n  }, [videoUrl, title]);\n\n  return <div ref={playerRef} className=\"player-wrapper\" />;\n}\n\n\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/doubles/Desktop/GITHUB PROJECTS/LLM-Agents-as-SAST-Tools/dataset/vulnerable/WelcomeMessage.jsx",
+    "messages": [
+      {
+        "ruleId": "no-restricted-syntax",
+        "severity": 2,
+        "message": "Potential DOM XSS sink: dangerouslySetInnerHTML usage.",
+        "line": 21,
+        "column": 14,
+        "nodeType": "JSXAttribute",
+        "messageId": "restrictedSyntax",
+        "endLine": 21,
+        "endColumn": 63
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "\nimport React, { useMemo } from \"react\";\n\nexport function WelcomeMessage({ username, greetingType }) {\n  const messageHtml = useMemo(() => {\n    const greetings = {\n      formal: \"Welcome, esteemed visitor\",\n      casual: \"Hey there\",\n      friendly: \"Welcome back, friend\"\n    };\n    const greeting = greetings[greetingType] || \"Welcome\";\n    return `\n      <div class=\"welcome-section\">\n        <h1>${greeting}, ${username}!</h1>\n        <p>We're happy to see you</p>\n      </div>\n    `;\n  }, [username, greetingType]);\n\n  return (\n    <section dangerouslySetInnerHTML={{ __html: messageHtml }} />\n  );\n}\n\n\n",
     "usedDeprecatedRules": []
   }
 ]

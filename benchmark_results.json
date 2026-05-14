@@ -1,11 +1,56 @@
 [
     {
+        "file": "FormValidationDisplay.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the showValidation function allows an attacker to inject malicious JavaScript code into the DOM, potentially leading to a cross-site scripting (XSS) attack."
+        }
+    },
+    {
+        "file": "SearchResultsContainer.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with unvalidated user input (searchQuery) allows an attacker to inject malicious HTML and execute arbitrary JavaScript code."
+        }
+    },
+    {
+        "file": "VideoPlayer.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML to set the innerHTML of the playerRef element allows for arbitrary HTML injection, which can lead to DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "RichTextEditor.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML to set the initial content of the editorRef element without proper validation allows an attacker to inject malicious JavaScript code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "BreadcrumbNavigation.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML to set the innerHTML of an element without proper validation allows for potential DOM-based XSS attacks."
+        }
+    },
+    {
         "file": "ReferralWelcomeCard.jsx",
         "true_label": true,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The component uses insertAdjacentHTML with user-controlled input (referrer URL parameter) without proper sanitization, allowing for potential DOM-based XSS attacks."
+            "reasoning": "The use of insertAdjacentHTML with unvalidated user input (referrer URL parameter) allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
         }
     },
     {
@@ -14,7 +59,79 @@
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The use of `dangerouslySetInnerHTML` in the toastRef.current.innerHTML assignment allows for arbitrary HTML injection, which can lead to DOM-based XSS attacks."
+            "reasoning": "The use of dangerouslySetInnerHTML in the toastRef.current.innerHTML assignment allows for arbitrary HTML injection, which can lead to DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "StepIndicator.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with untrusted user-generated content (stepsHtml) allows an attacker to inject malicious JavaScript code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "DataVisualization.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML to render user-controlled data (dataLabel and dataValue) without proper validation, making it vulnerable to DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "BlogPostExcerpt.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with untrusted user-input (postHtml) allows an attacker to inject malicious HTML and JavaScript code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "NotificationDropdown.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with user-controlled data (URLSearchParams) allows an attacker to inject malicious HTML and JavaScript code, potentially leading to a DOM-based XSS attack."
+        }
+    },
+    {
+        "file": "UserProfileWidget.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML to render user-provided data (user.bio) without proper validation allows an attacker to inject malicious JavaScript code, potentially leading to a DOM-based XSS attack."
+        }
+    },
+    {
+        "file": "LanguageSelector.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` and unvalidated user input in the `handleLanguageChange` function allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "LanguageCodeSnippet.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the codeRef.current.innerHTML assignment allows an attacker to inject malicious JavaScript code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "ActivityFeedItem.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with user-controlled content (`renderActivity()` function) allows an attacker to inject malicious HTML and execute arbitrary JavaScript code."
         }
     },
     {
@@ -23,7 +140,79 @@
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The use of `dangerouslySetInnerHTML` with untrusted user input (`promoCode`) allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+            "reasoning": "The use of `dangerouslySetInnerHTML` with untrusted user input (`promoCode`) allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "QuoteCard.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with untrusted user input (quoteHtml) allows an attacker to inject malicious JavaScript code into the DOM, potentially leading to a cross-site scripting (XSS) attack."
+        }
+    },
+    {
+        "file": "InfoBannerWidget.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with untrusted user-generated content (bannerHtml) allows an attacker to inject malicious JavaScript code into the DOM, potentially leading to a cross-site scripting (XSS) attack."
+        }
+    },
+    {
+        "file": "ModalConfirmDialog.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with user-controlled content (`renderModal`) allows for potential DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "AvatarDisplay.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with untrusted user data (avatarHtml) allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "StatusBadge.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the useEffect hook allows for arbitrary HTML injection, which can lead to DOM-based XSS attacks if unvalidated user input is used to construct the badgeHtml string."
+        }
+    },
+    {
+        "file": "ProductReviewDisplay.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with user-controlled data (`displayReviews`) allows an attacker to inject malicious HTML and JavaScript code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "CodeBlockDisplay.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML to render user-controlled content, which can lead to DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "SummaryStatistics.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with untrusted user input (summaryHtml) allows an attacker to inject malicious HTML and JavaScript code, potentially leading to a DOM-based XSS vulnerability."
         }
     },
     {
@@ -32,7 +221,124 @@
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The use of `dangerouslySetInnerHTML` in the iframe's srcDoc attribute allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the iframe's srcDoc attribute allows an attacker to inject malicious HTML code, which can be executed by the browser when the snippet is rendered."
+        }
+    },
+    {
+        "file": "AlertNotificationBanner.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The showAlert function uses dangerouslySetInnerHTML to set the innerHTML of an element, which can lead to DOM-based XSS attacks if untrusted user input is injected into the HTML string."
+        }
+    },
+    {
+        "file": "SearchAutoComplete.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the `displaySuggestions` function allows an attacker to inject malicious HTML code into the page, potentially leading to a DOM-based XSS attack."
+        }
+    },
+    {
+        "file": "UserCommentCard.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the useEffect hook allows an attacker to inject malicious JavaScript code into the comment content, potentially leading to a DOM-based XSS attack."
+        }
+    },
+    {
+        "file": "TooltipContent.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with user-controlled content (`tooltipHtml`) allows an attacker to inject malicious HTML and JavaScript code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "DataTableRow.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the `displayRow` function allows an attacker to inject malicious JavaScript code into the DOM, potentially leading to a cross-site scripting (XSS) attack."
+        }
+    },
+    {
+        "file": "InlineEditorField.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` without proper sanitization and validation allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "AnalyticsCard.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with user-controlled data (`analyticsData`) allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "ThemeCustomizer.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML to render user-controlled data (themeData) without proper validation allows an attacker to inject malicious JavaScript code, potentially leading to a DOM-based XSS attack."
+        }
+    },
+    {
+        "file": "ShareableLink.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` and unvalidated user input in the `generateShareUrl` function allows an attacker to inject malicious HTML code into the page, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "SidebarMenu.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with unvalidated user input (item.link) allows an attacker to inject malicious HTML and JavaScript code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "FilterButton.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the `applyFilter` function allows an attacker to inject malicious JavaScript code into the DOM, potentially leading to a cross-site scripting (XSS) attack."
+        }
+    },
+    {
+        "file": "LoremGenerator.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with unvalidated user input (the 'count' prop) allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "FooterWidget.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with unvalidated user input (companyName and year) allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
         }
     },
     {
@@ -45,12 +351,93 @@
         }
     },
     {
+        "file": "DynamicTableCell.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the useEffect hook allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
         "file": "ReferralAttributionNote.jsx",
         "true_label": true,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The use of insertAdjacentHTML with user-controlled input (document.referrer) allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+            "reasoning": "The use of insertAdjacentHTML with user-controlled input (document.referrer) allows for potential DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "IconButton.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML to render user-controlled input (icon and label) directly into the DOM, which can lead to a DOM-based XSS vulnerability if an attacker injects malicious HTML."
+        }
+    },
+    {
+        "file": "BadgeLabel.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with unvalidated user input (badgeHtml) allows an attacker to inject malicious HTML and execute arbitrary JavaScript code."
+        }
+    },
+    {
+        "file": "FeatureHighlight.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the useEffect hook allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "SkeletonLoader.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with untrusted user input (`skeletonsHtml`) allows an attacker to inject malicious HTML and potentially execute arbitrary JavaScript code."
+        }
+    },
+    {
+        "file": "TestimonialCard.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with untrusted user input (testimonialHtml) allows an attacker to inject malicious HTML and execute arbitrary JavaScript code."
+        }
+    },
+    {
+        "file": "ImageGalleryItem.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the useEffect hook allows an attacker to inject malicious HTML and JavaScript code into the DOM, potentially leading to a cross-site scripting (XSS) attack."
+        }
+    },
+    {
+        "file": "ContentAuthWrapper.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML to set the innerHTML of an element without proper validation allows for potential DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "SocialMediaEmbed.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML to set the innerHTML of an element without proper validation allows for potential XSS attacks."
         }
     },
     {
@@ -59,7 +446,43 @@
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The use of dangerouslySetInnerHTML with untrusted user data (localStorage) allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+            "reasoning": "The use of dangerouslySetInnerHTML with untrusted user data (localStorage) allows an attacker to inject malicious HTML and execute arbitrary JavaScript code."
+        }
+    },
+    {
+        "file": "PricingTierCard.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the useEffect hook allows an attacker to inject malicious JavaScript code into the DOM, potentially leading to a cross-site scripting (XSS) attack."
+        }
+    },
+    {
+        "file": "HeaderNav.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with unvalidated user input (title and subtitle) allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "ChartLegend.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with untrusted user input (legendHtml) allows an attacker to inject malicious HTML and potentially execute arbitrary JavaScript code."
+        }
+    },
+    {
+        "file": "TabsNavigationComponent.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML to render user-controlled content, which can lead to DOM-based XSS attacks when unvalidated user input is injected into the HTML."
         }
     },
     {
@@ -68,7 +491,52 @@
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The use of dangerouslySetInnerHTML with unvalidated user input (query parameter) allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS attack."
+            "reasoning": "The use of dangerouslySetInnerHTML with unvalidated user input (query parameter) allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "PaginationLinks.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML to render user-controlled data, which can lead to DOM-based XSS attacks when an attacker injects malicious HTML or JavaScript."
+        }
+    },
+    {
+        "file": "FileUploadWidget.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the handleUpload function to update the upload-status element allows an attacker to inject malicious JavaScript code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "RatingDisplay.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the displayRating function to set the innerHTML of an element retrieved by ID can lead to DOM-based XSS attacks if unvalidated user input is used to construct the HTML string."
+        }
+    },
+    {
+        "file": "WelcomeMessage.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with unvalidated user input (username) allows an attacker to inject malicious HTML and JavaScript code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "ErrorMessageDisplay.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the `showError` function to set the innerHTML of an element retrieved by its ID can lead to DOM-based XSS attacks if unvalidated user input is used to construct the error message."
         }
     },
     {
@@ -90,6 +558,159 @@
         }
     },
     {
+        "file": "DynamicListGroup.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the `renderList` function to set the HTML content of an element without proper validation or encoding allows for potential DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "DynamicMenuItem.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with untrusted user input (`menuHtml`) allows an attacker to inject malicious HTML and execute arbitrary JavaScript code."
+        }
+    },
+    {
+        "file": "RecommendationCard.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the displayRecommendation function allows an attacker to inject malicious JavaScript code into the recDiv element, potentially leading to a DOM-based XSS attack."
+        }
+    },
+    {
+        "file": "FilterChipGroup.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with unvalidated user input (filter labels) allows an attacker to inject malicious HTML and execute arbitrary JavaScript code."
+        }
+    },
+    {
+        "file": "UploadProgressBar.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the displayProgress function allows an attacker to inject malicious JavaScript code into the progressContainer element, potentially leading to a DOM-based XSS attack."
+        }
+    },
+    {
+        "file": "CouponDisplay.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the displayCoupon function allows an attacker to inject malicious JavaScript code into the couponArea element, potentially leading to a DOM-based XSS attack."
+        }
+    },
+    {
+        "file": "NotificationBell.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "EmailNotificationPanel.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with user-controlled content (userEmail) allows an attacker to inject malicious JavaScript code into the page, potentially leading to a DOM-based XSS attack."
+        }
+    },
+    {
+        "file": "CalendarDatePicker.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the showCalendar function allows an attacker to inject malicious HTML and JavaScript code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "CollapsibleSection.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the toggleContent function allows an attacker to inject malicious HTML code into the page, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "MetadataCard.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` with user-controlled content (`renderMetadata()`) allows an attacker to inject malicious HTML and execute arbitrary JavaScript code."
+        }
+    },
+    {
+        "file": "TagsDisplayPanel.jsx",
+        "true_label": true,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML with unvalidated user input (tags) allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
+        "file": "FormValidationDisplay.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "SearchResultsContainer.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of window.location.search to get query parameters without proper validation can lead to DOM-based XSS attacks, as untrusted input is being used to set the searchQuery state."
+        }
+    },
+    {
+        "file": "VideoPlayer.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "RichTextEditor.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "BreadcrumbNavigation.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
         "file": "ReferralWelcomeCard.jsx",
         "true_label": false,
         "prediction": {
@@ -108,12 +729,156 @@
         }
     },
     {
+        "file": "StepIndicator.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "DataVisualization.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "BlogPostExcerpt.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "NotificationDropdown.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of `dangerouslySetInnerHTML` is not present in this code, but the unvalidated URL parameter 'category' can be exploited to inject malicious JavaScript code."
+        }
+    },
+    {
+        "file": "UserProfileWidget.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "LanguageSelector.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "LanguageCodeSnippet.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "ActivityFeedItem.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
         "file": "CheckoutPromoBanner.jsx",
         "true_label": false,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The use of `dangerouslySetInnerHTML` is not present, but the unvalidated URL parameter 'promo' in the `URLSearchParams` object can lead to a DOM-based XSS vulnerability if an attacker injects malicious JavaScript code into the 'promo' parameter."
+            "reasoning": "The use of `dangerouslySetInnerHTML` is not present, but the unvalidated URL parameter 'promo' in the `URLSearchParams` object can be exploited to inject malicious JavaScript code."
+        }
+    },
+    {
+        "file": "QuoteCard.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "InfoBannerWidget.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "ModalConfirmDialog.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "AvatarDisplay.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "StatusBadge.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "ProductReviewDisplay.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "CodeBlockDisplay.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "SummaryStatistics.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
         }
     },
     {
@@ -122,16 +887,142 @@
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The use of dangerouslySetInnerHTML in the iframe's srcDoc attribute allows an attacker to inject malicious JavaScript code, which can then be executed by the browser."
+            "reasoning": "The use of dangerouslySetInnerHTML in the iframe's srcDoc property allows an attacker to inject malicious HTML code, which can be executed by the browser when the user interacts with the preview."
+        }
+    },
+    {
+        "file": "AlertNotificationBanner.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "SearchAutoComplete.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "UserCommentCard.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "TooltipContent.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "DataTableRow.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "InlineEditorField.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "AnalyticsCard.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "ThemeCustomizer.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "Insecure Client-Side Storage",
+            "reasoning": "The application stores sensitive data (theme) in sessionStorage without proper encryption, making it accessible to an attacker who can steal the session storage."
+        }
+    },
+    {
+        "file": "ShareableLink.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the input field allows an attacker to inject malicious JavaScript code, which can be executed when the user clicks the 'Copy Link' button."
+        }
+    },
+    {
+        "file": "SidebarMenu.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "FilterButton.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities or insecure client-side storage practices."
+        }
+    },
+    {
+        "file": "LoremGenerator.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "FooterWidget.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
         }
     },
     {
         "file": "EmbeddedChatNotice.jsx",
         "true_label": false,
         "prediction": {
-            "is_vulnerable": true,
-            "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The use of `dangerouslySetInnerHTML` in the JSX template allows for arbitrary HTML injection, which can be exploited by an attacker to inject malicious JavaScript code."
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, and the use of a trusted origins set helps prevent unauthorized message events. Additionally, there is no insecure client-side storage used in this component."
+        }
+    },
+    {
+        "file": "DynamicTableCell.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
         }
     },
     {
@@ -144,6 +1035,78 @@
         }
     },
     {
+        "file": "IconButton.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "BadgeLabel.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "FeatureHighlight.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "SkeletonLoader.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "TestimonialCard.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "ImageGalleryItem.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "ContentAuthWrapper.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "SocialMediaEmbed.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The use of dangerouslySetInnerHTML in the iframe's src attribute allows an attacker to inject malicious JavaScript code, potentially leading to a DOM-based XSS vulnerability."
+        }
+    },
+    {
         "file": "SavedFilterChip.jsx",
         "true_label": false,
         "prediction": {
@@ -153,7 +1116,7 @@
         }
     },
     {
-        "file": "ProductSearchHeader.jsx",
+        "file": "PricingTierCard.jsx",
         "true_label": false,
         "prediction": {
             "is_vulnerable": false,
@@ -162,12 +1125,93 @@
         }
     },
     {
+        "file": "HeaderNav.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "ChartLegend.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "TabsNavigationComponent.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "ProductSearchHeader.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, and it uses URLSearchParams to safely parse query parameters."
+        }
+    },
+    {
+        "file": "PaginationLinks.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "FileUploadWidget.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "RatingDisplay.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "WelcomeMessage.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "ErrorMessageDisplay.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
         "file": "DocsPreviewFrame.jsx",
         "true_label": false,
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "DOM-based XSS",
-            "reasoning": "The use of `dangerouslySetInnerHTML` in the iframe component allows an attacker to inject malicious HTML code, potentially leading to a DOM-based XSS vulnerability."
+            "reasoning": "The use of `dangerouslySetInnerHTML` in the iframe's srcDoc attribute allows an attacker to inject malicious HTML, potentially leading to a DOM-based XSS vulnerability."
         }
     },
     {
@@ -176,7 +1220,115 @@
         "prediction": {
             "is_vulnerable": true,
             "vulnerability_type": "Insecure Client-Side Storage",
-            "reasoning": "The application stores sensitive data (profile.bioDraft) in local storage without proper encryption, making it accessible to an attacker who gains access to the user's browser."
+            "reasoning": "The application stores sensitive data (profile.bioDraft) in local storage without proper encryption, making it accessible to an attacker if exploited."
+        }
+    },
+    {
+        "file": "DynamicListGroup.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "DynamicMenuItem.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "RecommendationCard.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "FilterChipGroup.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "UploadProgressBar.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "CouponDisplay.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": true,
+            "vulnerability_type": "DOM-based XSS",
+            "reasoning": "The component uses dangerouslySetInnerHTML to render user-controlled data (code) without proper validation, making it vulnerable to DOM-based XSS attacks."
+        }
+    },
+    {
+        "file": "NotificationBell.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "EmailNotificationPanel.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "CalendarDatePicker.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "CollapsibleSection.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe use of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "MetadataCard.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
+        }
+    },
+    {
+        "file": "TagsDisplayPanel.jsx",
+        "true_label": false,
+        "prediction": {
+            "is_vulnerable": false,
+            "vulnerability_type": null,
+            "reasoning": "The code does not contain any obvious DOM-based XSS vulnerabilities, such as unsafe usage of dangerouslySetInnerHTML or unvalidated URL parameters."
         }
     }
 ]
